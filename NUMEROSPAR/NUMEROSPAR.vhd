@@ -9,7 +9,7 @@ end NUMEROSPAR;
 --Arquitectura pa la logica
 architecture rtl of NUMEROSPAR is
     begin
-    S <= ((not A) and (not D)) or (((not B) and (not C)) and D);
+    S <= ((not A) and D) or (((not B) and (not C)) and D);
     --S <= not(A and D) or not(B and C) and D
     --S=not(AD) + not(BD)D
     end rtl;

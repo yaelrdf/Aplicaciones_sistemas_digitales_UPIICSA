@@ -1,5 +1,5 @@
 Fitter report for NUMEROSPAR
-Sun Oct 13 17:10:52 2024
+Sun Oct 13 20:35:25 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -53,7 +53,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+
 ; Fitter Summary                                                         ;
 +-----------------------+------------------------------------------------+
-; Fitter Status         ; Successful - Sun Oct 13 17:10:52 2024          ;
+; Fitter Status         ; Successful - Sun Oct 13 20:35:25 2024          ;
 ; Quartus Prime Version ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name         ; NUMEROSPAR                                     ;
 ; Top-level Entity Name ; NUMEROSPAR                                     ;
@@ -121,8 +121,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -135,7 +135,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/mcmin/Documents/DEV TOOLS/GIT/digital-systems-aplications-UPIICSA/NUMEROSPAR/output_files/NUMEROSPAR.pin.
+The pin-out file can be found in C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/NUMEROSPAR/output_files/NUMEROSPAR.pin.
 
 
 +------------------------------------------------------------------+
@@ -359,10 +359,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name ; Pin Type ; Pad to Core 0 ;
 +------+----------+---------------+
 ; S    ; Output   ; --            ;
-; A    ; Input    ; (1)           ;
 ; D    ; Input    ; (1)           ;
 ; B    ; Input    ; (1)           ;
 ; C    ; Input    ; (1)           ;
+; A    ; Input    ; (1)           ;
 +------+----------+---------------+
 
 
@@ -450,7 +450,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (119006): Selected device EPM240T100C5 for design "NUMEROSPAR"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -476,7 +476,7 @@ Info (176234): Starting register packing
 Info (186468): Started processing fast register assignments
 Info (186469): Finished processing fast register assignments
 Info (176235): Finished register packing
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -490,20 +490,20 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.12 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.26 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file C:/Users/mcmin/Documents/DEV TOOLS/GIT/digital-systems-aplications-UPIICSA/NUMEROSPAR/output_files/NUMEROSPAR.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/NUMEROSPAR/output_files/NUMEROSPAR.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 6141 megabytes
-    Info: Processing ended: Sun Oct 13 17:10:52 2024
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 5321 megabytes
+    Info: Processing ended: Sun Oct 13 20:35:25 2024
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/mcmin/Documents/DEV TOOLS/GIT/digital-systems-aplications-UPIICSA/NUMEROSPAR/output_files/NUMEROSPAR.fit.smsg.
+The suppressed messages can be found in C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/NUMEROSPAR/output_files/NUMEROSPAR.fit.smsg.
 
 

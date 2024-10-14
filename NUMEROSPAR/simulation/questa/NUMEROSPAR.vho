@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
--- DATE "10/13/2024 17:10:57"
+-- DATE "10/13/2024 20:35:37"
 
 -- 
 -- Device: Altera EPM240T100C5 Package TQFP100
@@ -38,7 +38,7 @@ ENTITY 	NUMEROSPAR IS
 	B : IN std_logic;
 	C : IN std_logic;
 	D : IN std_logic;
-	S : BUFFER std_logic
+	S : OUT std_logic
 	);
 END NUMEROSPAR;
 
@@ -65,7 +65,6 @@ SIGNAL \A~combout\ : std_logic;
 SIGNAL \C~combout\ : std_logic;
 SIGNAL \D~combout\ : std_logic;
 SIGNAL \S~0_combout\ : std_logic;
-SIGNAL \ALT_INV_S~0_combout\ : std_logic;
 
 BEGIN
 
@@ -77,7 +76,6 @@ S <= ww_S;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\ALT_INV_S~0_combout\ <= NOT \S~0_combout\;
 
 -- Location: PIN_74,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \B~I\ : maxii_io
@@ -126,11 +124,11 @@ PORT MAP (
 -- Location: LC_X7_Y4_N3
 \S~0\ : maxii_lcell
 -- Equation(s):
--- \S~0_combout\ = (\D~combout\ & ((\B~combout\) # ((\C~combout\)))) # (!\D~combout\ & (((\A~combout\))))
+-- \S~0_combout\ = (\D~combout\ & (((!\B~combout\ & !\C~combout\)) # (!\A~combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "facc",
+	lut_mask => "3700",
 	operation_mode => "normal",
 	output_mode => "comb_only",
 	register_cascade_mode => "off",
@@ -153,7 +151,7 @@ GENERIC MAP (
 	operation_mode => "output")
 -- pragma translate_on
 PORT MAP (
-	datain => \ALT_INV_S~0_combout\,
+	datain => \S~0_combout\,
 	oe => VCC,
 	padio => ww_S);
 END structure;
