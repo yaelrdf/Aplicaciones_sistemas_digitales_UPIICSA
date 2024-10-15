@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Tue Oct 15 12:29:08 2024
+Analysis & Synthesis Status : Successful - Tue Oct 15 13:36:49 2024
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : RESTA_COMPARACION
 Top-level Entity Name : RESTA_COMPARACION
 Family : MAX II
-Total logic elements : 14
+Total logic elements : 13
 Total pins : 16
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )
