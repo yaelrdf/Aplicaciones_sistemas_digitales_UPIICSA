@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
--- DATE "10/13/2024 20:35:37"
+-- DATE "10/15/2024 08:05:39"
 
 -- 
 -- Device: Altera EPM240T100C5 Package TQFP100
@@ -38,7 +38,7 @@ ENTITY 	NUMEROSPAR IS
 	B : IN std_logic;
 	C : IN std_logic;
 	D : IN std_logic;
-	S : OUT std_logic
+	S : BUFFER std_logic
 	);
 END NUMEROSPAR;
 
@@ -62,7 +62,6 @@ SIGNAL ww_D : std_logic;
 SIGNAL ww_S : std_logic;
 SIGNAL \B~combout\ : std_logic;
 SIGNAL \A~combout\ : std_logic;
-SIGNAL \C~combout\ : std_logic;
 SIGNAL \D~combout\ : std_logic;
 SIGNAL \S~0_combout\ : std_logic;
 
@@ -99,17 +98,6 @@ PORT MAP (
 	padio => ww_A,
 	combout => \A~combout\);
 
--- Location: PIN_72,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\C~I\ : maxii_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "input")
--- pragma translate_on
-PORT MAP (
-	oe => GND,
-	padio => ww_C,
-	combout => \C~combout\);
-
 -- Location: PIN_70,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \D~I\ : maxii_io
 -- pragma translate_off
@@ -124,11 +112,11 @@ PORT MAP (
 -- Location: LC_X7_Y4_N3
 \S~0\ : maxii_lcell
 -- Equation(s):
--- \S~0_combout\ = (\D~combout\ & (((!\B~combout\ & !\C~combout\)) # (!\A~combout\)))
+-- \S~0_combout\ = ((\D~combout\ & ((!\A~combout\) # (!\B~combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "3700",
+	lut_mask => "7700",
 	operation_mode => "normal",
 	output_mode => "comb_only",
 	register_cascade_mode => "off",
@@ -138,11 +126,20 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \B~combout\,
 	datab => \A~combout\,
-	datac => \C~combout\,
 	datad => \D~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	combout => \S~0_combout\);
+
+-- Location: PIN_72,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\C~I\ : maxii_io
+-- pragma translate_off
+GENERIC MAP (
+	operation_mode => "input")
+-- pragma translate_on
+PORT MAP (
+	oe => GND,
+	padio => ww_C);
 
 -- Location: PIN_75,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 \S~I\ : maxii_io
