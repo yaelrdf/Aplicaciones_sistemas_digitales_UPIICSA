@@ -1,0 +1,46 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity BinarySubtractorComparator is
+    Port ( A3, A2, A1, A0 : in  STD_LOGIC;
+           B3, B2, B1, B0 : in  STD_LOGIC;
+           PS : out STD_LOGIC;
+           D3, D2, D1, D0 : out STD_LOGIC;
+           C1, C2, C3 : out STD_LOGIC);
+end BinarySubtractorComparator;
+
+architecture Behavioral of BinarySubtractorComparator is
+    signal BORROW1, BORROW2, BORROW3 : STD_LOGIC;
+begin
+    -- Subtraction process
+    D0 <= A0 xor B0;
+    BORROW1 <= (not A0) and B0;
+
+    D1 <= (A1 xor B1) xor BORROW1;
+    BORROW2 <= ((not A1) and B1) or ((not (A1 xor B1)) and BORROW1);
+
+    D2 <= (A2 xor B2) xor BORROW2;
+    BORROW3 <= ((not A2) and B2) or ((not (A2 xor B2)) and BORROW2);
+
+    D3 <= (A3 xor B3) xor BORROW3;
+    PS <= ((not A3) and B3) or ((not (A3 xor B3)) and BORROW3);
+
+    -- Comparison process
+    process(A3, A2, A1, A0, B3, B2, B1, B0)
+    begin
+        if (A3 & A2 & A1 & A0 > B3 & B2 & B1 & B0) then
+            C1 <= '1';
+            C2 <= '0';
+            C3 <= '0';
+        elsif (A3 & A2 & A1 & A0 < B3 & B2 & B1 & B0) then
+            C1 <= '0';
+            C2 <= '1';
+            C3 <= '0';
+        else  -- A = B
+            C1 <= '0';
+            C2 <= '0';
+            C3 <= '1';
+        end if;
+    end process;
+
+end Behavioral;
