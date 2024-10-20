@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
-// DATE "10/15/2024 13:36:55"
+// DATE "10/20/2024 16:11:59"
 
 // 
 // Device: Altera EPM240T100C5 Package TQFP100
@@ -468,7 +468,7 @@ defparam \LessThan0~1 .sum_lutc_input = "datac";
 defparam \LessThan0~1 .synch_mode = "off";
 // synopsys translate_on
 
-// Location: LC_X7_Y4_N3
+// Location: LC_X7_Y4_N9
 maxii_lcell \LessThan0~3 (
 // Equation(s):
 // \LessThan0~3_combout  = (\LessThan0~0_combout ) # ((\LessThan0~2_combout  & (\LessThan0~1_combout )))
@@ -576,7 +576,7 @@ defparam \LessThan1~0 .sum_lutc_input = "datac";
 defparam \LessThan1~0 .synch_mode = "off";
 // synopsys translate_on
 
-// Location: LC_X7_Y4_N5
+// Location: LC_X7_Y4_N4
 maxii_lcell \C2~0 (
 // Equation(s):
 // \C2~0_combout  = (!\LessThan0~3_combout  & ((\LessThan1~0_combout ) # ((\LessThan1~1_combout  & \LessThan0~2_combout ))))
@@ -612,7 +612,7 @@ defparam \C2~0 .sum_lutc_input = "datac";
 defparam \C2~0 .synch_mode = "off";
 // synopsys translate_on
 
-// Location: LC_X7_Y4_N9
+// Location: LC_X7_Y4_N3
 maxii_lcell \C3~0 (
 // Equation(s):
 // \C3~0_combout  = (\LessThan1~0_combout ) # ((\LessThan0~3_combout ) # ((\LessThan1~1_combout  & \LessThan0~2_combout )))
@@ -698,7 +698,7 @@ maxii_io \D[3]~I (
 defparam \D[3]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_75,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_71,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxii_io \C1~I (
 	.datain(\LessThan0~3_combout ),
 	.oe(vcc),
@@ -708,7 +708,7 @@ maxii_io \C1~I (
 defparam \C1~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_73,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_75,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxii_io \C2~I (
 	.datain(\C2~0_combout ),
 	.oe(vcc),
@@ -718,7 +718,7 @@ maxii_io \C2~I (
 defparam \C2~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_71,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_73,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxii_io \C3~I (
 	.datain(!\C3~0_combout ),
 	.oe(vcc),

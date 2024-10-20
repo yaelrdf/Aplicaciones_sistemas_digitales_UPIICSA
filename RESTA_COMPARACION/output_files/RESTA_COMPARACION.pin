@@ -133,11 +133,11 @@ GND*                         : 67        :        :                   :         
 D[0]                         : 68        : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : 69        :        :                   :         : 2         :                
 D[1]                         : 70        : output : 3.3-V LVTTL       :         : 2         : Y              
-C3                           : 71        : output : 3.3-V LVTTL       :         : 2         : Y              
+C1                           : 71        : output : 3.3-V LVTTL       :         : 2         : Y              
 D[2]                         : 72        : output : 3.3-V LVTTL       :         : 2         : Y              
-C2                           : 73        : output : 3.3-V LVTTL       :         : 2         : Y              
+C3                           : 73        : output : 3.3-V LVTTL       :         : 2         : Y              
 D[3]                         : 74        : output : 3.3-V LVTTL       :         : 2         : Y              
-C1                           : 75        : output : 3.3-V LVTTL       :         : 2         : Y              
+C2                           : 75        : output : 3.3-V LVTTL       :         : 2         : Y              
 PS                           : 76        : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : 77        :        :                   :         : 2         :                
 B[0]                         : 78        : input  : 3.3-V LVTTL       :         : 2         : Y              

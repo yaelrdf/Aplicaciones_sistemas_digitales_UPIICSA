@@ -57,9 +57,9 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_global_assignment -name VHDL_FILE RESTA_COMPARACION.vhd
 set_location_assignment PIN_76 -to PS
-set_location_assignment PIN_75 -to C1
-set_location_assignment PIN_73 -to C2
-set_location_assignment PIN_71 -to C3
+set_location_assignment PIN_71 -to C1
+set_location_assignment PIN_75 -to C2
+set_location_assignment PIN_73 -to C3
 set_location_assignment PIN_100 -to A[3]
 set_location_assignment PIN_98 -to A[2]
 set_location_assignment PIN_96 -to A[1]
