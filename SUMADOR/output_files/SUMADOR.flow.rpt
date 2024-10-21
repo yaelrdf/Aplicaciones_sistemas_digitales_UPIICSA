@@ -1,5 +1,5 @@
 Flow report for SUMADOR
-Tue Oct 15 09:38:10 2024
+Sun Oct 20 22:25:22 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +-----------------------+------------------------------------------------+
-; Flow Status           ; Successful - Tue Oct 15 09:38:10 2024          ;
+; Flow Status           ; Successful - Sun Oct 20 22:25:22 2024          ;
 ; Quartus Prime Version ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name         ; SUMADOR                                        ;
 ; Top-level Entity Name ; SUMADOR                                        ;
@@ -60,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/15/2024 09:37:48 ;
+; Start date & time ; 10/20/2024 22:25:00 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; SUMADOR             ;
 +-------------------+---------------------+
@@ -71,7 +71,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------+---------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                       ; Value                           ; Default Value ; Entity Name ; Section Id                        ;
 +---------------------------------------+---------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                 ; 231143715998239.172900666820544 ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                 ; 231143715998239.172948470006876 ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                             ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                             ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                             ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -93,10 +93,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4767 MB             ; 00:00:23                           ;
 ; Fitter               ; 00:00:02     ; 1.0                     ; 6137 MB             ; 00:00:01                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4663 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4671 MB             ; 00:00:01                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4663 MB             ; 00:00:00                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4674 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4620 MB             ; 00:00:01                           ;
-; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:27                           ;
+; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:26                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -105,11 +105,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; Yael-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; Yael-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; Yael-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; Yael-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Yael-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

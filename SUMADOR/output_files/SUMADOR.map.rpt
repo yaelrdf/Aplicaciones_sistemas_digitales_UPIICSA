@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SUMADOR
-Tue Oct 15 09:38:01 2024
+Sun Oct 20 22:25:13 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue Oct 15 09:38:01 2024          ;
+; Analysis & Synthesis Status ; Successful - Sun Oct 20 22:25:13 2024          ;
 ; Quartus Prime Version       ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name               ; SUMADOR                                        ;
 ; Top-level Entity Name       ; SUMADOR                                        ;
@@ -140,13 +140,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                ;
-+----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                   ; Library ;
-+----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------------+---------+
-; sumador.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/mcmin/Documents/DEV TOOLS/GIT/digital-systems-aplications-UPIICSA/SUMADOR/sumador.vhd ;         ;
-+----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                      ;
++----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                         ; Library ;
++----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------------------------+---------+
+; sumador.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/SUMADOR/sumador.vhd ;         ;
++----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -214,13 +214,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Tue Oct 15 09:37:47 2024
+    Info: Processing started: Sun Oct 20 22:24:59 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SUMADOR -c SUMADOR
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Warning (12125): Using design file sumador.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: SUMADOR-Behavioral File: C:/Users/mcmin/Documents/DEV TOOLS/GIT/digital-systems-aplications-UPIICSA/SUMADOR/sumador.vhd Line: 11
-    Info (12023): Found entity 1: SUMADOR File: C:/Users/mcmin/Documents/DEV TOOLS/GIT/digital-systems-aplications-UPIICSA/SUMADOR/sumador.vhd Line: 4
+    Info (12022): Found design unit 1: SUMADOR-Behavioral File: C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/SUMADOR/sumador.vhd Line: 13
+    Info (12023): Found entity 1: SUMADOR File: C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/SUMADOR/sumador.vhd Line: 4
 Info (12127): Elaborating entity "SUMADOR" for the top level hierarchy
 Info (21057): Implemented 21 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
@@ -228,7 +228,7 @@ Info (21057): Implemented 21 device resources after synthesis - the final resour
     Info (21061): Implemented 8 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4767 megabytes
-    Info: Processing ended: Tue Oct 15 09:38:01 2024
+    Info: Processing ended: Sun Oct 20 22:25:13 2024
     Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:23
 

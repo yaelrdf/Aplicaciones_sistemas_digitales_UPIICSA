@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RESTA_COMPARACION
-Sun Oct 20 16:11:48 2024
+Sun Oct 20 23:46:00 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sun Oct 20 16:11:48 2024          ;
+; Analysis & Synthesis Status ; Successful - Sun Oct 20 23:46:00 2024          ;
 ; Quartus Prime Version       ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name               ; RESTA_COMPARACION                              ;
 ; Top-level Entity Name       ; RESTA_COMPARACION                              ;
@@ -215,12 +215,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Sun Oct 20 16:11:22 2024
+    Info: Processing started: Sun Oct 20 23:45:46 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RESTA_COMPARACION -c RESTA_COMPARACION
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file resta_comparacion.vhd
-    Info (12022): Found design unit 1: RESTA_COMPARACION-Behavioral File: C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/RESTA_COMPARACION/RESTA_COMPARACION.vhd Line: 16
+    Info (12022): Found design unit 1: RESTA_COMPARACION-Behavioral File: C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/RESTA_COMPARACION/RESTA_COMPARACION.vhd Line: 17
     Info (12023): Found entity 1: RESTA_COMPARACION File: C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/RESTA_COMPARACION/RESTA_COMPARACION.vhd Line: 6
 Info (12127): Elaborating entity "RESTA_COMPARACION" for the top level hierarchy
 Info (21057): Implemented 29 device resources after synthesis - the final resource count might be different
@@ -228,9 +228,9 @@ Info (21057): Implemented 29 device resources after synthesis - the final resour
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 13 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4775 megabytes
-    Info: Processing ended: Sun Oct 20 16:11:48 2024
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 4777 megabytes
+    Info: Processing ended: Sun Oct 20 23:46:00 2024
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:23
 
 
