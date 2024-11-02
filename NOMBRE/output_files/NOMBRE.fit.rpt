@@ -1,5 +1,5 @@
 Fitter report for NOMBRE
-Tue Oct 29 09:53:15 2024
+Fri Nov  1 21:37:14 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -53,7 +53,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+
 ; Fitter Summary                                                         ;
 +-----------------------+------------------------------------------------+
-; Fitter Status         ; Successful - Tue Oct 29 09:53:15 2024          ;
+; Fitter Status         ; Successful - Fri Nov  1 21:37:14 2024          ;
 ; Quartus Prime Version ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name         ; NOMBRE                                         ;
 ; Top-level Entity Name ; NOMBRE                                         ;
@@ -121,8 +121,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -178,8 +178,8 @@ The pin-out file can be found in C:/Users/mcmin/Documents/GIT/digital-systems-ap
 ; Global signals                              ; 0                  ;
 ;     -- Global clocks                        ; 0 / 4 ( 0 % )      ;
 ; JTAGs                                       ; 0 / 1 ( 0 % )      ;
-; Average interconnect usage (total/H/V)      ; 1.3% / 1.1% / 1.5% ;
-; Peak interconnect usage (total/H/V)         ; 1.3% / 1.1% / 1.5% ;
+; Average interconnect usage (total/H/V)      ; 1.4% / 1.6% / 1.2% ;
+; Peak interconnect usage (total/H/V)         ; 1.4% / 1.6% / 1.2% ;
 ; Maximum fan-out                             ; 5                  ;
 ; Highest non-global fan-out                  ; 5                  ;
 ; Total fan-out                               ; 19                 ;
@@ -192,8 +192,8 @@ The pin-out file can be found in C:/Users/mcmin/Documents/GIT/digital-systems-ap
 +--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
 ; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Location assigned by ; Slow Slew Rate ;
 +--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
-; ent[0] ; 73    ; 2        ; 8            ; 4            ; 1           ; 3                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
-; ent[1] ; 75    ; 2        ; 7            ; 5            ; 0           ; 5                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
+; ent[0] ; 97    ; 2        ; 3            ; 5            ; 3           ; 3                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
+; ent[1] ; 99    ; 2        ; 2            ; 5            ; 1           ; 5                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
 +--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
 
 
@@ -202,23 +202,23 @@ The pin-out file can be found in C:/Users/mcmin/Documents/GIT/digital-systems-ap
 +-------------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
 ; Name        ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Slow Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Fast Output Connection ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
 +-------------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
-; display[0]  ; 76    ; 2        ; 7            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[10] ; 96    ; 2        ; 3            ; 5            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[11] ; 98    ; 2        ; 2            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[12] ; 91    ; 2        ; 4            ; 5            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[13] ; 95    ; 2        ; 3            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[14] ; 97    ; 2        ; 3            ; 5            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[15] ; 99    ; 2        ; 2            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[16] ; 100   ; 2        ; 2            ; 5            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[1]  ; 85    ; 2        ; 5            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[2]  ; 82    ; 2        ; 6            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[3]  ; 84    ; 2        ; 6            ; 5            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[4]  ; 87    ; 2        ; 5            ; 5            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[5]  ; 86    ; 2        ; 5            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[6]  ; 89    ; 2        ; 4            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[7]  ; 88    ; 2        ; 5            ; 5            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[8]  ; 90    ; 2        ; 4            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[9]  ; 92    ; 2        ; 3            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[0]  ; 56    ; 2        ; 8            ; 1            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[10] ; 57    ; 2        ; 8            ; 2            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[11] ; 61    ; 2        ; 8            ; 2            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[12] ; 67    ; 2        ; 8            ; 3            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[13] ; 69    ; 2        ; 8            ; 3            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[14] ; 71    ; 2        ; 8            ; 4            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[15] ; 73    ; 2        ; 8            ; 4            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[16] ; 75    ; 2        ; 7            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[1]  ; 58    ; 2        ; 8            ; 2            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[2]  ; 66    ; 2        ; 8            ; 3            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[3]  ; 68    ; 2        ; 8            ; 3            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[4]  ; 70    ; 2        ; 8            ; 4            ; 4           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[5]  ; 72    ; 2        ; 8            ; 4            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[6]  ; 74    ; 2        ; 8            ; 4            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[7]  ; 76    ; 2        ; 7            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[8]  ; 54    ; 2        ; 8            ; 1            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[9]  ; 55    ; 2        ; 8            ; 1            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 +-------------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
 
 
@@ -290,53 +290,53 @@ The pin-out file can be found in C:/Users/mcmin/Documents/GIT/digital-systems-ap
 ; 51       ; 41         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 52       ; 42         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; 53       ; 43         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 54       ; 44         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 55       ; 45         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 56       ; 46         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 57       ; 47         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 58       ; 48         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
+; 54       ; 44         ; 2        ; display[8]     ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; Y               ; no       ; Off          ;
+; 55       ; 45         ; 2        ; display[9]     ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; Y               ; no       ; Off          ;
+; 56       ; 46         ; 2        ; display[0]     ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; Y               ; no       ; Off          ;
+; 57       ; 47         ; 2        ; display[10]    ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; Y               ; no       ; Off          ;
+; 58       ; 48         ; 2        ; display[1]     ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; Y               ; no       ; Off          ;
 ; 59       ;            ; 2        ; VCCIO2         ; power  ;              ; 3.3V      ; --         ;                 ; --       ; --           ;
 ; 60       ;            ;          ; GNDIO          ; gnd    ;              ;           ; --         ;                 ; --       ; --           ;
-; 61       ; 49         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
+; 61       ; 49         ; 2        ; display[11]    ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; Y               ; no       ; Off          ;
 ; 62       ; 50         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; 63       ;            ;          ; VCCINT         ; power  ;              ; 2.5V/3.3V ; --         ;                 ; --       ; --           ;
 ; 64       ; 51         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; 65       ;            ;          ; GNDINT         ; gnd    ;              ;           ; --         ;                 ; --       ; --           ;
-; 66       ; 52         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 67       ; 53         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 68       ; 54         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 69       ; 55         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 70       ; 56         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 71       ; 57         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 72       ; 58         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 73       ; 59         ; 2        ; ent[0]         ; input  ; 3.3-V LVTTL  ;           ; Row I/O    ; Y               ; no       ; Off          ;
-; 74       ; 60         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 75       ; 61         ; 2        ; ent[1]         ; input  ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
-; 76       ; 62         ; 2        ; display[0]     ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
+; 66       ; 52         ; 2        ; display[2]     ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; Y               ; no       ; Off          ;
+; 67       ; 53         ; 2        ; display[12]    ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; Y               ; no       ; Off          ;
+; 68       ; 54         ; 2        ; display[3]     ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; Y               ; no       ; Off          ;
+; 69       ; 55         ; 2        ; display[13]    ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; Y               ; no       ; Off          ;
+; 70       ; 56         ; 2        ; display[4]     ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; Y               ; no       ; Off          ;
+; 71       ; 57         ; 2        ; display[14]    ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; Y               ; no       ; Off          ;
+; 72       ; 58         ; 2        ; display[5]     ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; Y               ; no       ; Off          ;
+; 73       ; 59         ; 2        ; display[15]    ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; Y               ; no       ; Off          ;
+; 74       ; 60         ; 2        ; display[6]     ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; Y               ; no       ; Off          ;
+; 75       ; 61         ; 2        ; display[16]    ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
+; 76       ; 62         ; 2        ; display[7]     ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
 ; 77       ; 63         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 78       ; 64         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 79       ;            ;          ; GNDIO          ; gnd    ;              ;           ; --         ;                 ; --       ; --           ;
 ; 80       ;            ; 2        ; VCCIO2         ; power  ;              ; 3.3V      ; --         ;                 ; --       ; --           ;
 ; 81       ; 65         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
-; 82       ; 66         ; 2        ; display[2]     ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
+; 82       ; 66         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 83       ; 67         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
-; 84       ; 68         ; 2        ; display[3]     ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
-; 85       ; 69         ; 2        ; display[1]     ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
-; 86       ; 70         ; 2        ; display[5]     ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
-; 87       ; 71         ; 2        ; display[4]     ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
-; 88       ; 72         ; 2        ; display[7]     ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
-; 89       ; 73         ; 2        ; display[6]     ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
-; 90       ; 74         ; 2        ; display[8]     ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
-; 91       ; 75         ; 2        ; display[12]    ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
-; 92       ; 76         ; 2        ; display[9]     ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
+; 84       ; 68         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
+; 85       ; 69         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
+; 86       ; 70         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
+; 87       ; 71         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
+; 88       ; 72         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
+; 89       ; 73         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
+; 90       ; 74         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
+; 91       ; 75         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
+; 92       ; 76         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 93       ;            ;          ; GNDIO          ; gnd    ;              ;           ; --         ;                 ; --       ; --           ;
 ; 94       ;            ; 2        ; VCCIO2         ; power  ;              ; 3.3V      ; --         ;                 ; --       ; --           ;
-; 95       ; 77         ; 2        ; display[13]    ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
-; 96       ; 78         ; 2        ; display[10]    ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
-; 97       ; 79         ; 2        ; display[14]    ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
-; 98       ; 80         ; 2        ; display[11]    ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
-; 99       ; 81         ; 2        ; display[15]    ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
-; 100      ; 82         ; 2        ; display[16]    ; output ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
+; 95       ; 77         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
+; 96       ; 78         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
+; 97       ; 79         ; 2        ; ent[0]         ; input  ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
+; 98       ; 80         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
+; 99       ; 81         ; 2        ; ent[1]         ; input  ; 3.3-V LVTTL  ;           ; Column I/O ; Y               ; no       ; Off          ;
+; 100      ; 82         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 +----------+------------+----------+----------------+--------+--------------+-----------+------------+-----------------+----------+--------------+
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
@@ -394,19 +394,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------+----------+---------------+
 
 
-+-------------------------------------------+
-; Routing Usage Summary                     ;
-+-----------------------+-------------------+
-; Routing Resource Type ; Usage             ;
-+-----------------------+-------------------+
-; C4s                   ; 9 / 784 ( 1 % )   ;
-; Direct links          ; 0 / 888 ( 0 % )   ;
-; Global clocks         ; 0 / 4 ( 0 % )     ;
-; LAB clocks            ; 0 / 32 ( 0 % )    ;
-; LUT chains            ; 0 / 216 ( 0 % )   ;
-; Local interconnects   ; 10 / 888 ( 1 % )  ;
-; R4s                   ; 6 / 704 ( < 1 % ) ;
-+-----------------------+-------------------+
++------------------------------------------+
+; Routing Usage Summary                    ;
++-----------------------+------------------+
+; Routing Resource Type ; Usage            ;
++-----------------------+------------------+
+; C4s                   ; 8 / 784 ( 1 % )  ;
+; Direct links          ; 0 / 888 ( 0 % )  ;
+; Global clocks         ; 0 / 4 ( 0 % )    ;
+; LAB clocks            ; 0 / 32 ( 0 % )   ;
+; LUT chains            ; 0 / 216 ( 0 % )  ;
+; Local interconnects   ; 12 / 888 ( 1 % ) ;
+; R4s                   ; 9 / 704 ( 1 % )  ;
++-----------------------+------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -480,7 +480,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (119006): Selected device EPM240T100C5 for design "NOMBRE"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -520,15 +520,15 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.12 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.26 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/NOMBRE/output_files/NOMBRE.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 6146 megabytes
-    Info: Processing ended: Tue Oct 29 09:53:15 2024
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 5320 megabytes
+    Info: Processing ended: Fri Nov  1 21:37:14 2024
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +----------------------------+

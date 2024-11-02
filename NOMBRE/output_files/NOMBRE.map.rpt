@@ -1,5 +1,5 @@
 Analysis & Synthesis report for NOMBRE
-Tue Oct 29 09:53:12 2024
+Fri Nov  1 21:37:09 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue Oct 29 09:53:12 2024          ;
+; Analysis & Synthesis Status ; Successful - Fri Nov  1 21:37:08 2024          ;
 ; Quartus Prime Version       ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name               ; NOMBRE                                         ;
 ; Top-level Entity Name       ; NOMBRE                                         ;
@@ -129,8 +129,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -214,10 +214,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Tue Oct 29 09:52:59 2024
+    Info: Processing started: Fri Nov  1 21:36:27 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off NOMBRE -c NOMBRE
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12125): Using design file nombre.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: NOMBRE-Behavioral File: C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/NOMBRE/nombre.vhd Line: 11
     Info (12023): Found entity 1: NOMBRE File: C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/NOMBRE/nombre.vhd Line: 5
@@ -232,9 +232,9 @@ Info (21057): Implemented 22 device resources after synthesis - the final resour
     Info (21059): Implemented 17 output pins
     Info (21061): Implemented 3 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4767 megabytes
-    Info: Processing ended: Tue Oct 29 09:53:12 2024
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4778 megabytes
+    Info: Processing ended: Fri Nov  1 21:37:09 2024
+    Info: Elapsed time: 00:00:42
+    Info: Total CPU time (on all processors): 00:01:11
 
 
