@@ -15,7 +15,6 @@ end RESTA_3_BIT;
 architecture Behavioral of RESTA_3_BIT is
     --Diferencia como signal
     signal diff : STD_LOGIC_VECTOR(3 downto 0);
-    signal final: std_logic_vector(3 downto 0);
 begin
     --Proceso para la resta utilizando diff como ayuda
     process(A, B)
@@ -30,21 +29,21 @@ begin
     begin
         case(diff) is
             when "0000" => display <= "11111111001001000";
-            when "0001" => display <= "00110000001000000";
-            when "0010" => display <= "11101110000110000";
-            when "0011" => display <= "11111100000010000";
-            when "0100" => display <= "00110001000110000";
-            when "0101" => display <= "11011101000110000";
-            when "0110" => display <= "11011111000110000";
-            when "0111" => display <= "11110000000000000";
-            when "1000" => display <= "11111111001001000";
-            when "1001" => display <= "11110000000000001";
-            when "1010" => display <= "11011111000110001";
+            when "0010" => display <= "00110000001000000";
+            when "0100" => display <= "11101110000110000";
+            when "0110" => display <= "11111100000010000";
+            when "1000" => display <= "00110001000110000";
+            when "1010" => display <= "11011101000110000";
+            when "1100" => display <= "11011111000110000";
+            when "1110" => display <= "11110000000000000";
+            when "0000" => display <= "11111111001001000";
+            when "0011" => display <= "00110000001000001";
+            when "0101" => display <= "11101110000110001";
+            when "0111" => display <= "11111100000010001";
+            when "1001" => display <= "00110001000110001";
             when "1011" => display <= "11011101000110001";
-            when "1100" => display <= "00110001000110001";
-            when "1101" => display <= "11111100000010001";
-            when "1110" => display <= "11101110000110001";
-            when "1111" => display <= "00110000001000001";
+            when "1101" => display <= "11011111000110001";
+            when "1111" => display <= "11110000000000001";
             when others => display <="00000000000000001";
         end case;
     end process;
