@@ -1,0 +1,39 @@
+|HEXA_BIN_EQU
+A => Ad.IN0
+A => Ad.IN0
+A => Gd.IN1
+A => Ed.IN0
+A => Fd.IN1
+B => Ad.IN0
+B => Ad.IN1
+B => Ad.IN1
+B => Bd.IN0
+B => Ed.IN1
+B => Gd.IN1
+C => Ad.IN1
+C => Ad.IN1
+C => Bd.IN1
+C => Cd.IN1
+C => Fd.IN0
+C => Fd.IN1
+C => Ad.IN1
+D => Ad.IN1
+D => Ad.IN1
+D => Ad.IN1
+D => Ad.IN1
+D => Dd.IN1
+D => Ed.IN1
+D => Ed.IN1
+D => Fd.IN1
+D => Fd.IN1
+D => Bd.IN1
+D => Bd.IN1
+Ad << Ad.DB_MAX_OUTPUT_PORT_TYPE
+Bd << Bd.DB_MAX_OUTPUT_PORT_TYPE
+Cd << Cd.DB_MAX_OUTPUT_PORT_TYPE
+Dd << Dd.DB_MAX_OUTPUT_PORT_TYPE
+Ed << Ed.DB_MAX_OUTPUT_PORT_TYPE
+Fd << Fd.DB_MAX_OUTPUT_PORT_TYPE
+Gd << Gd.DB_MAX_OUTPUT_PORT_TYPE
+
+

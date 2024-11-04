@@ -1,5 +1,5 @@
 Flow report for HEXADECIMAL_BIN
-Fri Nov  1 16:52:27 2024
+Sun Nov  3 16:46:17 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +-----------------------+------------------------------------------------+
-; Flow Status           ; Successful - Fri Nov  1 16:52:27 2024          ;
+; Flow Status           ; Successful - Sun Nov  3 16:46:17 2024          ;
 ; Quartus Prime Version ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name         ; HEXADECIMAL_BIN                                ;
 ; Top-level Entity Name ; HEXADECIMAL_BIN                                ;
 ; Family                ; MAX II                                         ;
 ; Device                ; EPM240T100C5                                   ;
 ; Timing Models         ; Final                                          ;
-; Total logic elements  ; 11 / 240 ( 5 % )                               ;
-; Total pins            ; 21 / 80 ( 26 % )                               ;
+; Total logic elements  ; 7 / 240 ( 3 % )                                ;
+; Total pins            ; 11 / 80 ( 14 % )                               ;
 ; Total virtual pins    ; 0                                              ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                                  ;
 +-----------------------+------------------------------------------------+
@@ -60,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/01/2024 16:51:20 ;
+; Start date & time ; 11/03/2024 16:45:12 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; HEXADECIMAL_BIN     ;
 +-------------------+---------------------+
@@ -71,7 +71,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------+--------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                       ; Value                          ; Default Value ; Entity Name ; Section Id                        ;
 +---------------------------------------+--------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                 ; 62488674037191.173050147913792 ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                 ; 62488674037191.173067391203036 ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                            ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                            ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                            ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -91,12 +91,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:45     ; 1.0                     ; 4778 MB             ; 00:01:19                           ;
-; Fitter               ; 00:00:06     ; 1.0                     ; 5316 MB             ; 00:00:04                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4668 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4670 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4619 MB             ; 00:00:02                           ;
-; Total                ; 00:00:59     ; --                      ; --                  ; 00:01:30                           ;
+; Analysis & Synthesis ; 00:00:49     ; 1.0                     ; 4778 MB             ; 00:01:14                           ;
+; Fitter               ; 00:00:05     ; 1.0                     ; 5320 MB             ; 00:00:03                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4662 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4670 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4622 MB             ; 00:00:01                           ;
+; Total                ; 00:00:59     ; --                      ; --                  ; 00:01:21                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

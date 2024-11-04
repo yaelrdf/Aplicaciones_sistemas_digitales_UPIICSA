@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sun Nov  3 23:44:59 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : HEXA_BIN_EQU
+Top-level Entity Name : HEXA_BIN_EQU
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 7 / 240 ( 3 % )
+Total pins : 11 / 80 ( 14 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for HEXADECIMAL_BIN
-Fri Nov  1 16:52:03 2024
+Sun Nov  3 16:45:58 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,13 +41,13 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri Nov  1 16:52:03 2024          ;
+; Analysis & Synthesis Status ; Successful - Sun Nov  3 16:45:58 2024          ;
 ; Quartus Prime Version       ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name               ; HEXADECIMAL_BIN                                ;
 ; Top-level Entity Name       ; HEXADECIMAL_BIN                                ;
 ; Family                      ; MAX II                                         ;
-; Total logic elements        ; 11                                             ;
-; Total pins                  ; 21                                             ;
+; Total logic elements        ; 7                                              ;
+; Total pins                  ; 11                                             ;
 ; Total virtual pins          ; 0                                              ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                  ;
 +-----------------------------+------------------------------------------------+
@@ -154,20 +154,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Total logic elements                        ; 11          ;
-;     -- Combinational with no register       ; 11          ;
+; Total logic elements                        ; 7           ;
+;     -- Combinational with no register       ; 7           ;
 ;     -- Register only                        ; 0           ;
 ;     -- Combinational with a register        ; 0           ;
 ;                                             ;             ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 10          ;
-;     -- 3 input functions                    ; 1           ;
+;     -- 4 input functions                    ; 7           ;
+;     -- 3 input functions                    ; 0           ;
 ;     -- 2 input functions                    ; 0           ;
 ;     -- 1 input functions                    ; 0           ;
 ;     -- 0 input functions                    ; 0           ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 11          ;
+;     -- normal mode                          ; 7           ;
 ;     -- arithmetic mode                      ; 0           ;
 ;     -- qfbk mode                            ; 0           ;
 ;     -- register cascade mode                ; 0           ;
@@ -175,11 +175,11 @@ https://fpgasoftware.intel.com/eula.
 ;     -- asynchronous clear/load mode         ; 0           ;
 ;                                             ;             ;
 ; Total registers                             ; 0           ;
-; I/O pins                                    ; 21          ;
-; Maximum fan-out node                        ; entradas[1] ;
-; Maximum fan-out                             ; 11          ;
-; Total fan-out                               ; 57          ;
-; Average fan-out                             ; 1.78        ;
+; I/O pins                                    ; 11          ;
+; Maximum fan-out node                        ; entradas[0] ;
+; Maximum fan-out                             ; 7           ;
+; Total fan-out                               ; 35          ;
+; Average fan-out                             ; 1.94        ;
 +---------------------------------------------+-------------+
 
 
@@ -188,7 +188,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-----------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name     ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-----------------+--------------+
-; |HEXADECIMAL_BIN           ; 11 (11)     ; 0            ; 0          ; 21   ; 0            ; 11 (11)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |HEXADECIMAL_BIN    ; HEXADECIMAL_BIN ; work         ;
+; |HEXADECIMAL_BIN           ; 7 (7)       ; 0            ; 0          ; 11   ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |HEXADECIMAL_BIN    ; HEXADECIMAL_BIN ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -214,7 +214,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Nov  1 16:51:18 2024
+    Info: Processing started: Sun Nov  3 16:45:09 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off HEXADECIMAL_BIN -c HEXADECIMAL_BIN
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -222,18 +222,14 @@ Warning (12125): Using design file hexadecimal_bin.vhd, which is not specified a
     Info (12022): Found design unit 1: HEXADECIMAL_BIN-Behavioral File: C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/HEXADECIMAL_BIN/hexadecimal_bin.vhd Line: 11
     Info (12023): Found entity 1: HEXADECIMAL_BIN File: C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/HEXADECIMAL_BIN/hexadecimal_bin.vhd Line: 5
 Info (12127): Elaborating entity "HEXADECIMAL_BIN" for the top level hierarchy
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "display[0]" is stuck at GND File: C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/HEXADECIMAL_BIN/hexadecimal_bin.vhd Line: 6
-    Warning (13410): Pin "display[1]" is stuck at GND File: C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/HEXADECIMAL_BIN/hexadecimal_bin.vhd Line: 6
-    Warning (13410): Pin "display[8]" is stuck at GND File: C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/HEXADECIMAL_BIN/hexadecimal_bin.vhd Line: 6
-Info (21057): Implemented 32 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 18 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 17 output pins
-    Info (21061): Implemented 11 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info (21059): Implemented 7 output pins
+    Info (21061): Implemented 7 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4778 megabytes
-    Info: Processing ended: Fri Nov  1 16:52:04 2024
-    Info: Elapsed time: 00:00:46
-    Info: Total CPU time (on all processors): 00:01:19
+    Info: Processing ended: Sun Nov  3 16:45:59 2024
+    Info: Elapsed time: 00:00:50
+    Info: Total CPU time (on all processors): 00:01:14
 
 
