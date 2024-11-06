@@ -1,5 +1,5 @@
 Flow report for HEXA_BIN_EQU
-Mon Nov  4 20:50:34 2024
+Tue Nov  5 08:50:17 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +-----------------------+------------------------------------------------+
-; Flow Status           ; Successful - Mon Nov  4 20:50:34 2024          ;
+; Flow Status           ; Successful - Tue Nov  5 08:50:17 2024          ;
 ; Quartus Prime Version ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name         ; HEXA_BIN_EQU                                   ;
 ; Top-level Entity Name ; HEXA_BIN_EQU                                   ;
@@ -60,30 +60,30 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/04/2024 20:49:10 ;
+; Start date & time ; 11/05/2024 08:49:56 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; HEXA_BIN_EQU        ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                         ;
-+---------------------------------------+--------------------------------+---------------+-------------+-----------------------------------+
-; Assignment Name                       ; Value                          ; Default Value ; Entity Name ; Section Id                        ;
-+---------------------------------------+--------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                 ; 62488674037191.173077494901852 ; --            ; --          ; --                                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                            ; --            ; --          ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                            ; --            ; --          ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                            ; --            ; --          ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                            ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_OUTPUT_DATA_FORMAT                ; Verilog Hdl                    ; --            ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                   ; Questa Intel FPGA (Verilog)    ; <None>        ; --          ; --                                ;
-; EDA_TIME_SCALE                        ; 1 ps                           ; --            ; --          ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP                ; 85                             ; --            ; --          ; --                                ;
-; MIN_CORE_JUNCTION_TEMP                ; 0                              ; --            ; --          ; --                                ;
-; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                           ; --            ; --          ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY              ; output_files                   ; --            ; --          ; --                                ;
-+---------------------------------------+--------------------------------+---------------+-------------+-----------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                          ;
++---------------------------------------+---------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                       ; Value                           ; Default Value ; Entity Name ; Section Id                        ;
++---------------------------------------+---------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                 ; 231143715998239.173081819615624 ; --            ; --          ; --                                ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                             ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                             ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                             ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                             ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_OUTPUT_DATA_FORMAT                ; Verilog Hdl                     ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                   ; Questa Intel FPGA (Verilog)     ; <None>        ; --          ; --                                ;
+; EDA_TIME_SCALE                        ; 1 ps                            ; --            ; --          ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP                ; 85                              ; --            ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP                ; 0                               ; --            ; --          ; --                                ;
+; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                            ; --            ; --          ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY              ; output_files                    ; --            ; --          ; --                                ;
++---------------------------------------+---------------------------------+---------------+-------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -91,12 +91,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:47     ; 1.0                     ; 4778 MB             ; 00:01:15                           ;
-; Fitter               ; 00:00:04     ; 1.0                     ; 5329 MB             ; 00:00:03                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4659 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:13     ; 1.0                     ; 4670 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4622 MB             ; 00:00:02                           ;
-; Total                ; 00:01:09     ; --                      ; --                  ; 00:01:27                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4767 MB             ; 00:00:23                           ;
+; Fitter               ; 00:00:02     ; 1.0                     ; 6145 MB             ; 00:00:01                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4663 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4671 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4623 MB             ; 00:00:01                           ;
+; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:27                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -105,11 +105,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-TE7OR9J  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-TE7OR9J  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-TE7OR9J  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-TE7OR9J  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-TE7OR9J  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

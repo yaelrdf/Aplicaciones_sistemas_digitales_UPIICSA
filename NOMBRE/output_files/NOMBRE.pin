@@ -153,11 +153,11 @@ GND*                         : 87        :        :                   :         
 GND*                         : 88        :        :                   :         : 2         :                
 GND*                         : 89        :        :                   :         : 2         :                
 GND*                         : 90        :        :                   :         : 2         :                
-GND*                         : 91        :        :                   :         : 2         :                
+ent[3]                       : 91        : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : 92        :        :                   :         : 2         :                
 GNDIO                        : 93        : gnd    :                   :         :           :                
 VCCIO2                       : 94        : power  :                   : 3.3V    : 2         :                
-GND*                         : 95        :        :                   :         : 2         :                
+ent[2]                       : 95        : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : 96        :        :                   :         : 2         :                
 ent[0]                       : 97        : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : 98        :        :                   :         : 2         :                

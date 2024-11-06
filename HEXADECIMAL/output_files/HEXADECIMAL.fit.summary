@@ -1,0 +1,11 @@
+Fitter Status : Successful - Wed Oct 30 15:18:00 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : HEXADECIMAL
+Top-level Entity Name : HEXADECIMAL
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 12 / 240 ( 5 % )
+Total pins : 21 / 80 ( 26 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

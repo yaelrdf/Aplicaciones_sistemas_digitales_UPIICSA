@@ -1,5 +1,5 @@
 Timing Analyzer report for NOMBRE
-Fri Nov  1 21:37:22 2024
+Tue Nov  5 09:47:38 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -67,8 +67,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -145,10 +145,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 24    ; 24   ;
-; Unconstrained Output Ports      ; 13    ; 13   ;
-; Unconstrained Output Port Paths ; 24    ; 24   ;
+; Unconstrained Input Ports       ; 4     ; 4    ;
+; Unconstrained Input Port Paths  ; 58    ; 58   ;
+; Unconstrained Output Ports      ; 15    ; 15   ;
+; Unconstrained Output Port Paths ; 58    ; 58   ;
 +---------------------------------+-------+------+
 
 
@@ -159,6 +159,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; ent[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; ent[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ent[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ent[3]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
 
@@ -167,10 +169,12 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
+; display[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; display[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display[7]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display[8]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display[9]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display[10] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -190,6 +194,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; ent[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; ent[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ent[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ent[3]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
 
@@ -198,10 +204,12 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
+; display[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; display[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display[7]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display[8]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display[9]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display[10] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -220,11 +228,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Nov  1 21:37:19 2024
+    Info: Processing started: Tue Nov  5 09:47:36 2024
 Info: Command: quartus_sta NOMBRE -c NOMBRE
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (334003): Started post-fitting delay annotation
@@ -246,9 +254,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4670 megabytes
-    Info: Processing ended: Fri Nov  1 21:37:22 2024
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4671 megabytes
+    Info: Processing ended: Tue Nov  5 09:47:37 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

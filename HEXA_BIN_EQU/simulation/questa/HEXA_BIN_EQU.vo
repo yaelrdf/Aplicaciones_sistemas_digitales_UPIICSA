@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
-// DATE "11/04/2024 20:50:33"
+// DATE "11/05/2024 08:50:17"
 
 // 
 // Device: Altera EPM240T100C5 Package TQFP100
@@ -267,7 +267,7 @@ defparam \Dd~0 .synch_mode = "off";
 // Location: LC_X4_Y2_N3
 maxii_lcell \Ed~0 (
 // Equation(s):
-// \Ed~0_combout  = (\A~combout  & (!\C~combout  & (\B~combout  & \D~combout ))) # (!\A~combout  & ((\D~combout ) # ((!\C~combout  & \B~combout ))))
+// \Ed~0_combout  = (\C~combout  & (!\A~combout  & ((\D~combout )))) # (!\C~combout  & ((\B~combout  & (!\A~combout )) # (!\B~combout  & ((\D~combout )))))
 
 	.clk(gnd),
 	.dataa(\C~combout ),
@@ -292,7 +292,7 @@ maxii_lcell \Ed~0 (
 	.cout0(),
 	.cout1());
 // synopsys translate_off
-defparam \Ed~0 .lut_mask = "7310";
+defparam \Ed~0 .lut_mask = "3710";
 defparam \Ed~0 .operation_mode = "normal";
 defparam \Ed~0 .output_mode = "comb_only";
 defparam \Ed~0 .register_cascade_mode = "off";
