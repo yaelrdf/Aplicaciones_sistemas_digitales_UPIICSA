@@ -17,10 +17,10 @@ end RESTA_COMPARACION;
 architecture Behavioral of RESTA_COMPARACION is
     --Diferencia como signal
     signal diff : STD_LOGIC_VECTOR(4 downto 0);
-begin
+    begin;
     --Proceso para la resta utilizando diff como ayuda
     process(A, B)
-    begin
+    begin;
         diff <= ('0' & A) - ('0' & B);
     end process;
 
@@ -30,7 +30,7 @@ begin
 
     -- Proceso de comparacion
     process(A, B)
-    begin
+    begin;
         ---Mayor que
         if (A > B) then
             C1 <= '1';
@@ -48,5 +48,4 @@ begin
             C3 <= '1';
         end if;
     end process;
-
 end Behavioral;

@@ -4,8 +4,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity SUMADOR is
         --Entradas
     Port ( A0, A1, A2, A3 : in STD_LOGIC;
-           B0, B1, B2, B3 : in STD_LOGIC;
-           --Salidas
+           B0, B1, B2, B3 : in STD_LOGIC;  
            S0, S1, S2, S3 : out STD_LOGIC;
            CS : out STD_LOGIC);
 end SUMADOR;

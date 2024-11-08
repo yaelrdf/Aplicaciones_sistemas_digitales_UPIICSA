@@ -1,5 +1,5 @@
 Analysis & Synthesis report for HEXA_BIN_EQU
-Wed Nov  6 15:38:50 2024
+Thu Nov  7 10:20:07 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Nov  6 15:38:50 2024          ;
+; Analysis & Synthesis Status ; Successful - Thu Nov  7 10:20:07 2024          ;
 ; Quartus Prime Version       ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name               ; HEXA_BIN_EQU                                   ;
 ; Top-level Entity Name       ; HEXA_BIN_EQU                                   ;
@@ -214,7 +214,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Wed Nov  6 15:38:37 2024
+    Info: Processing started: Thu Nov  7 10:19:52 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off HEXA_BIN_EQU -c HEXA_BIN_EQU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -228,8 +228,8 @@ Info (21057): Implemented 18 device resources after synthesis - the final resour
     Info (21061): Implemented 7 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4767 megabytes
-    Info: Processing ended: Wed Nov  6 15:38:50 2024
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Processing ended: Thu Nov  7 10:20:07 2024
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:23
 
 
