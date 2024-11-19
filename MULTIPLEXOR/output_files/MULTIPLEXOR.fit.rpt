@@ -1,5 +1,5 @@
 Fitter report for MULTIPLEXOR
-Thu Nov  7 15:50:51 2024
+Mon Nov 11 10:01:16 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -55,7 +55,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+
 ; Fitter Summary                                                         ;
 +-----------------------+------------------------------------------------+
-; Fitter Status         ; Successful - Thu Nov  7 15:50:51 2024          ;
+; Fitter Status         ; Successful - Mon Nov 11 10:01:16 2024          ;
 ; Quartus Prime Version ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name         ; MULTIPLEXOR                                    ;
 ; Top-level Entity Name ; MULTIPLEXOR                                    ;
@@ -546,14 +546,14 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.20 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.13 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/mcmin/Documents/GIT/digital-systems-aplications-UPIICSA/MULTIPLEXOR/output_files/MULTIPLEXOR.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 6149 megabytes
-    Info: Processing ended: Thu Nov  7 15:50:51 2024
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 6150 megabytes
+    Info: Processing ended: Mon Nov 11 10:01:16 2024
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:01
 
 
