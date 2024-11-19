@@ -43,7 +43,7 @@ begin
     process(clk)
     begin
         if clk'event and clk='1' then
-            if contador_2hz = "101111101011110000100000" then --25 millones en binario
+            if contador_2hz = "101111101011110000100000" then --12.5 millones en binario
                 contador_2hz <= (others => '0');
                 clk_2hz <= not clk_2hz;
             else
@@ -52,4 +52,3 @@ begin
         end if;
     end process;
 end Behavioral;
-
