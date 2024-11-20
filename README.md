@@ -5,15 +5,15 @@
 > Este repositorio esta bajo licencia GPL-V3 por lo que la contribucion al autor "Yael-RDF" es nesesaria al utilizar cualquier contenido en este repositorio
 
 ## Indice
-- [Comuertas logicas](COMPUERTAS\COMPUERTAS.vhd)
-- [Sumador](SUMADOR\SUMADOR.vhd)
-- [Restador con comparador](RESTA_COMPARACION\RESTA_COMPARACION.vhd)
-- [Numeros par](NUMEROSPAR\NUMEROSPAR.vhd)
-- [Restador DYSPLAY](RESTA_3_BIT\RESTA_3_BIT.vhd)
-- [Hexadecimal a binario DYSPLAY](HEXA_BIN_EQU\HEXA_BIN_EQU.vhd)
-- [Multiplexor](MULTIPLEXOR\MULTIPLEXOR.vhd)
+- [Comuertas logicas](COMPUERTAS/COMPUERTAS.vhd)
+- [Sumador](SUMADOR/SUMADOR.vhd)
+- [Restador con comparador](RESTA_COMPARACION/RESTA_COMPARACION.vhd)
+- [Numeros par](NUMEROSPAR/NUMEROSPAR.vhd)
+- [Restador DYSPLAY](RESTA_3_BIT/RESTA_3_BIT.vhd)
+- [Hexadecimal a binario DYSPLAY](HEXA_BIN_EQU/HEXA_BIN_EQU.vhd)
+- [Multiplexor](MULTIPLEXOR/MULTIPLEXOR.vhd)
 ----
-- [Señales de relog](CKL_MISC\CLK_MISC.vhd)
+- [Señales de relog](CKL_MISC/CLK_MISC.vhd)
 
 
 
