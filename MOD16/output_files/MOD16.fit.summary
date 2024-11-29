@@ -1,0 +1,11 @@
+Fitter Status : Successful - Fri Nov 29 16:29:57 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : MOD16
+Top-level Entity Name : MOD16
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 63 / 240 ( 26 % )
+Total pins : 6 / 80 ( 8 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

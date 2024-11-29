@@ -1,0 +1,25 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity clk_redux is
+    Port ( 
+        clk : in STD_LOGIC;
+        clk_out : out std_logic
+    );
+end clk_redux;
+
+architecture Behavioral of clk_redux is
+ signal contador_1hz : std_logic;
+begin
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            if contador_1hz = "0001011111010111100001000000" then --25 millones en binario
+                contador_1hz <= (others => '0');
+                clk_out <= not clk_out;
+            else
+                contador_1hz <= contador_1hz + "1";
+            end if;
+        end if;
+    end process;
+end Behavioral;

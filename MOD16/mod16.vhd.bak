@@ -1,0 +1,31 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use work.clock_1hz_pkg.ALL;
+
+entity MOD16 is
+    Port ( 
+        clk : in STD_LOGIC
+        A,B,C,D : out std_logic;
+    );
+end MOD16;
+
+architecture Behavioral of MOD16 is
+    signal contador_1hz : std_logic_vector(27 downto 0) := (others => '0');
+    signal clk_1hz : std_logic;
+begin
+    -- Libreria para el relog
+    process(clk)
+    begin
+        clk_1hz(clk, contador_1hz, clk_1hz);
+    end process;
+
+    process(clk_1hz)
+    begin
+        if  rising_edge(clk_1hz) then
+            A <= (C and A and not(B)) or (not(C) and D and A and not(B)) or (A and B and not(C) and not(D)) or (not(A) and not(B) and not(C) and not(D));
+            B <= (C and not(A) and B) or (not(C) and not(D) and not(B)) or (A and not(B) and not(C) and not(D)) or (A and not(B) and C and D);
+            C <= (not(A) and C and D) or (not(C) and not(D) and B) or (A and not(B) and not(C) and not(D)) or (A and not(B) and C and D);
+            D <= (not(C) and not(D) and A) or (not(D) and not(D) and B) or (not(A) and not(B) and not(C) and D) or (A and not(B) and C and not(D));
+        end if;
+    end process;
+end Behavioral;

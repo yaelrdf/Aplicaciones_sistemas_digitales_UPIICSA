@@ -1,0 +1,42 @@
+|MOD16
+clk => clk_redux:clk_redux_inst.clk_in
+A <> A~reg0
+B <> B~reg0
+C <> C~reg0
+D <> D~reg0
+clk_1hz <> clk_redux:clk_redux_inst.clk_out
+
+
+|MOD16|clk_redux:clk_redux_inst
+clk_in => clk_out~reg0.CLK
+clk_in => contador_1hz[0].CLK
+clk_in => contador_1hz[1].CLK
+clk_in => contador_1hz[2].CLK
+clk_in => contador_1hz[3].CLK
+clk_in => contador_1hz[4].CLK
+clk_in => contador_1hz[5].CLK
+clk_in => contador_1hz[6].CLK
+clk_in => contador_1hz[7].CLK
+clk_in => contador_1hz[8].CLK
+clk_in => contador_1hz[9].CLK
+clk_in => contador_1hz[10].CLK
+clk_in => contador_1hz[11].CLK
+clk_in => contador_1hz[12].CLK
+clk_in => contador_1hz[13].CLK
+clk_in => contador_1hz[14].CLK
+clk_in => contador_1hz[15].CLK
+clk_in => contador_1hz[16].CLK
+clk_in => contador_1hz[17].CLK
+clk_in => contador_1hz[18].CLK
+clk_in => contador_1hz[19].CLK
+clk_in => contador_1hz[20].CLK
+clk_in => contador_1hz[21].CLK
+clk_in => contador_1hz[22].CLK
+clk_in => contador_1hz[23].CLK
+clk_in => contador_1hz[24].CLK
+clk_in => contador_1hz[25].CLK
+clk_in => contador_1hz[26].CLK
+clk_in => contador_1hz[27].CLK
+clk_out <> clk_out~reg0
+
+

@@ -5,7 +5,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity CLK_MISC is
     port(
-        clk : in std_logic;
+        clk_in : in std_logic;
         clk_1hz, clk_05hz, clk_2hz : inout std_logic
     );
 end CLK_MISC;
@@ -14,9 +14,9 @@ architecture Behavioral of CLK_MISC is
     signal contador_1hz, contador_05hz, contador_2hz: std_logic_vector(27 downto 0);
 begin
     --Proceso 1hz
-    process(clk)
-    begin
-        if clk'event and clk='1' then
+    process(clk_in)
+    begin-----rising_edge(clk_in)
+        if rising_edge(clk_in) then
             if contador_1hz = "0001011111010111100001000000" then --25 millones en binario
                 contador_1hz <= (others => '0');
                 clk_1hz <= not clk_1hz;
@@ -27,9 +27,9 @@ begin
     end process;
 
     --Proceso 05hz
-    process(clk)
+    process(clk_in)
     begin
-        if clk'event and clk='1' then
+        if rising_edge(clk_in) then
             if contador_05hz = "0010111110101111000010000000" then --50 millones en binario
                 contador_05hz <= (others => '0');
                 clk_05hz <= not clk_05hz;
@@ -40,9 +40,9 @@ begin
     end process;
 
     --Proceso 2hz
-    process(clk)
+    process(clk_in)
     begin
-        if clk'event and clk='1' then
+        if rising_edge(clk_in) then
             if contador_2hz = "101111101011110000100000" then --12.5 millones en binario
                 contador_2hz <= (others => '0');
                 clk_2hz <= not clk_2hz;
