@@ -34,7 +34,7 @@ architecture Behavioral of MOD_8_X is
 
 ----------------------------------------------------
 --Programa
---Estados
+--Manejo de estados Tabla de transicion
 process(clk_1hz)
 begin
 
@@ -57,7 +57,7 @@ end if;
 
 end process;
 
---Decodificar
+--Decodificacion (16 segmentos anodo comun)
 process(estado)
 begin
     case estado is
