@@ -15,6 +15,7 @@
 ----
 - [Señales de relog](CKL_MISC/CLK_MISC.vhd)
 - [Contador MOD16 LED](MOD16\MOD16.vhd)
+- [Contador MOD8 DISPLAY](MOD_8_X/MOD_8_X.vhd)
 
 
 
