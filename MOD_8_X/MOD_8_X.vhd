@@ -45,8 +45,8 @@ if rising_edge(clk_1hz)then
             when "111" => estado <= "010";
             when "010" => estado <= "110";
             when "110" => estado <= "000";
-            when "000" => estado <= "110";
-            when "110" => estado <= "101";
+            when "000" => estado <= "011";
+            when "011" => estado <= "101";
             when "101" => estado <= "001";
             when "001" => estado <= "100";
         end case;
