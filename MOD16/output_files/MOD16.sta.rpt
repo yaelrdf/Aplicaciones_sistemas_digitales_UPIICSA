@@ -1,5 +1,5 @@
 Timing Analyzer report for MOD16
-Fri Nov 29 16:30:00 2024
+Fri Nov 29 23:47:38 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -71,14 +71,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -97,8 +98,8 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+---------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                            ; Note ;
 +------------+-----------------+---------------------------------------+------+
-; 110.05 MHz ; 110.05 MHz      ; clk                                   ;      ;
-; 325.63 MHz ; 325.63 MHz      ; clk_redux:clk_redux_inst|clk_out~reg0 ;      ;
+; 116.18 MHz ; 116.18 MHz      ; clk                                   ;      ;
+; 348.55 MHz ; 348.55 MHz      ; clk_redux:clk_redux_inst|clk_out~reg0 ;      ;
 +------------+-----------------+---------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -108,8 +109,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------+--------+---------------+
 ; Clock                                 ; Slack  ; End Point TNS ;
 +---------------------------------------+--------+---------------+
-; clk                                   ; -8.087 ; -199.228      ;
-; clk_redux:clk_redux_inst|clk_out~reg0 ; -2.071 ; -7.640        ;
+; clk                                   ; -7.607 ; -191.529      ;
+; clk_redux:clk_redux_inst|clk_out~reg0 ; -1.869 ; -7.291        ;
 +---------------------------------------+--------+---------------+
 
 
@@ -118,8 +119,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------+--------+---------------+
 ; Clock                                 ; Slack  ; End Point TNS ;
 +---------------------------------------+--------+---------------+
-; clk                                   ; -1.617 ; -1.617        ;
-; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.694  ; 0.000         ;
+; clk                                   ; -1.607 ; -1.607        ;
+; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.701  ; 0.000         ;
 +---------------------------------------+--------+---------------+
 
 
@@ -150,106 +151,106 @@ No paths to report.
 +--------+-------------------------------------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                                 ; To Node                                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-------------------------------------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
-; -8.087 ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.754      ;
-; -8.021 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.688      ;
-; -7.998 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.665      ;
-; -7.998 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.665      ;
-; -7.965 ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.632      ;
-; -7.956 ; clk_redux:clk_redux_inst|contador_1hz[15] ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.623      ;
-; -7.885 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.552      ;
-; -7.852 ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.519      ;
-; -7.820 ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.487      ;
-; -7.807 ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk          ; clk         ; 1.000        ; 0.000      ; 8.474      ;
-; -7.778 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.445      ;
-; -7.662 ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk          ; clk         ; 1.000        ; 0.000      ; 8.329      ;
-; -7.645 ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.312      ;
-; -7.620 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk          ; clk         ; 1.000        ; 0.000      ; 8.287      ;
-; -7.618 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.285      ;
-; -7.610 ; clk_redux:clk_redux_inst|contador_1hz[7]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.277      ;
-; -7.588 ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.255      ;
-; -7.579 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.246      ;
-; -7.575 ; clk_redux:clk_redux_inst|contador_1hz[9]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.242      ;
-; -7.556 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.223      ;
-; -7.556 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.223      ;
-; -7.542 ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.209      ;
-; -7.542 ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.209      ;
-; -7.539 ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.206      ;
-; -7.522 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.189      ;
-; -7.514 ; clk_redux:clk_redux_inst|contador_1hz[15] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.181      ;
-; -7.504 ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.171      ;
-; -7.499 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.166      ;
-; -7.499 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.166      ;
-; -7.498 ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.165      ;
-; -7.473 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.140      ;
-; -7.460 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk          ; clk         ; 1.000        ; 0.000      ; 8.127      ;
-; -7.457 ; clk_redux:clk_redux_inst|contador_1hz[15] ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.124      ;
-; -7.450 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.117      ;
-; -7.450 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.117      ;
-; -7.447 ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.114      ;
-; -7.443 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.110      ;
-; -7.441 ; clk_redux:clk_redux_inst|contador_1hz[10] ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.108      ;
-; -7.438 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.105      ;
-; -7.415 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.082      ;
-; -7.415 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.082      ;
-; -7.412 ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.079      ;
-; -7.410 ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.077      ;
-; -7.408 ; clk_redux:clk_redux_inst|contador_1hz[15] ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.075      ;
-; -7.392 ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.059      ;
-; -7.391 ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.058      ;
-; -7.386 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.053      ;
-; -7.384 ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk          ; clk         ; 1.000        ; 0.000      ; 8.051      ;
-; -7.381 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.048      ;
-; -7.358 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.025      ;
-; -7.358 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.025      ;
-; -7.353 ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.020      ;
-; -7.350 ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.017      ;
-; -7.337 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.004      ;
-; -7.326 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.993      ;
-; -7.316 ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.983      ;
-; -7.304 ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.971      ;
-; -7.304 ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.971      ;
-; -7.303 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.970      ;
-; -7.303 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.970      ;
-; -7.302 ; clk_redux:clk_redux_inst|contador_1hz[9]  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.969      ;
-; -7.302 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.969      ;
-; -7.284 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.951      ;
-; -7.278 ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.945      ;
-; -7.269 ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.936      ;
-; -7.261 ; clk_redux:clk_redux_inst|contador_1hz[15] ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.928      ;
-; -7.261 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.928      ;
-; -7.261 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.928      ;
-; -7.257 ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.924      ;
-; -7.245 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.912      ;
-; -7.242 ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.909      ;
-; -7.213 ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.880      ;
-; -7.212 ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.879      ;
-; -7.199 ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.866      ;
-; -7.191 ; clk_redux:clk_redux_inst|contador_1hz[26] ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.858      ;
-; -7.190 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.857      ;
-; -7.171 ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.838      ;
-; -7.168 ; clk_redux:clk_redux_inst|contador_1hz[7]  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.835      ;
-; -7.163 ; clk_redux:clk_redux_inst|contador_1hz[15] ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.830      ;
-; -7.161 ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.828      ;
-; -7.157 ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.824      ;
-; -7.148 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.815      ;
-; -7.147 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.814      ;
-; -7.144 ; clk_redux:clk_redux_inst|contador_1hz[9]  ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk          ; clk         ; 1.000        ; 0.000      ; 7.811      ;
-; -7.133 ; clk_redux:clk_redux_inst|contador_1hz[9]  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.800      ;
-; -7.124 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.791      ;
-; -7.124 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.791      ;
-; -7.120 ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk          ; clk         ; 1.000        ; 0.000      ; 7.787      ;
-; -7.118 ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.785      ;
-; -7.115 ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.782      ;
-; -7.111 ; clk_redux:clk_redux_inst|contador_1hz[7]  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.778      ;
-; -7.100 ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.767      ;
-; -7.100 ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.767      ;
-; -7.097 ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.764      ;
-; -7.086 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.753      ;
-; -7.076 ; clk_redux:clk_redux_inst|contador_1hz[9]  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.743      ;
-; -7.069 ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.736      ;
-; -7.062 ; clk_redux:clk_redux_inst|contador_1hz[7]  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.729      ;
-; -7.056 ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.723      ;
-; -7.052 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.719      ;
+; -7.607 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.274      ;
+; -7.591 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.258      ;
+; -7.580 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.247      ;
+; -7.564 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.231      ;
+; -7.492 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.159      ;
+; -7.473 ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.140      ;
+; -7.472 ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.139      ;
+; -7.465 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.132      ;
+; -7.464 ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.131      ;
+; -7.427 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.094      ;
+; -7.411 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.078      ;
+; -7.407 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.074      ;
+; -7.405 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.072      ;
+; -7.391 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.058      ;
+; -7.389 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 8.056      ;
+; -7.328 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.995      ;
+; -7.312 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.979      ;
+; -7.312 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.979      ;
+; -7.304 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.971      ;
+; -7.293 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.960      ;
+; -7.292 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.959      ;
+; -7.290 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.957      ;
+; -7.288 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.955      ;
+; -7.266 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.933      ;
+; -7.213 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.880      ;
+; -7.205 ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.872      ;
+; -7.204 ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.871      ;
+; -7.199 ; clk_redux:clk_redux_inst|contador_1hz[10] ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.866      ;
+; -7.196 ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.863      ;
+; -7.190 ; clk_redux:clk_redux_inst|contador_1hz[7]  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.857      ;
+; -7.189 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.856      ;
+; -7.185 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[26] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.852      ;
+; -7.172 ; clk_redux:clk_redux_inst|contador_1hz[10] ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.839      ;
+; -7.169 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[26] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.836      ;
+; -7.163 ; clk_redux:clk_redux_inst|contador_1hz[7]  ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.830      ;
+; -7.143 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.810      ;
+; -7.134 ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.801      ;
+; -7.127 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.794      ;
+; -7.124 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.791      ;
+; -7.121 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.788      ;
+; -7.120 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.787      ;
+; -7.119 ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.786      ;
+; -7.116 ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.783      ;
+; -7.113 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.780      ;
+; -7.108 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.775      ;
+; -7.092 ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.759      ;
+; -7.089 ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.756      ;
+; -7.078 ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.745      ;
+; -7.070 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[26] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.737      ;
+; -7.042 ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.709      ;
+; -7.031 ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.698      ;
+; -7.030 ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.697      ;
+; -7.028 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.695      ;
+; -7.022 ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.689      ;
+; -7.019 ; clk_redux:clk_redux_inst|contador_1hz[10] ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.686      ;
+; -7.015 ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.682      ;
+; -7.014 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.681      ;
+; -7.010 ; clk_redux:clk_redux_inst|contador_1hz[7]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.677      ;
+; -7.009 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.676      ;
+; -7.001 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.668      ;
+; -6.999 ; clk_redux:clk_redux_inst|contador_1hz[10] ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.666      ;
+; -6.997 ; clk_redux:clk_redux_inst|contador_1hz[10] ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.664      ;
+; -6.993 ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.660      ;
+; -6.992 ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.659      ;
+; -6.990 ; clk_redux:clk_redux_inst|contador_1hz[7]  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.657      ;
+; -6.990 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.657      ;
+; -6.989 ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.656      ;
+; -6.988 ; clk_redux:clk_redux_inst|contador_1hz[7]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.655      ;
+; -6.985 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.652      ;
+; -6.984 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.651      ;
+; -6.982 ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.649      ;
+; -6.959 ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.626      ;
+; -6.939 ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.606      ;
+; -6.936 ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.603      ;
+; -6.932 ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.599      ;
+; -6.919 ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.586      ;
+; -6.917 ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.584      ;
+; -6.916 ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.583      ;
+; -6.914 ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.581      ;
+; -6.911 ; clk_redux:clk_redux_inst|contador_1hz[7]  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.578      ;
+; -6.899 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.566      ;
+; -6.898 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.565      ;
+; -6.896 ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.563      ;
+; -6.896 ; clk_redux:clk_redux_inst|contador_1hz[10] ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.563      ;
+; -6.895 ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.562      ;
+; -6.895 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.562      ;
+; -6.888 ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.555      ;
+; -6.887 ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.554      ;
+; -6.887 ; clk_redux:clk_redux_inst|contador_1hz[7]  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.554      ;
+; -6.886 ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.553      ;
+; -6.871 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[26] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.538      ;
+; -6.862 ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.529      ;
+; -6.842 ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.509      ;
+; -6.840 ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.507      ;
+; -6.840 ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.507      ;
+; -6.837 ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.504      ;
+; -6.829 ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk_redux:clk_redux_inst|contador_1hz[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.496      ;
+; -6.823 ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.490      ;
+; -6.816 ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.483      ;
+; -6.813 ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.480      ;
 +--------+-------------------------------------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -258,22 +259,21 @@ No paths to report.
 +--------+-----------+---------+---------------------------------------+---------------------------------------+--------------+------------+------------+
 ; Slack  ; From Node ; To Node ; Launch Clock                          ; Latch Clock                           ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-----------+---------+---------------------------------------+---------------------------------------+--------------+------------+------------+
-; -2.071 ; B~reg0    ; D~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.738      ;
-; -1.870 ; A~reg0    ; C~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.537      ;
-; -1.867 ; A~reg0    ; D~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.534      ;
-; -1.852 ; B~reg0    ; A~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.519      ;
-; -1.847 ; B~reg0    ; B~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.514      ;
-; -1.721 ; D~reg0    ; A~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.388      ;
-; -1.720 ; D~reg0    ; C~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.387      ;
-; -1.719 ; D~reg0    ; B~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.386      ;
-; -1.518 ; C~reg0    ; A~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.185      ;
-; -1.514 ; C~reg0    ; D~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.181      ;
-; -1.513 ; C~reg0    ; B~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.180      ;
-; -1.508 ; C~reg0    ; C~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.175      ;
-; -1.291 ; A~reg0    ; B~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 1.958      ;
-; -1.283 ; A~reg0    ; A~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 1.950      ;
-; -1.270 ; B~reg0    ; C~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 1.937      ;
-; -1.248 ; D~reg0    ; D~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 1.915      ;
+; -1.869 ; A~reg0    ; D~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.536      ;
+; -1.834 ; C~reg0    ; D~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.501      ;
+; -1.829 ; C~reg0    ; C~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.496      ;
+; -1.797 ; D~reg0    ; B~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.464      ;
+; -1.796 ; D~reg0    ; A~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.463      ;
+; -1.730 ; B~reg0    ; D~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.397      ;
+; -1.683 ; A~reg0    ; C~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.350      ;
+; -1.680 ; A~reg0    ; A~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.347      ;
+; -1.627 ; D~reg0    ; C~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.294      ;
+; -1.620 ; D~reg0    ; D~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.287      ;
+; -1.514 ; B~reg0    ; C~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.181      ;
+; -1.510 ; B~reg0    ; A~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.177      ;
+; -1.506 ; B~reg0    ; B~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 2.173      ;
+; -1.256 ; C~reg0    ; B~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 1.923      ;
+; -1.255 ; C~reg0    ; A~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 1.000        ; 0.000      ; 1.922      ;
 +--------+-----------+---------+---------------------------------------+---------------------------------------+--------------+------------+------------+
 
 
@@ -282,106 +282,106 @@ No paths to report.
 +--------+-------------------------------------------+-------------------------------------------+---------------------------------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                                 ; To Node                                   ; Launch Clock                          ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-------------------------------------------+-------------------------------------------+---------------------------------------+-------------+--------------+------------+------------+
-; -1.617 ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk         ; 0.000        ; 3.348      ; 2.328      ;
-; -1.117 ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk         ; -0.500       ; 3.348      ; 2.328      ;
-; 2.825  ; clk_redux:clk_redux_inst|contador_1hz[26] ; clk_redux:clk_redux_inst|contador_1hz[26] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 3.046      ;
+; -1.607 ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk         ; 0.000        ; 3.348      ; 2.338      ;
+; -1.107 ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk         ; -0.500       ; 3.348      ; 2.338      ;
+; 2.885  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 3.106      ;
 ; 3.090  ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 3.311      ;
-; 3.430  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 3.651      ;
-; 3.526  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 3.747      ;
-; 3.669  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 3.890      ;
-; 3.722  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 3.943      ;
-; 3.858  ; clk_redux:clk_redux_inst|contador_1hz[27] ; clk_redux:clk_redux_inst|contador_1hz[27] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.079      ;
-; 3.903  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.124      ;
-; 3.999  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.220      ;
-; 4.046  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[26] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.267      ;
-; 4.051  ; clk_redux:clk_redux_inst|contador_1hz[26] ; clk_redux:clk_redux_inst|contador_1hz[27] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.272      ;
-; 4.081  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.302      ;
-; 4.195  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.416      ;
-; 4.205  ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.426      ;
-; 4.284  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.505      ;
-; 4.380  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.601      ;
-; 4.482  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.703      ;
-; 4.486  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.707      ;
-; 4.487  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.708      ;
-; 4.554  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.775      ;
-; 4.576  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[27] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.797      ;
-; 4.576  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.797      ;
-; 4.578  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.799      ;
-; 4.582  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.803      ;
-; 4.583  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.804      ;
-; 4.587  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.808      ;
-; 4.637  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.858      ;
-; 4.640  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.861      ;
-; 4.678  ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.899      ;
-; 4.700  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.921      ;
-; 4.702  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.923      ;
-; 4.710  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.931      ;
-; 4.711  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.932      ;
-; 4.712  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.933      ;
-; 4.774  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.995      ;
-; 4.778  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.999      ;
-; 4.779  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.000      ;
-; 4.796  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.017      ;
-; 4.797  ; clk_redux:clk_redux_inst|contador_1hz[7]  ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.018      ;
-; 4.798  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.019      ;
-; 4.806  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.027      ;
-; 4.807  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.028      ;
-; 4.808  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.029      ;
-; 4.869  ; clk_redux:clk_redux_inst|contador_1hz[7]  ; clk_redux:clk_redux_inst|contador_1hz[7]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.090      ;
-; 4.873  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk_redux:clk_redux_inst|contador_1hz[26] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.094      ;
-; 4.911  ; clk_redux:clk_redux_inst|contador_1hz[9]  ; clk_redux:clk_redux_inst|contador_1hz[9]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.132      ;
-; 4.935  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.156      ;
-; 4.973  ; clk_redux:clk_redux_inst|contador_1hz[15] ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.194      ;
-; 4.990  ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.211      ;
-; 4.990  ; clk_redux:clk_redux_inst|contador_1hz[10] ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.211      ;
-; 4.992  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.213      ;
-; 4.994  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.215      ;
-; 5.002  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.223      ;
-; 5.003  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.224      ;
-; 5.004  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.225      ;
-; 5.011  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.232      ;
-; 5.047  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.268      ;
-; 5.059  ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.280      ;
-; 5.060  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.281      ;
-; 5.091  ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.312      ;
-; 5.107  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.328      ;
-; 5.109  ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.330      ;
-; 5.110  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.331      ;
-; 5.127  ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.348      ;
-; 5.133  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.354      ;
-; 5.136  ; clk_redux:clk_redux_inst|contador_1hz[27] ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.357      ;
-; 5.137  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.358      ;
-; 5.137  ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[7]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.358      ;
-; 5.138  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.359      ;
-; 5.138  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.359      ;
-; 5.188  ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.409      ;
-; 5.192  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.413      ;
-; 5.205  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[26] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.426      ;
-; 5.235  ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.456      ;
-; 5.241  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk_redux:clk_redux_inst|contador_1hz[26] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.462      ;
-; 5.245  ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.466      ;
-; 5.245  ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.466      ;
-; 5.257  ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.478      ;
-; 5.258  ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.479      ;
-; 5.261  ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.482      ;
-; 5.262  ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.483      ;
-; 5.270  ; clk_redux:clk_redux_inst|contador_1hz[7]  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.491      ;
-; 5.285  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.506      ;
-; 5.298  ; clk_redux:clk_redux_inst|contador_1hz[10] ; clk_redux:clk_redux_inst|contador_1hz[10] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.519      ;
-; 5.300  ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.521      ;
-; 5.302  ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.523      ;
-; 5.303  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.524      ;
-; 5.313  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.534      ;
-; 5.318  ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.539      ;
-; 5.324  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk_redux:clk_redux_inst|contador_1hz[26] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.545      ;
-; 5.340  ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.561      ;
-; 5.351  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.572      ;
-; 5.352  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.573      ;
-; 5.353  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.574      ;
-; 5.357  ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[26] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.578      ;
-; 5.361  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.582      ;
-; 5.362  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.583      ;
-; 5.363  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.584      ;
+; 3.385  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 3.606      ;
+; 3.388  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk                                   ; clk         ; 0.000        ; 0.000      ; 3.609      ;
+; 3.391  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 3.612      ;
+; 3.391  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 3.612      ;
+; 3.481  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 3.702      ;
+; 3.708  ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 3.929      ;
+; 3.813  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.034      ;
+; 3.954  ; clk_redux:clk_redux_inst|contador_1hz[9]  ; clk_redux:clk_redux_inst|contador_1hz[9]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.175      ;
+; 3.981  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.202      ;
+; 3.984  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.205      ;
+; 3.987  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.208      ;
+; 3.987  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.208      ;
+; 3.995  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.216      ;
+; 4.032  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.253      ;
+; 4.039  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.260      ;
+; 4.042  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.263      ;
+; 4.043  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.264      ;
+; 4.060  ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.281      ;
+; 4.084  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.305      ;
+; 4.128  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.349      ;
+; 4.184  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.405      ;
+; 4.187  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.408      ;
+; 4.226  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.447      ;
+; 4.289  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.510      ;
+; 4.306  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.527      ;
+; 4.311  ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.532      ;
+; 4.313  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.534      ;
+; 4.316  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.537      ;
+; 4.319  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.540      ;
+; 4.319  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.540      ;
+; 4.332  ; clk_redux:clk_redux_inst|contador_1hz[27] ; clk_redux:clk_redux_inst|contador_1hz[27] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.553      ;
+; 4.397  ; clk_redux:clk_redux_inst|contador_1hz[15] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.618      ;
+; 4.498  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.719      ;
+; 4.501  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.722      ;
+; 4.501  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.722      ;
+; 4.514  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.735      ;
+; 4.519  ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.740      ;
+; 4.522  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.743      ;
+; 4.523  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.744      ;
+; 4.585  ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.806      ;
+; 4.628  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.849      ;
+; 4.635  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.856      ;
+; 4.637  ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.858      ;
+; 4.638  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.859      ;
+; 4.639  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.860      ;
+; 4.665  ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.886      ;
+; 4.723  ; clk_redux:clk_redux_inst|contador_1hz[7]  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.944      ;
+; 4.724  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.945      ;
+; 4.726  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.947      ;
+; 4.729  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.950      ;
+; 4.732  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.953      ;
+; 4.732  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.953      ;
+; 4.736  ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.957      ;
+; 4.744  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 4.965      ;
+; 4.780  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.001      ;
+; 4.789  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.010      ;
+; 4.792  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.013      ;
+; 4.795  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.016      ;
+; 4.795  ; clk_redux:clk_redux_inst|contador_1hz[17] ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.016      ;
+; 4.800  ; clk_redux:clk_redux_inst|contador_1hz[1]  ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.021      ;
+; 4.803  ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.024      ;
+; 4.806  ; clk_redux:clk_redux_inst|contador_1hz[9]  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.027      ;
+; 4.835  ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.056      ;
+; 4.842  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk_redux:clk_redux_inst|contador_1hz[8]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.063      ;
+; 4.851  ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.072      ;
+; 4.897  ; clk_redux:clk_redux_inst|contador_1hz[15] ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.118      ;
+; 4.900  ; clk_redux:clk_redux_inst|contador_1hz[15] ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.121      ;
+; 4.903  ; clk_redux:clk_redux_inst|contador_1hz[15] ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.124      ;
+; 4.903  ; clk_redux:clk_redux_inst|contador_1hz[15] ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.124      ;
+; 4.926  ; clk_redux:clk_redux_inst|contador_1hz[15] ; clk_redux:clk_redux_inst|contador_1hz[15] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.147      ;
+; 4.960  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.181      ;
+; 4.967  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.188      ;
+; 4.970  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.191      ;
+; 4.971  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.192      ;
+; 5.013  ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk_redux:clk_redux_inst|contador_1hz[5]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.234      ;
+; 5.019  ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.240      ;
+; 5.022  ; clk_redux:clk_redux_inst|contador_1hz[26] ; clk_redux:clk_redux_inst|contador_1hz[26] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.243      ;
+; 5.022  ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.243      ;
+; 5.023  ; clk_redux:clk_redux_inst|contador_1hz[10] ; clk_redux:clk_redux_inst|contador_1hz[20] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.244      ;
+; 5.025  ; clk_redux:clk_redux_inst|contador_1hz[21] ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.246      ;
+; 5.046  ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.267      ;
+; 5.048  ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk_redux:clk_redux_inst|contador_1hz[4]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.269      ;
+; 5.054  ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.275      ;
+; 5.056  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[0]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.277      ;
+; 5.110  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[18] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.331      ;
+; 5.112  ; clk_redux:clk_redux_inst|contador_1hz[11] ; clk_redux:clk_redux_inst|contador_1hz[16] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.333      ;
+; 5.118  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[24] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.339      ;
+; 5.119  ; clk_redux:clk_redux_inst|contador_1hz[23] ; clk_redux:clk_redux_inst|contador_1hz[19] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.340      ;
+; 5.142  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk_redux:clk_redux_inst|contador_1hz[6]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.363      ;
+; 5.144  ; clk_redux:clk_redux_inst|contador_1hz[2]  ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.365      ;
+; 5.149  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk_redux:clk_redux_inst|contador_1hz[13] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.370      ;
+; 5.152  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk_redux:clk_redux_inst|contador_1hz[12] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.373      ;
+; 5.153  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk_redux:clk_redux_inst|contador_1hz[14] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.374      ;
+; 5.161  ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk_redux:clk_redux_inst|contador_1hz[25] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.382      ;
+; 5.165  ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|contador_1hz[22] ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.386      ;
+; 5.168  ; clk_redux:clk_redux_inst|contador_1hz[3]  ; clk_redux:clk_redux_inst|clk_out~reg0     ; clk                                   ; clk         ; 0.000        ; 0.000      ; 5.389      ;
 +--------+-------------------------------------------+-------------------------------------------+---------------------------------------+-------------+--------------+------------+------------+
 
 
@@ -390,22 +390,21 @@ No paths to report.
 +-------+-----------+---------+---------------------------------------+---------------------------------------+--------------+------------+------------+
 ; Slack ; From Node ; To Node ; Launch Clock                          ; Latch Clock                           ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------+---------+---------------------------------------+---------------------------------------+--------------+------------+------------+
-; 1.694 ; D~reg0    ; D~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 1.915      ;
-; 1.716 ; B~reg0    ; C~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 1.937      ;
-; 1.729 ; A~reg0    ; A~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 1.950      ;
-; 1.737 ; A~reg0    ; B~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 1.958      ;
-; 1.954 ; C~reg0    ; C~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.175      ;
-; 1.959 ; C~reg0    ; B~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.180      ;
-; 1.960 ; C~reg0    ; D~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.181      ;
-; 1.964 ; C~reg0    ; A~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.185      ;
-; 2.165 ; D~reg0    ; B~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.386      ;
-; 2.166 ; D~reg0    ; C~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.387      ;
-; 2.167 ; D~reg0    ; A~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.388      ;
-; 2.293 ; B~reg0    ; B~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.514      ;
-; 2.298 ; B~reg0    ; A~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.519      ;
-; 2.313 ; A~reg0    ; D~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.534      ;
-; 2.316 ; A~reg0    ; C~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.537      ;
-; 2.517 ; B~reg0    ; D~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.738      ;
+; 1.701 ; C~reg0    ; A~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 1.922      ;
+; 1.702 ; C~reg0    ; B~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 1.923      ;
+; 1.952 ; B~reg0    ; B~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.173      ;
+; 1.956 ; B~reg0    ; A~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.177      ;
+; 1.960 ; B~reg0    ; C~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.181      ;
+; 2.066 ; D~reg0    ; D~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.287      ;
+; 2.073 ; D~reg0    ; C~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.294      ;
+; 2.126 ; A~reg0    ; A~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.347      ;
+; 2.129 ; A~reg0    ; C~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.350      ;
+; 2.176 ; B~reg0    ; D~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.397      ;
+; 2.242 ; D~reg0    ; A~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.463      ;
+; 2.243 ; D~reg0    ; B~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.464      ;
+; 2.275 ; C~reg0    ; C~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.496      ;
+; 2.280 ; C~reg0    ; D~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.501      ;
+; 2.315 ; A~reg0    ; D~reg0  ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 0.000        ; 0.000      ; 2.536      ;
 +-------+-----------+---------+---------------------------------------+---------------------------------------+--------------+------------+------------+
 
 
@@ -416,7 +415,7 @@ No paths to report.
 +---------------------------------------+---------------------------------------+----------+----------+----------+----------+
 ; clk                                   ; clk                                   ; 1106     ; 0        ; 0        ; 0        ;
 ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk                                   ; 1        ; 1        ; 0        ; 0        ;
-; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 16       ; 0        ; 0        ; 0        ;
+; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 15       ; 0        ; 0        ; 0        ;
 +---------------------------------------+---------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -428,7 +427,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------------------------+---------------------------------------+----------+----------+----------+----------+
 ; clk                                   ; clk                                   ; 1106     ; 0        ; 0        ; 0        ;
 ; clk_redux:clk_redux_inst|clk_out~reg0 ; clk                                   ; 1        ; 1        ; 0        ; 0        ;
-; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 16       ; 0        ; 0        ; 0        ;
+; clk_redux:clk_redux_inst|clk_out~reg0 ; clk_redux:clk_redux_inst|clk_out~reg0 ; 15       ; 0        ; 0        ; 0        ;
 +---------------------------------------+---------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -501,11 +500,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Nov 29 16:29:59 2024
+    Info: Processing started: Fri Nov 29 23:47:37 2024
 Info: Command: quartus_sta MOD16 -c MOD16
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (334003): Started post-fitting delay annotation
@@ -518,16 +517,16 @@ Info (332105): Deriving Clocks
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -8.087
+Info (332146): Worst-case setup slack is -7.607
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.087            -199.228 clk 
-    Info (332119):    -2.071              -7.640 clk_redux:clk_redux_inst|clk_out~reg0 
-Info (332146): Worst-case hold slack is -1.617
+    Info (332119):    -7.607            -191.529 clk 
+    Info (332119):    -1.869              -7.291 clk_redux:clk_redux_inst|clk_out~reg0 
+Info (332146): Worst-case hold slack is -1.607
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.617              -1.617 clk 
-    Info (332119):     1.694               0.000 clk_redux:clk_redux_inst|clk_out~reg0 
+    Info (332119):    -1.607              -1.607 clk 
+    Info (332119):     1.701               0.000 clk_redux:clk_redux_inst|clk_out~reg0 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.289
@@ -539,9 +538,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4674 megabytes
-    Info: Processing ended: Fri Nov 29 16:30:00 2024
+    Info: Peak virtual memory: 333 megabytes
+    Info: Processing ended: Fri Nov 29 23:47:38 2024
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
