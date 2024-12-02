@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MOD16
-Fri Nov 29 16:29:55 2024
+Mon Dec  2 12:44:31 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri Nov 29 16:29:55 2024          ;
+; Analysis & Synthesis Status ; Successful - Mon Dec  2 12:44:31 2024          ;
 ; Quartus Prime Version       ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name               ; MOD16                                          ;
 ; Top-level Entity Name       ; MOD16                                          ;
@@ -161,8 +161,8 @@ https://fpgasoftware.intel.com/eula.
 ;     -- Combinational with a register        ; 18    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 13    ;
-;     -- 3 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 12    ;
+;     -- 3 input functions                    ; 1     ;
 ;     -- 2 input functions                    ; 41    ;
 ;     -- 1 input functions                    ; 1     ;
 ;     -- 0 input functions                    ; 0     ;
@@ -180,8 +180,8 @@ https://fpgasoftware.intel.com/eula.
 ; I/O pins                                    ; 6     ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 29    ;
-; Total fan-out                               ; 188   ;
-; Average fan-out                             ; 2.47  ;
+; Total fan-out                               ; 187   ;
+; Average fan-out                             ; 2.46  ;
 +---------------------------------------------+-------+
 
 
@@ -217,7 +217,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Nov 29 16:29:48 2024
+    Info: Processing started: Mon Dec  2 12:44:16 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MOD16 -c MOD16
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -254,8 +254,8 @@ Info (21057): Implemented 76 device resources after synthesis - the final resour
     Info (21061): Implemented 70 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
     Info: Peak virtual memory: 4767 megabytes
-    Info: Processing ended: Fri Nov 29 16:29:55 2024
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Processing ended: Mon Dec  2 12:44:31 2024
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:22
 
 
