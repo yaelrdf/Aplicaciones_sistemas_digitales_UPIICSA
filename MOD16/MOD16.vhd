@@ -23,8 +23,8 @@ architecture Behavioral of MOD16 is
 --Instancicion del componente
     begin
         clk_redux_inst : clk_redux
-       port map(
-           clk_in => clk,
+        port map(
+            clk_in => clk,
             clk_out => clk_1hz
         );
 
@@ -33,10 +33,10 @@ architecture Behavioral of MOD16 is
     process(clk_1hz)
     begin
         if  rising_edge(clk_1hz) then
-            A <= (A and B) or (A and C) or (A and not(C) and D) or (not(A) and not(B) and not(C) and D);
-            B <= (not(C) and not(D) and not(B)) or  (C and B) or (B and not(C) and D);
-            C <= (A and B) or (A and not(C) and not(D)) or (B and not(C) and not(D)) or (not(c) and C and D);
-            D <= (C and not(D)) or (A and B) or (not(A) and B and not(D)) or (A and not(D));
+            A <= (C and A and not(B)) or (not(C) and D and A and not(B)) or (A and B and not(C) and not(D)) or (not(A) and not(B) and not(C) and not(D));
+            B <= (C and not(A) and B) or (not(C) and not(D) and not(B)) or (A and not(B) and not(C) and not(D)) or (A and not(B) and C and D);
+            C <= (not(A) and C and D) or (not(C) and not(D) and B) or (A and not(B) and not(C) and not(D)) or (A and not(B) and C and D);
+            D <= (not(C) and not(D) and A) or (not(D) and not(D) and B) or (not(A) and not(B) and not(C) and D) or (A and not(B) and C and not(D));
         end if;
     end process;
 end Behavioral;

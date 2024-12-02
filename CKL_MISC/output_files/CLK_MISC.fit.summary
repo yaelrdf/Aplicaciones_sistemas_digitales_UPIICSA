@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue Nov 19 09:36:43 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : CLK_MISC
+Top-level Entity Name : CLK_MISC
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 179 / 240 ( 75 % )
+Total pins : 4 / 80 ( 5 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
