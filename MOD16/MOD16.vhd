@@ -5,7 +5,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity MOD16 is
     Port ( 
-        clk : in STD_LOGIC;
+        clk,stop : in STD_LOGIC;
         A,B,C,D : inout std_logic;
         clk_1hz : inout std_logic
     );
@@ -32,7 +32,7 @@ architecture Behavioral of MOD16 is
 --Programa
     process(clk_1hz)
     begin
-        if  rising_edge(clk_1hz) then
+        if  rising_edge(clk_1hz) and stop='0' then
             A <= (not(A) and not(B) and not(C) and not(D)) or (A and B) or (A and C) or (A and D);
             B <= (not(C) and not(D) and not(B)) or (C and B) or (B and D);
             C <= (not(A) and C and D) or (not(C) and not(D) and B) or (A and not(B) and not(C) and not(D)) or (A and not(B) and C and D);

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MOD16
-Mon Dec  2 12:44:31 2024
+Mon Dec  2 17:45:18 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,13 +41,13 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Dec  2 12:44:31 2024          ;
+; Analysis & Synthesis Status ; Successful - Mon Dec  2 17:45:18 2024          ;
 ; Quartus Prime Version       ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name               ; MOD16                                          ;
 ; Top-level Entity Name       ; MOD16                                          ;
 ; Family                      ; MAX II                                         ;
-; Total logic elements        ; 70                                             ;
-; Total pins                  ; 6                                              ;
+; Total logic elements        ; 73                                             ;
+; Total pins                  ; 7                                              ;
 ; Total virtual pins          ; 0                                              ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                  ;
 +-----------------------------+------------------------------------------------+
@@ -129,8 +129,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -140,14 +140,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                          ;
-+----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                             ; Library ;
-+----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------+---------+
-; mod16.vhd                        ; yes             ; Auto-Found VHDL File  ; C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd     ;         ;
-; clk_redux.vhd                    ; yes             ; Auto-Found VHDL File  ; C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/clk_redux.vhd ;         ;
-+----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                         ;
++----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                            ; Library ;
++----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------------+---------+
+; MOD16.vhd                        ; yes             ; Auto-Found VHDL File  ; /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd     ;         ;
+; clk_redux.vhd                    ; yes             ; Auto-Found VHDL File  ; /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/clk_redux.vhd ;         ;
++----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -155,20 +155,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 70    ;
-;     -- Combinational with no register       ; 37    ;
+; Total logic elements                        ; 73    ;
+;     -- Combinational with no register       ; 40    ;
 ;     -- Register only                        ; 15    ;
 ;     -- Combinational with a register        ; 18    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 12    ;
-;     -- 3 input functions                    ; 1     ;
-;     -- 2 input functions                    ; 41    ;
+;     -- 4 input functions                    ; 14    ;
+;     -- 3 input functions                    ; 0     ;
+;     -- 2 input functions                    ; 43    ;
 ;     -- 1 input functions                    ; 1     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 43    ;
+;     -- normal mode                          ; 46    ;
 ;     -- arithmetic mode                      ; 27    ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
@@ -177,11 +177,11 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;       ;
 ; Total registers                             ; 33    ;
 ; Total logic cells in carry chains           ; 28    ;
-; I/O pins                                    ; 6     ;
+; I/O pins                                    ; 7     ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 29    ;
-; Total fan-out                               ; 187   ;
-; Average fan-out                             ; 2.46  ;
+; Total fan-out                               ; 196   ;
+; Average fan-out                             ; 2.45  ;
 +---------------------------------------------+-------+
 
 
@@ -190,7 +190,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node    ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name             ; Entity Name ; Library Name ;
 +-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------+-------------+--------------+
-; |MOD16                        ; 70 (4)      ; 33           ; 0          ; 6    ; 0            ; 37 (0)       ; 15 (0)            ; 18 (4)           ; 28 (0)          ; 0 (0)      ; |MOD16                          ; MOD16       ; work         ;
+; |MOD16                        ; 73 (7)      ; 33           ; 0          ; 7    ; 0            ; 40 (3)       ; 15 (0)            ; 18 (4)           ; 28 (0)          ; 0 (0)      ; |MOD16                          ; MOD16       ; work         ;
 ;    |clk_redux:clk_redux_inst| ; 66 (66)     ; 29           ; 0          ; 0    ; 0            ; 37 (37)      ; 15 (15)           ; 14 (14)          ; 28 (28)         ; 0 (0)      ; |MOD16|clk_redux:clk_redux_inst ; clk_redux   ; work         ;
 +-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -217,45 +217,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Dec  2 12:44:16 2024
+    Info: Processing started: Mon Dec  2 17:44:47 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MOD16 -c MOD16
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Warning (12125): Using design file mod16.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: MOD16-Behavioral File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 14
-    Info (12023): Found entity 1: MOD16 File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 6
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Warning (12125): Using design file MOD16.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: MOD16-Behavioral File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 14
+    Info (12023): Found entity 1: MOD16 File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 6
 Info (12127): Elaborating entity "MOD16" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at MOD16.vhd(35): signal "stop" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 35
 Warning (12125): Using design file clk_redux.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: clk_redux-Behavioral File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/clk_redux.vhd Line: 13
-    Info (12023): Found entity 1: clk_redux File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/clk_redux.vhd Line: 6
-Info (12128): Elaborating entity "clk_redux" for hierarchy "clk_redux:clk_redux_inst" File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 25
+    Info (12022): Found design unit 1: clk_redux-Behavioral File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/clk_redux.vhd Line: 13
+    Info (12023): Found entity 1: clk_redux File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/clk_redux.vhd Line: 6
+Info (12128): Elaborating entity "clk_redux" for hierarchy "clk_redux:clk_redux_inst" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 25
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "A" and its non-tri-state driver. File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 9
-    Warning (13035): Inserted always-enabled tri-state buffer between "B" and its non-tri-state driver. File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 9
-    Warning (13035): Inserted always-enabled tri-state buffer between "C" and its non-tri-state driver. File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 9
-    Warning (13035): Inserted always-enabled tri-state buffer between "D" and its non-tri-state driver. File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 9
-    Warning (13035): Inserted always-enabled tri-state buffer between "clk_1hz" and its non-tri-state driver. File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 10
+    Warning (13035): Inserted always-enabled tri-state buffer between "A" and its non-tri-state driver. File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 9
+    Warning (13035): Inserted always-enabled tri-state buffer between "B" and its non-tri-state driver. File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 9
+    Warning (13035): Inserted always-enabled tri-state buffer between "C" and its non-tri-state driver. File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 9
+    Warning (13035): Inserted always-enabled tri-state buffer between "D" and its non-tri-state driver. File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 9
+    Warning (13035): Inserted always-enabled tri-state buffer between "clk_1hz" and its non-tri-state driver. File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 10
 Info (13060): One or more bidirectional pins are fed by always enabled tri-state buffers
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "A" is moved to its source File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 9
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "B" is moved to its source File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 9
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "C" is moved to its source File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 9
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "D" is moved to its source File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 9
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "clk_1hz" is moved to its source File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 10
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "A" is moved to its source File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 9
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "B" is moved to its source File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 9
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "C" is moved to its source File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 9
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "D" is moved to its source File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 9
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "clk_1hz" is moved to its source File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 10
 Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "A~synth" File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 9
-    Warning (13010): Node "B~synth" File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 9
-    Warning (13010): Node "C~synth" File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 9
-    Warning (13010): Node "D~synth" File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 9
-    Warning (13010): Node "clk_1hz~synth" File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/mod16.vhd Line: 10
-Info (21057): Implemented 76 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
+    Warning (13010): Node "A~synth" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 9
+    Warning (13010): Node "B~synth" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 9
+    Warning (13010): Node "C~synth" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 9
+    Warning (13010): Node "D~synth" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 9
+    Warning (13010): Node "clk_1hz~synth" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD16/MOD16.vhd Line: 10
+Info (21057): Implemented 80 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
     Info (21060): Implemented 5 bidirectional pins
-    Info (21061): Implemented 70 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4767 megabytes
-    Info: Processing ended: Mon Dec  2 12:44:31 2024
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:22
+    Info (21061): Implemented 73 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 389 megabytes
+    Info: Processing ended: Mon Dec  2 17:45:18 2024
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:00:58
 
 

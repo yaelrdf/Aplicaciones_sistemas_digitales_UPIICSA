@@ -61,3 +61,4 @@ set_location_assignment PIN_97 -to B
 set_location_assignment PIN_95 -to C
 set_location_assignment PIN_91 -to D
 set_location_assignment PIN_77 -to clk_1hz
+set_location_assignment PIN_75 -to stop
