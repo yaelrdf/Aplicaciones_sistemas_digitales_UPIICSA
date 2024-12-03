@@ -1,9 +1,5 @@
 |MOD16
 clk => clk_redux:clk_redux_inst.clk_in
-stop => D.OUTPUTSELECT
-stop => C.OUTPUTSELECT
-stop => B.OUTPUTSELECT
-stop => A.OUTPUTSELECT
 A <> A~reg0
 B <> B~reg0
 C <> C~reg0

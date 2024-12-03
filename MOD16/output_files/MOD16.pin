@@ -137,7 +137,7 @@ GND*                         : 71        :        :                   :         
 GND*                         : 72        :        :                   :         : 2         :                
 GND*                         : 73        :        :                   :         : 2         :                
 GND*                         : 74        :        :                   :         : 2         :                
-stop                         : 75        : input  : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : 75        :        :                   :         : 2         :                
 GND*                         : 76        :        :                   :         : 2         :                
 clk_1hz                      : 77        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : 78        :        :                   :         : 2         :                
