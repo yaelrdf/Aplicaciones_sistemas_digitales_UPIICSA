@@ -1,5 +1,5 @@
 Fitter report for MOD_16_XY
-Mon Dec  2 22:19:21 2024
+Tue Dec  3 08:03:03 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -57,14 +57,14 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+
 ; Fitter Summary                                                         ;
 +-----------------------+------------------------------------------------+
-; Fitter Status         ; Successful - Mon Dec  2 22:19:21 2024          ;
+; Fitter Status         ; Successful - Tue Dec  3 08:03:03 2024          ;
 ; Quartus Prime Version ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name         ; MOD_16_XY                                      ;
 ; Top-level Entity Name ; MOD_16_XY                                      ;
 ; Family                ; MAX II                                         ;
 ; Device                ; EPM240T100C5                                   ;
 ; Timing Models         ; Final                                          ;
-; Total logic elements  ; 106 / 240 ( 44 % )                             ;
+; Total logic elements  ; 107 / 240 ( 45 % )                             ;
 ; Total pins            ; 21 / 80 ( 26 % )                               ;
 ; Total virtual pins    ; 0                                              ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                                  ;
@@ -125,23 +125,23 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.04        ;
-; Maximum used               ; 4           ;
+; Average used               ; 1.17        ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.6%      ;
-;     Processors 3-4         ;   1.2%      ;
+;     Processor 2            ;   1.1%      ;
+;     Processors 3-16        ;   1.1%      ;
 +----------------------------+-------------+
 
 
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY/output_files/MOD_16_XY.pin.
+The pin-out file can be found in C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY/output_files/MOD_16_XY.pin.
 
 
 +---------------------------------------------------------------------+
@@ -149,24 +149,24 @@ The pin-out file can be found in /home/yaelrdf/Documents/GIT/Aplicaciones_sistem
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 106 / 240 ( 44 % )    ;
-;     -- Combinational with no register       ; 61                    ;
+; Total logic elements                        ; 107 / 240 ( 45 % )    ;
+;     -- Combinational with no register       ; 62                    ;
 ;     -- Register only                        ; 8                     ;
 ;     -- Combinational with a register        ; 37                    ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
 ;     -- 4 input functions                    ; 42                    ;
-;     -- 3 input functions                    ; 7                     ;
-;     -- 2 input functions                    ; 47                    ;
+;     -- 3 input functions                    ; 6                     ;
+;     -- 2 input functions                    ; 49                    ;
 ;     -- 1 input functions                    ; 2                     ;
 ;     -- 0 input functions                    ; 0                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 79                    ;
+;     -- normal mode                          ; 80                    ;
 ;     -- arithmetic mode                      ; 27                    ;
-;     -- qfbk mode                            ; 17                    ;
+;     -- qfbk mode                            ; 16                    ;
 ;     -- register cascade mode                ; 0                     ;
-;     -- synchronous clear/load mode          ; 21                    ;
+;     -- synchronous clear/load mode          ; 20                    ;
 ;     -- asynchronous clear/load mode         ; 0                     ;
 ;                                             ;                       ;
 ; Total registers                             ; 45 / 240 ( 19 % )     ;
@@ -184,12 +184,12 @@ The pin-out file can be found in /home/yaelrdf/Documents/GIT/Aplicaciones_sistem
 ; Global signals                              ; 2                     ;
 ;     -- Global clocks                        ; 2 / 4 ( 50 % )        ;
 ; JTAGs                                       ; 0 / 1 ( 0 % )         ;
-; Average interconnect usage (total/H/V)      ; 11.9% / 11.6% / 12.2% ;
-; Peak interconnect usage (total/H/V)         ; 11.9% / 11.6% / 12.2% ;
+; Average interconnect usage (total/H/V)      ; 11.7% / 11.7% / 11.6% ;
+; Peak interconnect usage (total/H/V)         ; 11.7% / 11.7% / 11.6% ;
 ; Maximum fan-out                             ; 29                    ;
-; Highest non-global fan-out                  ; 23                    ;
-; Total fan-out                               ; 371                   ;
-; Average fan-out                             ; 2.92                  ;
+; Highest non-global fan-out                  ; 22                    ;
+; Total fan-out                               ; 372                   ;
+; Average fan-out                             ; 2.91                  ;
 +---------------------------------------------+-----------------------+
 
 
@@ -198,8 +198,8 @@ The pin-out file can be found in /home/yaelrdf/Documents/GIT/Aplicaciones_sistem
 +-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Location assigned by ; Slow Slew Rate ;
 +-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
-; XY[0] ; 99    ; 2        ; 2            ; 5            ; 1           ; 23                    ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
-; XY[1] ; 97    ; 2        ; 3            ; 5            ; 3           ; 23                    ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
+; XY[0] ; 99    ; 2        ; 2            ; 5            ; 1           ; 22                    ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
+; XY[1] ; 97    ; 2        ; 3            ; 5            ; 3           ; 22                    ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
 ; clk   ; 12    ; 1        ; 1            ; 3            ; 3           ; 29                    ; 0                  ; yes    ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
 +-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
 
@@ -214,16 +214,16 @@ The pin-out file can be found in /home/yaelrdf/Documents/GIT/Aplicaciones_sistem
 ; display[11] ; 61    ; 2        ; 8            ; 2            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; display[12] ; 67    ; 2        ; 8            ; 3            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; display[13] ; 69    ; 2        ; 8            ; 3            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[14] ; 71    ; 2        ; 8            ; 4            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; yes                    ; User                 ; 10 pF ; -                    ; -                   ;
-; display[15] ; 73    ; 2        ; 8            ; 4            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[16] ; 75    ; 2        ; 7            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; yes                    ; User                 ; 10 pF ; -                    ; -                   ;
+; display[14] ; 71    ; 2        ; 8            ; 4            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[15] ; 73    ; 2        ; 8            ; 4            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; yes                    ; User                 ; 10 pF ; -                    ; -                   ;
+; display[16] ; 75    ; 2        ; 7            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; display[1]  ; 58    ; 2        ; 8            ; 2            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; display[2]  ; 66    ; 2        ; 8            ; 3            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; display[3]  ; 68    ; 2        ; 8            ; 3            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[4]  ; 70    ; 2        ; 8            ; 4            ; 4           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[4]  ; 70    ; 2        ; 8            ; 4            ; 4           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; yes                    ; User                 ; 10 pF ; -                    ; -                   ;
 ; display[5]  ; 72    ; 2        ; 8            ; 4            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; yes                    ; User                 ; 10 pF ; -                    ; -                   ;
 ; display[6]  ; 74    ; 2        ; 8            ; 4            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; display[7]  ; 76    ; 2        ; 7            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; display[7]  ; 76    ; 2        ; 7            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; yes                    ; User                 ; 10 pF ; -                    ; -                   ;
 ; display[8]  ; 54    ; 2        ; 8            ; 1            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; display[9]  ; 55    ; 2        ; 8            ; 1            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 +-------------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
@@ -378,7 +378,7 @@ Note: User assignments will override these defaults. The user specified values a
 +-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node    ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                 ; Entity Name ; Library Name ;
 +-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------+-------------+--------------+
-; |MOD_16_XY                    ; 106 (47)    ; 45           ; 0          ; 21   ; 0            ; 61 (31)      ; 8 (0)             ; 37 (16)          ; 28 (0)          ; 16 (9)     ; |MOD_16_XY                          ; MOD_16_XY   ; work         ;
+; |MOD_16_XY                    ; 107 (48)    ; 45           ; 0          ; 21   ; 0            ; 62 (32)      ; 8 (0)             ; 37 (16)          ; 28 (0)          ; 15 (8)     ; |MOD_16_XY                          ; MOD_16_XY   ; work         ;
 ;    |clk_redux:clk_redux_inst| ; 59 (59)     ; 29           ; 0          ; 0    ; 0            ; 30 (30)      ; 8 (8)             ; 21 (21)          ; 28 (28)         ; 7 (7)      ; |MOD_16_XY|clk_redux:clk_redux_inst ; clk_redux   ; work         ;
 +-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -419,7 +419,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                  ; Location    ; Fan-Out ; Usage ; Global ; Global Resource Used ; Global Line Name ;
 +---------------------------------------+-------------+---------+-------+--------+----------------------+------------------+
 ; clk                                   ; PIN_12      ; 29      ; Clock ; yes    ; Global Clock         ; GCLK0            ;
-; clk_redux:clk_redux_inst|clk_out~reg0 ; LC_X3_Y1_N9 ; 18      ; Clock ; yes    ; Global Clock         ; GCLK3            ;
+; clk_redux:clk_redux_inst|clk_out~reg0 ; LC_X4_Y3_N8 ; 18      ; Clock ; yes    ; Global Clock         ; GCLK3            ;
 +---------------------------------------+-------------+---------+-------+--------+----------------------+------------------+
 
 
@@ -429,7 +429,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                  ; Location    ; Fan-Out ; Global Resource Used ; Global Line Name ;
 +---------------------------------------+-------------+---------+----------------------+------------------+
 ; clk                                   ; PIN_12      ; 29      ; Global Clock         ; GCLK0            ;
-; clk_redux:clk_redux_inst|clk_out~reg0 ; LC_X3_Y1_N9 ; 18      ; Global Clock         ; GCLK3            ;
+; clk_redux:clk_redux_inst|clk_out~reg0 ; LC_X4_Y3_N8 ; 18      ; Global Clock         ; GCLK3            ;
 +---------------------------------------+-------------+---------+----------------------+------------------+
 
 
@@ -438,30 +438,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+--------------------+
 ; Routing Resource Type ; Usage              ;
 +-----------------------+--------------------+
-; C4s                   ; 80 / 784 ( 10 % )  ;
-; Direct links          ; 33 / 888 ( 4 % )   ;
+; C4s                   ; 77 / 784 ( 10 % )  ;
+; Direct links          ; 37 / 888 ( 4 % )   ;
 ; Global clocks         ; 2 / 4 ( 50 % )     ;
-; LAB clocks            ; 8 / 32 ( 25 % )    ;
-; LUT chains            ; 8 / 216 ( 4 % )    ;
-; Local interconnects   ; 153 / 888 ( 17 % ) ;
-; R4s                   ; 66 / 704 ( 9 % )   ;
+; LAB clocks            ; 7 / 32 ( 22 % )    ;
+; LUT chains            ; 6 / 216 ( 3 % )    ;
+; Local interconnects   ; 157 / 888 ( 18 % ) ;
+; R4s                   ; 64 / 704 ( 9 % )   ;
 +-----------------------+--------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +--------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 7.57) ; Number of LABs  (Total = 14) ;
+; Number of Logic Elements  (Average = 7.64) ; Number of LABs  (Total = 14) ;
 +--------------------------------------------+------------------------------+
 ; 1                                          ; 1                            ;
-; 2                                          ; 1                            ;
-; 3                                          ; 0                            ;
+; 2                                          ; 0                            ;
+; 3                                          ; 2                            ;
 ; 4                                          ; 1                            ;
-; 5                                          ; 1                            ;
+; 5                                          ; 0                            ;
 ; 6                                          ; 0                            ;
-; 7                                          ; 1                            ;
+; 7                                          ; 0                            ;
 ; 8                                          ; 1                            ;
-; 9                                          ; 1                            ;
+; 9                                          ; 2                            ;
 ; 10                                         ; 7                            ;
 +--------------------------------------------+------------------------------+
 
@@ -469,82 +469,75 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 0.79) ; Number of LABs  (Total = 14) ;
+; LAB-wide Signals  (Average = 0.71) ; Number of LABs  (Total = 14) ;
 +------------------------------------+------------------------------+
-; 1 Clock                            ; 11                           ;
+; 1 Clock                            ; 10                           ;
 +------------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 9.00) ; Number of LABs  (Total = 14) ;
+; Number of Signals Sourced  (Average = 9.07) ; Number of LABs  (Total = 14) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
 ; 1                                           ; 1                            ;
-; 2                                           ; 1                            ;
-; 3                                           ; 0                            ;
-; 4                                           ; 0                            ;
+; 2                                           ; 0                            ;
+; 3                                           ; 1                            ;
+; 4                                           ; 1                            ;
 ; 5                                           ; 1                            ;
 ; 6                                           ; 0                            ;
-; 7                                           ; 1                            ;
-; 8                                           ; 2                            ;
-; 9                                           ; 1                            ;
-; 10                                          ; 3                            ;
-; 11                                          ; 0                            ;
-; 12                                          ; 0                            ;
+; 7                                           ; 0                            ;
+; 8                                           ; 0                            ;
+; 9                                           ; 0                            ;
+; 10                                          ; 5                            ;
+; 11                                          ; 1                            ;
+; 12                                          ; 1                            ;
 ; 13                                          ; 1                            ;
 ; 14                                          ; 2                            ;
-; 15                                          ; 1                            ;
 +---------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 7.57) ; Number of LABs  (Total = 14) ;
+; Number of Signals Sourced Out  (Average = 7.71) ; Number of LABs  (Total = 14) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
 ; 1                                               ; 1                            ;
-; 2                                               ; 1                            ;
-; 3                                               ; 0                            ;
-; 4                                               ; 0                            ;
+; 2                                               ; 0                            ;
+; 3                                               ; 1                            ;
+; 4                                               ; 1                            ;
 ; 5                                               ; 1                            ;
 ; 6                                               ; 0                            ;
-; 7                                               ; 2                            ;
-; 8                                               ; 3                            ;
-; 9                                               ; 3                            ;
-; 10                                              ; 2                            ;
-; 11                                              ; 0                            ;
-; 12                                              ; 0                            ;
-; 13                                              ; 1                            ;
+; 7                                               ; 0                            ;
+; 8                                               ; 1                            ;
+; 9                                               ; 4                            ;
+; 10                                              ; 4                            ;
+; 11                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 9.43) ; Number of LABs  (Total = 14) ;
+; Number of Distinct Inputs  (Average = 9.50) ; Number of LABs  (Total = 14) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
 ; 1                                           ; 0                            ;
 ; 2                                           ; 1                            ;
-; 3                                           ; 1                            ;
+; 3                                           ; 0                            ;
 ; 4                                           ; 0                            ;
-; 5                                           ; 1                            ;
-; 6                                           ; 1                            ;
+; 5                                           ; 0                            ;
+; 6                                           ; 3                            ;
 ; 7                                           ; 0                            ;
-; 8                                           ; 1                            ;
+; 8                                           ; 0                            ;
 ; 9                                           ; 1                            ;
-; 10                                          ; 1                            ;
-; 11                                          ; 3                            ;
+; 10                                          ; 2                            ;
+; 11                                          ; 4                            ;
 ; 12                                          ; 1                            ;
-; 13                                          ; 2                            ;
-; 14                                          ; 0                            ;
-; 15                                          ; 0                            ;
-; 16                                          ; 0                            ;
-; 17                                          ; 0                            ;
-; 18                                          ; 1                            ;
+; 13                                          ; 0                            ;
+; 14                                          ; 2                            ;
 +---------------------------------------------+------------------------------+
 
 
@@ -566,7 +559,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (119006): Selected device EPM240T100C5 for design "MOD_16_XY"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -588,16 +581,16 @@ Info (332111): Found 2 clocks
     Info (332111):    1.000          clk
     Info (332111):    1.000 clk_redux:clk_redux_inst|clk_out~reg0
 Info (186079): Completed User Assigned Global Signals Promotion Operation
-Info (186215): Automatically promoted signal "clk" to use Global clock in PIN 12 File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY/MOD_16_XY.vhd Line: 8
-Info (186216): Automatically promoted some destinations of signal "clk_redux:clk_redux_inst|clk_out~reg0" to use Global clock File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY/clk_redux.vhd Line: 18
-    Info (186217): Destination "clk_1hz" may be non-global or may not use global clock File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY/MOD_16_XY.vhd Line: 9
-    Info (186217): Destination "clk_redux:clk_redux_inst|clk_out~reg0" may be non-global or may not use global clock File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY/clk_redux.vhd Line: 18
+Info (186215): Automatically promoted signal "clk" to use Global clock in PIN 12 File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY/mod_16_xy.vhd Line: 8
+Info (186216): Automatically promoted some destinations of signal "clk_redux:clk_redux_inst|clk_out~reg0" to use Global clock File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY/clk_redux.vhd Line: 18
+    Info (186217): Destination "clk_1hz" may be non-global or may not use global clock File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY/mod_16_xy.vhd Line: 9
+    Info (186217): Destination "clk_redux:clk_redux_inst|clk_out~reg0" may be non-global or may not use global clock File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY/clk_redux.vhd Line: 18
 Info (186079): Completed Auto Global Promotion Operation
 Info (176234): Starting register packing
 Info (186468): Started processing fast register assignments
 Info (186469): Finished processing fast register assignments
 Info (176235): Finished register packing
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -610,22 +603,22 @@ Info (170195): Router estimated average interconnect usage is 8% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.25 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.42 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169064): Following 1 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
-    Info (169065): Pin clk_1hz has a permanently enabled output enable File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY/MOD_16_XY.vhd Line: 9
+    Info (169065): Pin clk_1hz has a permanently enabled output enable File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY/mod_16_xy.vhd Line: 9
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY/output_files/MOD_16_XY.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY/output_files/MOD_16_XY.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 769 megabytes
-    Info: Processing ended: Mon Dec  2 22:19:21 2024
+    Info: Peak virtual memory: 6153 megabytes
+    Info: Processing ended: Tue Dec  3 08:03:03 2024
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Total CPU time (on all processors): 00:00:01
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY/output_files/MOD_16_XY.fit.smsg.
+The suppressed messages can be found in C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY/output_files/MOD_16_XY.fit.smsg.
 
 

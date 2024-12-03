@@ -66,7 +66,7 @@ process(estado_presente, XY)
                 --Reinicio
                 elsif XY = "10" then estado_siguiente <= S0;
                 --Multiplos de 3
-                elsif XY = "11" then estado_siguiente <= S15;
+                elsif XY = "11" then estado_siguiente <= S0;
                 end if;
             
             when S2 =>
@@ -77,7 +77,7 @@ process(estado_presente, XY)
                 --Reinicio
                 elsif XY = "10" then estado_siguiente <= S0;
                 --Multiplos de 3
-                elsif XY = "11" then estado_siguiente <= S15;
+                elsif XY = "11" then estado_siguiente <= S0;
                 end if;
             
             when S3 =>
@@ -88,7 +88,7 @@ process(estado_presente, XY)
                 --Reinicio
                 elsif XY = "10" then estado_siguiente <= S0;
                 --Multiplos de 3
-                elsif XY = "11" then estado_siguiente <= S15;
+                elsif XY = "11" then estado_siguiente <= S0;
                 end if;
             
             when S4 =>

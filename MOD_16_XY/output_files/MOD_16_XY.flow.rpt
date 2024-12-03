@@ -1,5 +1,5 @@
 Flow report for MOD_16_XY
-Mon Dec  2 22:19:27 2024
+Tue Dec  3 08:03:07 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,14 +41,14 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +-----------------------+------------------------------------------------+
-; Flow Status           ; Successful - Mon Dec  2 22:19:24 2024          ;
+; Flow Status           ; Successful - Tue Dec  3 08:03:05 2024          ;
 ; Quartus Prime Version ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name         ; MOD_16_XY                                      ;
 ; Top-level Entity Name ; MOD_16_XY                                      ;
 ; Family                ; MAX II                                         ;
 ; Device                ; EPM240T100C5                                   ;
 ; Timing Models         ; Final                                          ;
-; Total logic elements  ; 106 / 240 ( 44 % )                             ;
+; Total logic elements  ; 107 / 240 ( 45 % )                             ;
 ; Total pins            ; 21 / 80 ( 26 % )                               ;
 ; Total virtual pins    ; 0                                              ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                                  ;
@@ -60,23 +60,23 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/02/2024 22:18:51 ;
+; Start date & time ; 12/03/2024 08:02:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MOD_16_XY           ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                   ;
-+---------------------------------------+---------------------------------+---------------+-------------+------------+
-; Assignment Name                       ; Value                           ; Default Value ; Entity Name ; Section Id ;
-+---------------------------------------+---------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID                 ; 147527946579041.173319953140119 ; --            ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP                ; 85                              ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP                ; 0                               ; --            ; --          ; --         ;
-; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                            ; --            ; --          ; --         ;
-; PROJECT_OUTPUT_DIRECTORY              ; output_files                    ; --            ; --          ; --         ;
-+---------------------------------------+---------------------------------+---------------+-------------+------------+
++----------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                               ;
++---------------------------------------+-----------------------------+---------------+-------------+------------+
+; Assignment Name                       ; Value                       ; Default Value ; Entity Name ; Section Id ;
++---------------------------------------+-----------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID                 ; 91766876675.173323456601524 ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP                ; 85                          ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP                ; 0                           ; --            ; --          ; --         ;
+; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                        ; --            ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY              ; output_files                ; --            ; --          ; --         ;
++---------------------------------------+-----------------------------+---------------+-------------+------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -84,24 +84,24 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:25     ; 1.0                     ; 386 MB              ; 00:00:54                           ;
-; Fitter               ; 00:00:03     ; 1.0                     ; 769 MB              ; 00:00:04                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 315 MB              ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 336 MB              ; 00:00:01                           ;
-; Total                ; 00:00:30     ; --                      ; --                  ; 00:01:00                           ;
+; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4767 MB             ; 00:00:21                           ;
+; Fitter               ; 00:00:03     ; 1.2                     ; 6153 MB             ; 00:00:01                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4663 MB             ; 00:00:00                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4674 MB             ; 00:00:01                           ;
+; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:23                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                          ;
-+----------------------+------------------+------------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name          ; OS Version ; Processor type ;
-+----------------------+------------------+------------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-TE7OR9J  ; Debian GNU/Linux ; 12         ; x86_64         ;
-; Fitter               ; DESKTOP-TE7OR9J  ; Debian GNU/Linux ; 12         ; x86_64         ;
-; Assembler            ; DESKTOP-TE7OR9J  ; Debian GNU/Linux ; 12         ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-TE7OR9J  ; Debian GNU/Linux ; 12         ; x86_64         ;
-+----------------------+------------------+------------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
