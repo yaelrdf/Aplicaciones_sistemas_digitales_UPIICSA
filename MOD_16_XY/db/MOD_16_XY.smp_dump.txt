@@ -1,0 +1,19 @@
+
+State Machine - |MOD_16_XY|estado_presente
+Name estado_presente.S15 estado_presente.S14 estado_presente.S13 estado_presente.S12 estado_presente.S11 estado_presente.S10 estado_presente.S9 estado_presente.S8 estado_presente.S7 estado_presente.S6 estado_presente.S5 estado_presente.S4 estado_presente.S3 estado_presente.S2 estado_presente.S1 estado_presente.S0 
+estado_presente.S0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+estado_presente.S1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+estado_presente.S2 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+estado_presente.S3 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+estado_presente.S4 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+estado_presente.S5 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+estado_presente.S6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+estado_presente.S7 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+estado_presente.S8 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+estado_presente.S9 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+estado_presente.S10 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+estado_presente.S11 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+estado_presente.S12 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+estado_presente.S13 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado_presente.S14 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado_presente.S15 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
