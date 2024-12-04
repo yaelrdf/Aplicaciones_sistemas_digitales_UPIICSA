@@ -14,8 +14,9 @@
 - [Multiplexor](MULTIPLEXOR/MULTIPLEXOR.vhd)
 ----
 - [Señales de relog](CKL_MISC/CLK_MISC.vhd)
-- [Contador MOD16 LED](MOD16\MOD16.vhd)
+- [Contador MOD13 LED](MOD16\MOD16.vhd)
 - [Contador MOD8 DISPLAY](MOD_8_X/MOD_8_X.vhd)
+- [Contador MOD16 variables XY Display](MOD_16_XY/MOD_16_XY.vhd)
 
 
 
