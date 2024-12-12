@@ -1,0 +1,21 @@
+ENTRADAS:
+000
+001
+010
+011
+100
+
+SALIDAS:
+0000001
+1001111
+0010010
+0000110
+1001100
+
+
+=======SWICTH VHDL==========
+when "000" => decodificador <= "0000001";
+when "001" => decodificador <= "1001111";
+when "010" => decodificador <= "0010010";
+when "011" => decodificador <= "0000110";
+when "100" => decodificador <= "1001100";
