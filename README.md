@@ -16,8 +16,12 @@
 - [Señales de relog](CKL_MISC/CLK_MISC.vhd)
 - [Contador MOD13 LED](MOD16\MOD16.vhd)
 - [Contador MOD8 DISPLAY](MOD_8_X/MOD_8_X.vhd)
-- [Contador MOD16 variables XY Display](MOD_16_XY/MOD_16_XY.vhd)
-
+- [Contador MOD16 variables XY DISPLAY](MOD_16_XY/MOD_16_XY.vhd)
+----
+### Extras
+- [Contador MOD-5 Desendente (DISPLAY 7 Anodo)](MOD_5_DESENDENTE/MOD_5_DESENDENTE.vhd)
+- [Contador MOD-11 Desendente (DISPLAY 16 Catodo)](MOD11_DESENDENTE/MOD_11_DESENDENTE.vhd)
+- [COLIMA en display (16 Anodo)](PAIS_CLK/PAIS_CLK.vhd)
 
 
 
