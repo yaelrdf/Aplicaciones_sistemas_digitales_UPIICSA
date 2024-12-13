@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu Dec 12 21:04:22 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : PAIS_CLK
+Top-level Entity Name : PAIS_CLK
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 68 / 240 ( 28 % )
+Total pins : 19 / 80 ( 24 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

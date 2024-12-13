@@ -32,12 +32,14 @@ begin
 end process;
 
 --Contador para el manejo de display
-process(estado)
+process(clk_1hz)
 begin
-    if estado = "101" then --Maximo numero de combinaciones
-        estado <= (others => "0");
-    else
-        estado <= estado + "1";
+    if rising_edge(clk_1hz) then
+        if estado = "101" then --Maximo numero de combinaciones
+            estado <= (others => '0');
+        else
+            estado <= estado + "1";
+        end if;
     end if;
 end process;
 
@@ -52,6 +54,7 @@ begin
         when "011" => decodificador <= "00110011101111011";
         when "100" => decodificador <= "11001100010111111";
         when "101" => decodificador <= "00001100111001111";
+        when others => decodificador <= (others => '1');
     end case;
 end process;
 

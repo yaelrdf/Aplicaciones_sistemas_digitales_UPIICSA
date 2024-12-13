@@ -59,6 +59,7 @@ begin
         when "1000" => decodificador <= "11111111000110000";
         when "1001" => decodificador <= "11111101000110000";
         when "1010" => decodificador <= "01111011010000100";
+        when others => decodificador <= (others => '0');
     end case;
 end process;
 
