@@ -7,14 +7,14 @@ entity MOD_5_DESENDENTE is
     Port ( 
         clk : in std_logic;
         clk_1hz : inout std_logic;
-        decodificador : out std_logic_vector(6 downto 0);
-        --Estados
-        A,B,C : inout std_logic);
+        decodificador : out std_logic_vector(6 downto 0)
+    );
 
 end MOD_5_DESENDENTE;
 
 architecture behavioral of MOD_5_DESENDENTE is
 --Manejo del estado una vez realizadas las operaciones
+signal A,B,C : std_logic;
 signal estado : std_logic_vector(2 downto 0);
 signal contador_1hz : std_logic_vector(27 downto 0);
 
