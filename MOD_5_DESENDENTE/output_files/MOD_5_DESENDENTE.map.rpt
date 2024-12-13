@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MOD_5_DESENDENTE
-Thu Dec 12 17:39:09 2024
+Thu Dec 12 19:54:00 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Dec 12 17:39:09 2024          ;
+; Analysis & Synthesis Status ; Successful - Thu Dec 12 19:54:00 2024          ;
 ; Quartus Prime Version       ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name               ; MOD_5_DESENDENTE                               ;
 ; Top-level Entity Name       ; MOD_5_DESENDENTE                               ;
@@ -129,8 +129,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -140,13 +140,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                           ;
-+----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                              ; Library ;
-+----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------------------------------+---------+
-; MOD_5_DESENDENTE.vhd             ; yes             ; Auto-Found VHDL File  ; /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/MOD_5_DESENDENTE.vhd ;         ;
-+----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                               ; Library ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------------------------+---------+
+; mod_5_desendente.vhd             ; yes             ; Auto-Found VHDL File  ; C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/mod_5_desendente.vhd ;         ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -156,12 +156,12 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------+
 ; Total logic elements                        ; 74    ;
 ;     -- Combinational with no register       ; 42    ;
-;     -- Register only                        ; 16    ;
-;     -- Combinational with a register        ; 16    ;
+;     -- Register only                        ; 15    ;
+;     -- Combinational with a register        ; 17    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 9     ;
-;     -- 3 input functions                    ; 6     ;
+;     -- 3 input functions                    ; 7     ;
 ;     -- 2 input functions                    ; 42    ;
 ;     -- 1 input functions                    ; 1     ;
 ;     -- 0 input functions                    ; 0     ;
@@ -179,8 +179,8 @@ https://fpgasoftware.intel.com/eula.
 ; I/O pins                                    ; 9     ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 29    ;
-; Total fan-out                               ; 194   ;
-; Average fan-out                             ; 2.34  ;
+; Total fan-out                               ; 196   ;
+; Average fan-out                             ; 2.36  ;
 +---------------------------------------------+-------+
 
 
@@ -189,7 +189,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name      ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+------------------+--------------+
-; |MOD_5_DESENDENTE          ; 74 (74)     ; 32           ; 0          ; 9    ; 0            ; 42 (42)      ; 16 (16)           ; 16 (16)          ; 28 (28)         ; 0 (0)      ; |MOD_5_DESENDENTE   ; MOD_5_DESENDENTE ; work         ;
+; |MOD_5_DESENDENTE          ; 74 (74)     ; 32           ; 0          ; 9    ; 0            ; 42 (42)      ; 15 (15)           ; 17 (17)          ; 28 (28)         ; 0 (0)      ; |MOD_5_DESENDENTE   ; MOD_5_DESENDENTE ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -215,34 +215,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Dec 12 17:38:49 2024
+    Info: Processing started: Thu Dec 12 19:53:47 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MOD_5_DESENDENTE -c MOD_5_DESENDENTE
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Warning (12125): Using design file MOD_5_DESENDENTE.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: MOD_5_DESENDENTE-behavioral File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/MOD_5_DESENDENTE.vhd Line: 15
-    Info (12023): Found entity 1: MOD_5_DESENDENTE File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/MOD_5_DESENDENTE.vhd Line: 6
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Warning (12125): Using design file mod_5_desendente.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: MOD_5_DESENDENTE-behavioral File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/mod_5_desendente.vhd Line: 15
+    Info (12023): Found entity 1: MOD_5_DESENDENTE File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/mod_5_desendente.vhd Line: 6
 Info (12127): Elaborating entity "MOD_5_DESENDENTE" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at MOD_5_DESENDENTE.vhd(43): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/MOD_5_DESENDENTE.vhd Line: 43
-Warning (10492): VHDL Process Statement warning at MOD_5_DESENDENTE.vhd(43): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/MOD_5_DESENDENTE.vhd Line: 43
-Warning (10492): VHDL Process Statement warning at MOD_5_DESENDENTE.vhd(43): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/MOD_5_DESENDENTE.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at mod_5_desendente.vhd(43): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/mod_5_desendente.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at mod_5_desendente.vhd(43): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/mod_5_desendente.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at mod_5_desendente.vhd(43): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/mod_5_desendente.vhd Line: 43
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "clk_1hz" and its non-tri-state driver. File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/MOD_5_DESENDENTE.vhd Line: 9
+    Warning (13035): Inserted always-enabled tri-state buffer between "clk_1hz" and its non-tri-state driver. File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/mod_5_desendente.vhd Line: 9
 Info (13060): One or more bidirectional pins are fed by always enabled tri-state buffers
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "clk_1hz" is moved to its source File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/MOD_5_DESENDENTE.vhd Line: 9
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "clk_1hz" is moved to its source File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/mod_5_desendente.vhd Line: 9
 Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "clk_1hz~synth" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/MOD_5_DESENDENTE.vhd Line: 9
+    Warning (13010): Node "clk_1hz~synth" File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/mod_5_desendente.vhd Line: 9
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "decodificador[5]" is stuck at GND File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/MOD_5_DESENDENTE.vhd Line: 10
+    Warning (13410): Pin "decodificador[5]" is stuck at GND File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_5_DESENDENTE/mod_5_desendente.vhd Line: 10
 Info (21057): Implemented 83 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 7 output pins
     Info (21060): Implemented 1 bidirectional pins
     Info (21061): Implemented 74 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 380 megabytes
-    Info: Processing ended: Thu Dec 12 17:39:09 2024
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:46
+    Info: Peak virtual memory: 4767 megabytes
+    Info: Processing ended: Thu Dec 12 19:54:00 2024
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:22
 
 

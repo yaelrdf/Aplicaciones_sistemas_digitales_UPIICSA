@@ -1,5 +1,5 @@
 Flow report for MOD_5_DESENDENTE
-Thu Dec 12 17:39:19 2024
+Thu Dec 12 19:54:07 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,14 +41,14 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +-----------------------+------------------------------------------------+
-; Flow Status           ; Successful - Thu Dec 12 17:39:15 2024          ;
+; Flow Status           ; Successful - Thu Dec 12 19:54:05 2024          ;
 ; Quartus Prime Version ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name         ; MOD_5_DESENDENTE                               ;
 ; Top-level Entity Name ; MOD_5_DESENDENTE                               ;
 ; Family                ; MAX II                                         ;
 ; Device                ; EPM240T100C5                                   ;
 ; Timing Models         ; Final                                          ;
-; Total logic elements  ; 66 / 240 ( 28 % )                              ;
+; Total logic elements  ; 67 / 240 ( 28 % )                              ;
 ; Total pins            ; 9 / 80 ( 11 % )                                ;
 ; Total virtual pins    ; 0                                              ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                                  ;
@@ -60,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/12/2024 17:38:50 ;
+; Start date & time ; 12/12/2024 19:53:47 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MOD_5_DESENDENTE    ;
 +-------------------+---------------------+
@@ -71,7 +71,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------+---------------------------------+---------------+-------------+------------+
 ; Assignment Name                       ; Value                           ; Default Value ; Entity Name ; Section Id ;
 +---------------------------------------+---------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID                 ; 151938347676721.173404673006659 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID                 ; 231143715998239.173405482700924 ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP                ; 85                              ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP                ; 0                               ; --            ; --          ; --         ;
 ; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                            ; --            ; --          ; --         ;
@@ -84,24 +84,24 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 380 MB              ; 00:00:46                           ;
-; Fitter               ; 00:00:03     ; 1.0                     ; 772 MB              ; 00:00:03                           ;
-; Assembler            ; 00:00:00     ; 1.0                     ; 315 MB              ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 336 MB              ; 00:00:01                           ;
-; Total                ; 00:00:25     ; --                      ; --                  ; 00:00:51                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4767 MB             ; 00:00:22                           ;
+; Fitter               ; 00:00:02     ; 1.1                     ; 6152 MB             ; 00:00:02                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4669 MB             ; 00:00:00                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4674 MB             ; 00:00:01                           ;
+; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:25                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                          ;
-+----------------------+------------------+------------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name          ; OS Version ; Processor type ;
-+----------------------+------------------+------------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-TE7OR9J  ; Debian GNU/Linux ; 12         ; x86_64         ;
-; Fitter               ; DESKTOP-TE7OR9J  ; Debian GNU/Linux ; 12         ; x86_64         ;
-; Assembler            ; DESKTOP-TE7OR9J  ; Debian GNU/Linux ; 12         ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-TE7OR9J  ; Debian GNU/Linux ; 12         ; x86_64         ;
-+----------------------+------------------+------------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; YAEL-RDF-LAPTOP  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------

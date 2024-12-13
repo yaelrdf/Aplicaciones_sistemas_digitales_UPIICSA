@@ -36,9 +36,9 @@ end process;
 process(clk_1hz)
 begin
     if rising_edge(clk_1hz) then
-        A <= not(A) and not(B) and not(C);
-        B <= (A) or (A and B);
-        C <= (B and not(C)) or (A);
+        A <= not(B) and not(C) and not(A);
+        B <= (not(B) or C) and (A or B);
+        C <= not(C) and (A or B);
     end if;
     estado <= A&B&C;
 end process;
