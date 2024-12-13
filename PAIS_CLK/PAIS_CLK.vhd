@@ -32,6 +32,7 @@ begin
 end process;
 
 --Contador para el manejo de display
+--Incrementa con cada pulso de relog
 process(clk_1hz)
 begin
     if rising_edge(clk_1hz) then
@@ -44,7 +45,6 @@ begin
 end process;
 
 --Decodificador
-
 process(estado)
 begin
     case estado is
