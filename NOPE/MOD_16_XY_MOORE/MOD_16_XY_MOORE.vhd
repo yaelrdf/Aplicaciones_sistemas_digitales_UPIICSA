@@ -48,7 +48,7 @@ begin
             -- Stop
             when "01" => estado <= estado;
             -- Reset
-            when "10" => estado <= 0;
+            when "10" => estado <= 15;
             -- Multiples of 3 (ascending)
             when "11" => 
                 if estado < 15 then estado <= ((estado + 3) / 3) * 3;

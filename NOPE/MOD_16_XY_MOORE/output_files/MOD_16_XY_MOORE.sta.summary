@@ -3,19 +3,19 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Setup 'clk_redux:clk_redux_inst|clk_out~reg0'
-Slack : -17.308
-TNS   : -68.588
+Slack : -17.115
+TNS   : -68.368
 
 Type  : Setup 'clk'
-Slack : -8.316
-TNS   : -179.445
+Slack : -7.399
+TNS   : -168.759
 
 Type  : Hold 'clk'
-Slack : -1.798
-TNS   : -1.798
+Slack : -2.066
+TNS   : -2.066
 
 Type  : Hold 'clk_redux:clk_redux_inst|clk_out~reg0'
-Slack : 1.677
+Slack : 2.328
 TNS   : 0.000
 
 Type  : Minimum Pulse Width 'clk'

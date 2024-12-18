@@ -1,0 +1,58 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity MOD_6_DESENDENTE is
+    Port ( 
+        clk : in std_logic;
+        clk_1hz : inout std_logic;
+        decodificador : out std_logic_vector(6 downto 0)
+    );
+
+end MOD_6_DESENDENTE;
+
+architecture behavioral of MOD_6_DESENDENTE is
+--Manejo del estado una vez realizadas las operaciones
+signal estado : integer range 0 to 5;
+signal contador_1hz : std_logic_vector(27 downto 0);
+
+begin
+--Proceso relog 1hz
+process(clk)
+begin
+    if rising_edge(clk) then
+       if contador_1hz = "0001011111010111100001000000" then --25 millones en binario
+            contador_1hz <= (others => '0');
+            clk_1hz <= not clk_1hz;
+        else
+            contador_1hz <= contador_1hz + "1";
+        end if;
+    end if;
+end process;
+
+--Proceso para el manejo de estados
+process(clk_1hz)
+begin
+    if rising_edge(clk_1hz) then
+        if estado < 5
+            estado <= estado + 1;
+        else
+            estado <= 0;
+    end if;
+end process;
+
+process(estado)
+begin
+    case estado is
+        when 0 => display <= "0000001";
+        when 1 => display <= "1001111";
+        when 2 => display <= "0010010";
+        when 3 => display <= "0000110";
+        when 4 => display <= "1001100";
+        when 5 => display <= "0100100";
+        when 6 => display <= "0100000";
+        when 7 => display <= "0001111";
+    end case;
+end process;

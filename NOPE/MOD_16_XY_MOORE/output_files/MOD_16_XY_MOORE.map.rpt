@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MOD_16_XY_MOORE
-Fri Dec 13 02:03:48 2024
+Tue Dec 17 08:24:03 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -43,12 +43,12 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri Dec 13 02:03:48 2024          ;
+; Analysis & Synthesis Status ; Successful - Tue Dec 17 08:24:03 2024          ;
 ; Quartus Prime Version       ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name               ; MOD_16_XY_MOORE                                ;
 ; Top-level Entity Name       ; MOD_16_XY_MOORE                                ;
 ; Family                      ; MAX II                                         ;
-; Total logic elements        ; 107                                            ;
+; Total logic elements        ; 109                                            ;
 ; Total pins                  ; 25                                             ;
 ; Total virtual pins          ; 0                                              ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                  ;
@@ -131,8 +131,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -142,24 +142,24 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                   ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
-; MOD_16_XY_MOORE.vhd              ; yes             ; Auto-Found VHDL File         ; /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd        ;         ;
-; clk_redux.vhd                    ; yes             ; Auto-Found VHDL File         ; /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/clk_redux.vhd              ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; /home/yaelrdf/intelFPGA_lite/23.1std/quartus/libraries/megafunctions/lpm_divide.tdf                            ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; /home/yaelrdf/intelFPGA_lite/23.1std/quartus/libraries/megafunctions/abs_divider.inc                           ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; /home/yaelrdf/intelFPGA_lite/23.1std/quartus/libraries/megafunctions/sign_div_unsign.inc                       ;         ;
-; aglobal231.inc                   ; yes             ; Megafunction                 ; /home/yaelrdf/intelFPGA_lite/23.1std/quartus/libraries/megafunctions/aglobal231.inc                            ;         ;
-; db/lpm_divide_lvl.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/db/lpm_divide_lvl.tdf      ;         ;
-; db/sign_div_unsign_6kh.tdf       ; yes             ; Auto-Generated Megafunction  ; /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/db/sign_div_unsign_6kh.tdf ;         ;
-; db/alt_u_div_7ie.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/db/alt_u_div_7ie.tdf       ;         ;
-; db/add_sub_e7c.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/db/add_sub_e7c.tdf         ;         ;
-; db/add_sub_f7c.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/db/add_sub_f7c.tdf         ;         ;
-; db/add_sub_g7c.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/db/add_sub_g7c.tdf         ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                             ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                         ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
+; mod_16_xy_moore.vhd              ; yes             ; Auto-Found VHDL File         ; C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd        ;         ;
+; clk_redux.vhd                    ; yes             ; Auto-Found VHDL File         ; C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/clk_redux.vhd              ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_divide.tdf                                             ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/abs_divider.inc                                            ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sign_div_unsign.inc                                        ;         ;
+; aglobal231.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/aglobal231.inc                                             ;         ;
+; db/lpm_divide_lvl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/db/lpm_divide_lvl.tdf      ;         ;
+; db/sign_div_unsign_6kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/db/sign_div_unsign_6kh.tdf ;         ;
+; db/alt_u_div_7ie.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/db/alt_u_div_7ie.tdf       ;         ;
+; db/add_sub_e7c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/db/add_sub_e7c.tdf         ;         ;
+; db/add_sub_f7c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/db/add_sub_f7c.tdf         ;         ;
+; db/add_sub_g7c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/db/add_sub_g7c.tdf         ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -167,24 +167,24 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 107   ;
-;     -- Combinational with no register       ; 77    ;
+; Total logic elements                        ; 109   ;
+;     -- Combinational with no register       ; 79    ;
 ;     -- Register only                        ; 12    ;
 ;     -- Combinational with a register        ; 18    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 31    ;
-;     -- 3 input functions                    ; 7     ;
-;     -- 2 input functions                    ; 51    ;
+;     -- 4 input functions                    ; 26    ;
+;     -- 3 input functions                    ; 12    ;
+;     -- 2 input functions                    ; 53    ;
 ;     -- 1 input functions                    ; 6     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 75    ;
+;     -- normal mode                          ; 77    ;
 ;     -- arithmetic mode                      ; 32    ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
-;     -- synchronous clear/load mode          ; 2     ;
+;     -- synchronous clear/load mode          ; 4     ;
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 30    ;
@@ -192,8 +192,8 @@ https://fpgasoftware.intel.com/eula.
 ; I/O pins                                    ; 25    ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 26    ;
-; Total fan-out                               ; 318   ;
-; Average fan-out                             ; 2.41  ;
+; Total fan-out                               ; 321   ;
+; Average fan-out                             ; 2.40  ;
 +---------------------------------------------+-------+
 
 
@@ -202,7 +202,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node             ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                                                    ; Entity Name         ; Library Name ;
 +----------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |MOD_16_XY_MOORE                       ; 107 (27)    ; 30           ; 0          ; 25   ; 0            ; 77 (23)      ; 12 (0)            ; 18 (4)           ; 38 (0)          ; 0 (0)      ; |MOD_16_XY_MOORE                                                                                                                       ; MOD_16_XY_MOORE     ; work         ;
+; |MOD_16_XY_MOORE                       ; 109 (29)    ; 30           ; 0          ; 25   ; 0            ; 79 (25)      ; 12 (0)            ; 18 (4)           ; 38 (0)          ; 0 (0)      ; |MOD_16_XY_MOORE                                                                                                                       ; MOD_16_XY_MOORE     ; work         ;
 ;    |clk_redux:clk_redux_inst|          ; 59 (59)     ; 26           ; 0          ; 0    ; 0            ; 33 (33)      ; 12 (12)           ; 14 (14)          ; 25 (25)         ; 0 (0)      ; |MOD_16_XY_MOORE|clk_redux:clk_redux_inst                                                                                              ; clk_redux           ; work         ;
 ;    |lpm_divide:Div0|                   ; 21 (0)      ; 0            ; 0          ; 0    ; 0            ; 21 (0)       ; 0 (0)             ; 0 (0)            ; 13 (0)          ; 0 (0)      ; |MOD_16_XY_MOORE|lpm_divide:Div0                                                                                                       ; lpm_divide          ; work         ;
 ;       |lpm_divide_lvl:auto_generated|  ; 21 (0)      ; 0            ; 0          ; 0    ; 0            ; 21 (0)       ; 0 (0)             ; 0 (0)            ; 13 (0)          ; 0 (0)      ; |MOD_16_XY_MOORE|lpm_divide:Div0|lpm_divide_lvl:auto_generated                                                                         ; lpm_divide_lvl      ; work         ;
@@ -222,7 +222,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Total registers                              ; 30    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 2     ;
+; Number of registers using Synchronous Load   ; 4     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
@@ -235,8 +235,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |MOD_16_XY_MOORE|estado[1]~reg0 ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; Yes        ; |MOD_16_XY_MOORE|estado[3]~reg0 ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |MOD_16_XY_MOORE|estado[0]~reg0 ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |MOD_16_XY_MOORE|estado[2]~reg0 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
 
 
@@ -269,69 +269,69 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Dec 13 02:03:27 2024
+    Info: Processing started: Tue Dec 17 08:23:50 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MOD_16_XY_MOORE -c MOD_16_XY_MOORE
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Warning (12125): Using design file MOD_16_XY_MOORE.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: MOD_16_XY_MOORE-Behavioral File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 18
-    Info (12023): Found entity 1: MOD_16_XY_MOORE File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 7
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Warning (12125): Using design file mod_16_xy_moore.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: MOD_16_XY_MOORE-Behavioral File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 18
+    Info (12023): Found entity 1: MOD_16_XY_MOORE File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 7
 Info (12127): Elaborating entity "MOD_16_XY_MOORE" for the top level hierarchy
 Warning (12125): Using design file clk_redux.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: clk_redux-Behavioral File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/clk_redux.vhd Line: 13
-    Info (12023): Found entity 1: clk_redux File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/clk_redux.vhd Line: 6
-Info (12128): Elaborating entity "clk_redux" for hierarchy "clk_redux:clk_redux_inst" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 30
+    Info (12022): Found design unit 1: clk_redux-Behavioral File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/clk_redux.vhd Line: 13
+    Info (12023): Found entity 1: clk_redux File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/clk_redux.vhd Line: 6
+Info (12128): Elaborating entity "clk_redux" for hierarchy "clk_redux:clk_redux_inst" File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 30
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 54
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 54
-Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 54
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 54
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 54
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 54
     Info (12134): Parameter "LPM_WIDTHN" = "5"
     Info (12134): Parameter "LPM_WIDTHD" = "2"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_lvl.tdf
-    Info (12023): Found entity 1: lpm_divide_lvl File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/db/lpm_divide_lvl.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_lvl File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/db/lpm_divide_lvl.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_6kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_6kh File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/db/sign_div_unsign_6kh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_6kh File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/db/sign_div_unsign_6kh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_7ie.tdf
-    Info (12023): Found entity 1: alt_u_div_7ie File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/db/alt_u_div_7ie.tdf Line: 29
+    Info (12023): Found entity 1: alt_u_div_7ie File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/db/alt_u_div_7ie.tdf Line: 29
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_e7c.tdf
-    Info (12023): Found entity 1: add_sub_e7c File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/db/add_sub_e7c.tdf Line: 23
+    Info (12023): Found entity 1: add_sub_e7c File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/db/add_sub_e7c.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_f7c.tdf
-    Info (12023): Found entity 1: add_sub_f7c File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/db/add_sub_f7c.tdf Line: 23
+    Info (12023): Found entity 1: add_sub_f7c File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/db/add_sub_f7c.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_g7c.tdf
-    Info (12023): Found entity 1: add_sub_g7c File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/db/add_sub_g7c.tdf Line: 25
+    Info (12023): Found entity 1: add_sub_g7c File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/db/add_sub_g7c.tdf Line: 25
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "clk_1hz" and its non-tri-state driver. File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 10
-    Warning (13035): Inserted always-enabled tri-state buffer between "estado[0]" and its non-tri-state driver. File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 41
-    Warning (13035): Inserted always-enabled tri-state buffer between "estado[1]" and its non-tri-state driver. File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 41
-    Warning (13035): Inserted always-enabled tri-state buffer between "estado[2]" and its non-tri-state driver. File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 41
-    Warning (13035): Inserted always-enabled tri-state buffer between "estado[3]" and its non-tri-state driver. File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 41
+    Warning (13035): Inserted always-enabled tri-state buffer between "clk_1hz" and its non-tri-state driver. File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 10
+    Warning (13035): Inserted always-enabled tri-state buffer between "estado[0]" and its non-tri-state driver. File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 41
+    Warning (13035): Inserted always-enabled tri-state buffer between "estado[1]" and its non-tri-state driver. File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 41
+    Warning (13035): Inserted always-enabled tri-state buffer between "estado[2]" and its non-tri-state driver. File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 41
+    Warning (13035): Inserted always-enabled tri-state buffer between "estado[3]" and its non-tri-state driver. File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 41
 Info (13060): One or more bidirectional pins are fed by always enabled tri-state buffers
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "clk_1hz" is moved to its source File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 10
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "estado[0]" is moved to its source File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 41
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "estado[1]" is moved to its source File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 41
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "estado[2]" is moved to its source File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 41
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "estado[3]" is moved to its source File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 41
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "clk_1hz" is moved to its source File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 10
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "estado[0]" is moved to its source File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 41
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "estado[1]" is moved to its source File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 41
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "estado[2]" is moved to its source File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 41
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "estado[3]" is moved to its source File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 41
 Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "clk_1hz~synth" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 10
-    Warning (13010): Node "estado[0]~synth" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 41
-    Warning (13010): Node "estado[1]~synth" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 41
-    Warning (13010): Node "estado[2]~synth" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 41
-    Warning (13010): Node "estado[3]~synth" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 41
+    Warning (13010): Node "clk_1hz~synth" File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 10
+    Warning (13010): Node "estado[0]~synth" File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 41
+    Warning (13010): Node "estado[1]~synth" File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 41
+    Warning (13010): Node "estado[2]~synth" File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 41
+    Warning (13010): Node "estado[3]~synth" File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 41
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "display[0]" is stuck at GND File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 11
-    Warning (13410): Pin "display[1]" is stuck at GND File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 11
-    Warning (13410): Pin "display[8]" is stuck at GND File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 11
-Info (21057): Implemented 132 device resources after synthesis - the final resource count might be different
+    Warning (13410): Pin "display[0]" is stuck at GND File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 11
+    Warning (13410): Pin "display[1]" is stuck at GND File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 11
+    Warning (13410): Pin "display[8]" is stuck at GND File: C:/Users/mcmin/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/NOPE/MOD_16_XY_MOORE/mod_16_xy_moore.vhd Line: 11
+Info (21057): Implemented 134 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 17 output pins
     Info (21060): Implemented 5 bidirectional pins
-    Info (21061): Implemented 107 logic cells
+    Info (21061): Implemented 109 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 386 megabytes
-    Info: Processing ended: Fri Dec 13 02:03:48 2024
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:50
+    Info: Peak virtual memory: 4773 megabytes
+    Info: Processing ended: Tue Dec 17 08:24:03 2024
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:23
 
 

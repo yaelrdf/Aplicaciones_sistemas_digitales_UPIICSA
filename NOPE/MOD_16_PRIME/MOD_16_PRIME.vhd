@@ -3,16 +3,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity MOD_19_XY is
+entity MOD_16_PRIME is
     Port ( 
         clk,X,Y : in std_logic;
         clk_1hz : inout std_logic;
         display : out std_logic_vector(16 downto 0);
         estado : inout std_logic_vector(3 downto 0)
     );
-end MOD_19_XY;
+end MOD_16_PRIME;
 
-architecture Behavioral of MOD_19_XY is
+architecture Behavioral of MOD_16_PRIME is
 --Componente del relog
     component clk_redux
         Port ( 
@@ -36,8 +36,8 @@ signal C_estado : std_logic_vector(5 downto 0);
 --Manejo de estados Tabla de transicion
 process(clk_1hz)
 begin
+    C_estado <= X&Y&estado;
     if rising_edge(clk_1hz)then
-        C_estado <= X&Y&estado;
         case C_estado is
             when "000000" => estado <= "1111";
             when "000001" => estado <= "0000";

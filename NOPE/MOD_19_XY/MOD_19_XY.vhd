@@ -36,8 +36,8 @@ signal C_estado : std_logic_vector(5 downto 0);
 --Manejo de estados Tabla de transicion
 process(clk_1hz)
 begin
+    C_estado <= X&Y&estado;
     if rising_edge(clk_1hz)then
-        C_estado <= X&Y&estado;
         case C_estado is
             when "000000" => estado <= "0101";
             when "000001" => estado <= "0101";
@@ -49,12 +49,12 @@ begin
             when "000111" => estado <= "1010";
             when "001000" => estado <= "1010";
             when "001001" => estado <= "1010";
-            when "001010" => estado <= "1111";
-            when "001011" => estado <= "1111";
-            when "001100" => estado <= "1111";
-            when "001101" => estado <= "1111";
-            when "001110" => estado <= "1111";
-            when "001111" => estado <= "0101";
+            when "001010" => estado <= "0000";
+            when "001011" => estado <= "0000";
+            when "001100" => estado <= "0000";
+            when "001101" => estado <= "0000";
+            when "001110" => estado <= "0000";
+            when "001111" => estado <= "0000";
             when "010000" => estado <= "0000";
             when "010001" => estado <= "0001";
             when "010010" => estado <= "0010";
@@ -87,22 +87,22 @@ begin
             when "101101" => estado <= "0000";
             when "101110" => estado <= "0000";
             when "101111" => estado <= "0000";
-            when "110000" => estado <= "1111";
-            when "110001" => estado <= "0000";
-            when "110010" => estado <= "0000";
-            when "110011" => estado <= "0000";
-            when "110100" => estado <= "0011";
-            when "110101" => estado <= "0011";
-            when "110110" => estado <= "0011";
-            when "110111" => estado <= "0110";
-            when "111000" => estado <= "0110";
-            when "111001" => estado <= "0110";
-            when "111010" => estado <= "1001";
-            when "111011" => estado <= "1001";
-            when "111100" => estado <= "1001";
-            when "111101" => estado <= "1100";
-            when "111110" => estado <= "1100";
-            when "111111" => estado <= "1100";
+            when "110000" => estado <= "0011";
+            when "110001" => estado <= "0011";
+            when "110010" => estado <= "0011";
+            when "110011" => estado <= "0110";
+            when "110100" => estado <= "0110";
+            when "110101" => estado <= "0110";
+            when "110110" => estado <= "1001";
+            when "110111" => estado <= "1001";
+            when "111000" => estado <= "1001";
+            when "111001" => estado <= "1100";
+            when "111010" => estado <= "1100";
+            when "111011" => estado <= "1100";
+            when "111100" => estado <= "1111";
+            when "111101" => estado <= "0000";
+            when "111110" => estado <= "0000";
+            when "111111" => estado <= "0000";
         end case;
     end if;
 end process;
