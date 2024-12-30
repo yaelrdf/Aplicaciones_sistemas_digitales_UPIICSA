@@ -1,0 +1,69 @@
+|MOD_16_XY_MOORE
+clk => clk_redux:clk_redux_inst.clk_in
+X => A.IN0
+X => A.IN0
+X => B.IN1
+X => C.IN1
+X => D.IN1
+X => A.IN0
+Y => A.IN1
+Y => A.IN1
+Y => A.IN1
+Y => A.IN1
+clk_1hz <> clk_redux:clk_redux_inst.clk_out
+A <> A~reg0
+B <> B~reg0
+C <> C~reg0
+D <> D~reg0
+display[0] << <GND>
+display[1] << <GND>
+display[2] << Mux13.DB_MAX_OUTPUT_PORT_TYPE
+display[3] << Mux12.DB_MAX_OUTPUT_PORT_TYPE
+display[4] << Mux11.DB_MAX_OUTPUT_PORT_TYPE
+display[5] << Mux10.DB_MAX_OUTPUT_PORT_TYPE
+display[6] << Mux9.DB_MAX_OUTPUT_PORT_TYPE
+display[7] << Mux8.DB_MAX_OUTPUT_PORT_TYPE
+display[8] << <GND>
+display[9] << Mux7.DB_MAX_OUTPUT_PORT_TYPE
+display[10] << Mux6.DB_MAX_OUTPUT_PORT_TYPE
+display[11] << Mux5.DB_MAX_OUTPUT_PORT_TYPE
+display[12] << Mux4.DB_MAX_OUTPUT_PORT_TYPE
+display[13] << Mux3.DB_MAX_OUTPUT_PORT_TYPE
+display[14] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
+display[15] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+display[16] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MOD_16_XY_MOORE|clk_redux:clk_redux_inst
+clk_in => clk_out~reg0.CLK
+clk_in => contador_1hz[0].CLK
+clk_in => contador_1hz[1].CLK
+clk_in => contador_1hz[2].CLK
+clk_in => contador_1hz[3].CLK
+clk_in => contador_1hz[4].CLK
+clk_in => contador_1hz[5].CLK
+clk_in => contador_1hz[6].CLK
+clk_in => contador_1hz[7].CLK
+clk_in => contador_1hz[8].CLK
+clk_in => contador_1hz[9].CLK
+clk_in => contador_1hz[10].CLK
+clk_in => contador_1hz[11].CLK
+clk_in => contador_1hz[12].CLK
+clk_in => contador_1hz[13].CLK
+clk_in => contador_1hz[14].CLK
+clk_in => contador_1hz[15].CLK
+clk_in => contador_1hz[16].CLK
+clk_in => contador_1hz[17].CLK
+clk_in => contador_1hz[18].CLK
+clk_in => contador_1hz[19].CLK
+clk_in => contador_1hz[20].CLK
+clk_in => contador_1hz[21].CLK
+clk_in => contador_1hz[22].CLK
+clk_in => contador_1hz[23].CLK
+clk_in => contador_1hz[24].CLK
+clk_in => contador_1hz[25].CLK
+clk_in => contador_1hz[26].CLK
+clk_in => contador_1hz[27].CLK
+clk_out <> clk_out~reg0
+
+
