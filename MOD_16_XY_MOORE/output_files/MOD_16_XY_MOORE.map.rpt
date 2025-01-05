@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MOD_16_XY_MOORE
-Sun Dec 29 17:57:34 2024
+Sun Jan  5 02:58:49 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,12 +41,12 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sun Dec 29 17:57:34 2024          ;
+; Analysis & Synthesis Status ; Successful - Sun Jan  5 02:58:49 2025          ;
 ; Quartus Prime Version       ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name               ; MOD_16_XY_MOORE                                ;
 ; Top-level Entity Name       ; MOD_16_XY_MOORE                                ;
 ; Family                      ; MAX II                                         ;
-; Total logic elements        ; 101                                            ;
+; Total logic elements        ; 105                                            ;
 ; Total pins                  ; 25                                             ;
 ; Total virtual pins          ; 0                                              ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                  ;
@@ -140,14 +140,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                            ; Library ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------------------+---------+
-; MOD_16_XY_MOORE.vhd              ; yes             ; Auto-Found VHDL File  ; /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd ;         ;
-; clk_redux.vhd                    ; yes             ; Auto-Found VHDL File  ; /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/clk_redux.vhd       ;         ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                     ;
++----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                        ; Library ;
++----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------------------------+---------+
+; MOD_16_XY_MOORE.vhd              ; yes             ; Auto-Found VHDL File  ; /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd ;         ;
+; clk_redux.vhd                    ; yes             ; Auto-Found VHDL File  ; /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/clk_redux.vhd       ;         ;
++----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -155,20 +155,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 101   ;
-;     -- Combinational with no register       ; 68    ;
+; Total logic elements                        ; 105   ;
+;     -- Combinational with no register       ; 72    ;
 ;     -- Register only                        ; 15    ;
 ;     -- Combinational with a register        ; 18    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 35    ;
-;     -- 3 input functions                    ; 5     ;
+;     -- 4 input functions                    ; 41    ;
+;     -- 3 input functions                    ; 3     ;
 ;     -- 2 input functions                    ; 45    ;
 ;     -- 1 input functions                    ; 1     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 74    ;
+;     -- normal mode                          ; 78    ;
 ;     -- arithmetic mode                      ; 27    ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
@@ -180,8 +180,8 @@ https://fpgasoftware.intel.com/eula.
 ; I/O pins                                    ; 25    ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 29    ;
-; Total fan-out                               ; 313   ;
-; Average fan-out                             ; 2.48  ;
+; Total fan-out                               ; 331   ;
+; Average fan-out                             ; 2.55  ;
 +---------------------------------------------+-------+
 
 
@@ -190,7 +190,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node    ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                       ; Entity Name     ; Library Name ;
 +-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------+-----------------+--------------+
-; |MOD_16_XY_MOORE              ; 101 (35)    ; 33           ; 0          ; 25   ; 0            ; 68 (31)      ; 15 (0)            ; 18 (4)           ; 28 (0)          ; 0 (0)      ; |MOD_16_XY_MOORE                          ; MOD_16_XY_MOORE ; work         ;
+; |MOD_16_XY_MOORE              ; 105 (39)    ; 33           ; 0          ; 25   ; 0            ; 72 (35)      ; 15 (0)            ; 18 (4)           ; 28 (0)          ; 0 (0)      ; |MOD_16_XY_MOORE                          ; MOD_16_XY_MOORE ; work         ;
 ;    |clk_redux:clk_redux_inst| ; 66 (66)     ; 29           ; 0          ; 0    ; 0            ; 37 (37)      ; 15 (15)           ; 14 (14)          ; 28 (28)         ; 0 (0)      ; |MOD_16_XY_MOORE|clk_redux:clk_redux_inst ; clk_redux       ; work         ;
 +-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -217,54 +217,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Sun Dec 29 17:57:11 2024
+    Info: Processing started: Sun Jan  5 02:58:30 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MOD_16_XY_MOORE -c MOD_16_XY_MOORE
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12125): Using design file MOD_16_XY_MOORE.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: MOD_16_XY_MOORE-Behavioral File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 14
-    Info (12023): Found entity 1: MOD_16_XY_MOORE File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 6
+    Info (12022): Found design unit 1: MOD_16_XY_MOORE-Behavioral File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 14
+    Info (12023): Found entity 1: MOD_16_XY_MOORE File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 6
 Info (12127): Elaborating entity "MOD_16_XY_MOORE" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at MOD_16_XY_MOORE.vhd(47): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 47
-Warning (10492): VHDL Process Statement warning at MOD_16_XY_MOORE.vhd(47): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 47
-Warning (10492): VHDL Process Statement warning at MOD_16_XY_MOORE.vhd(47): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 47
-Warning (10492): VHDL Process Statement warning at MOD_16_XY_MOORE.vhd(47): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 47
-Warning (10492): VHDL Process Statement warning at MOD_16_XY_MOORE.vhd(49): signal "estado" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 49
+Warning (10492): VHDL Process Statement warning at MOD_16_XY_MOORE.vhd(58): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 58
+Warning (10492): VHDL Process Statement warning at MOD_16_XY_MOORE.vhd(58): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 58
+Warning (10492): VHDL Process Statement warning at MOD_16_XY_MOORE.vhd(58): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 58
+Warning (10492): VHDL Process Statement warning at MOD_16_XY_MOORE.vhd(58): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 58
+Warning (10492): VHDL Process Statement warning at MOD_16_XY_MOORE.vhd(60): signal "estado" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 60
 Warning (12125): Using design file clk_redux.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: clk_redux-Behavioral File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/clk_redux.vhd Line: 13
-    Info (12023): Found entity 1: clk_redux File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/clk_redux.vhd Line: 6
-Info (12128): Elaborating entity "clk_redux" for hierarchy "clk_redux:clk_redux_inst" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 27
+    Info (12022): Found design unit 1: clk_redux-Behavioral File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/clk_redux.vhd Line: 13
+    Info (12023): Found entity 1: clk_redux File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/clk_redux.vhd Line: 6
+Info (12128): Elaborating entity "clk_redux" for hierarchy "clk_redux:clk_redux_inst" File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 27
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "clk_1hz" and its non-tri-state driver. File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
-    Warning (13035): Inserted always-enabled tri-state buffer between "A" and its non-tri-state driver. File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
-    Warning (13035): Inserted always-enabled tri-state buffer between "B" and its non-tri-state driver. File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
-    Warning (13035): Inserted always-enabled tri-state buffer between "C" and its non-tri-state driver. File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
-    Warning (13035): Inserted always-enabled tri-state buffer between "D" and its non-tri-state driver. File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
+    Warning (13035): Inserted always-enabled tri-state buffer between "clk_1hz" and its non-tri-state driver. File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
+    Warning (13035): Inserted always-enabled tri-state buffer between "A" and its non-tri-state driver. File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
+    Warning (13035): Inserted always-enabled tri-state buffer between "B" and its non-tri-state driver. File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
+    Warning (13035): Inserted always-enabled tri-state buffer between "C" and its non-tri-state driver. File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
+    Warning (13035): Inserted always-enabled tri-state buffer between "D" and its non-tri-state driver. File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
 Info (13060): One or more bidirectional pins are fed by always enabled tri-state buffers
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "clk_1hz" is moved to its source File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "A" is moved to its source File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "B" is moved to its source File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "C" is moved to its source File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "D" is moved to its source File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "clk_1hz" is moved to its source File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "A" is moved to its source File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "B" is moved to its source File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "C" is moved to its source File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "D" is moved to its source File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
 Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "clk_1hz~synth" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
-    Warning (13010): Node "A~synth" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
-    Warning (13010): Node "B~synth" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
-    Warning (13010): Node "C~synth" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
-    Warning (13010): Node "D~synth" File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
+    Warning (13010): Node "clk_1hz~synth" File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
+    Warning (13010): Node "A~synth" File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
+    Warning (13010): Node "B~synth" File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
+    Warning (13010): Node "C~synth" File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
+    Warning (13010): Node "D~synth" File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 9
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "display[0]" is stuck at GND File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 10
-    Warning (13410): Pin "display[1]" is stuck at GND File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 10
-    Warning (13410): Pin "display[8]" is stuck at GND File: /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 10
-Info (21057): Implemented 126 device resources after synthesis - the final resource count might be different
+    Warning (13410): Pin "display[0]" is stuck at GND File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 10
+    Warning (13410): Pin "display[1]" is stuck at GND File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 10
+    Warning (13410): Pin "display[8]" is stuck at GND File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd Line: 10
+Info (21057): Implemented 130 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 17 output pins
     Info (21060): Implemented 5 bidirectional pins
-    Info (21061): Implemented 101 logic cells
+    Info (21061): Implemented 105 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
-    Info: Peak virtual memory: 380 megabytes
-    Info: Processing ended: Sun Dec 29 17:57:34 2024
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:52
+    Info: Peak virtual memory: 386 megabytes
+    Info: Processing ended: Sun Jan  5 02:58:49 2025
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:46
 
 

@@ -1,5 +1,5 @@
 Assembler report for MOD_16_XY_MOORE
-Sun Dec 29 17:57:42 2024
+Sun Jan  5 02:58:56 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Dec 29 17:57:42 2024 ;
+; Assembler Status      ; Successful - Sun Jan  5 02:58:56 2025 ;
 ; Revision Name         ; MOD_16_XY_MOORE                       ;
 ; Top-level Entity Name ; MOD_16_XY_MOORE                       ;
 ; Family                ; MAX II                                ;
@@ -53,13 +53,13 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                            ;
-+----------------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                            ;
-+----------------------------------------------------------------------------------------------------------------------+
-; /home/yaelrdf/Documents/GIT/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/output_files/MOD_16_XY_MOORE.pof ;
-+----------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                        ;
++------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                        ;
++------------------------------------------------------------------------------------------------------------------+
+; /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/MOD_16_XY_MOORE/output_files/MOD_16_XY_MOORE.pof ;
++------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------+
@@ -67,8 +67,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------+------------------------------+
 ; Option         ; Setting                      ;
 +----------------+------------------------------+
-; JTAG usercode  ; 0x00181E94                   ;
-; Checksum       ; 0x00182294                   ;
+; JTAG usercode  ; 0x001820C5                   ;
+; Checksum       ; 0x001824D5                   ;
 +----------------+------------------------------+
 
 
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Sun Dec 29 17:57:42 2024
+    Info: Processing started: Sun Jan  5 02:58:56 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off MOD_16_XY_MOORE -c MOD_16_XY_MOORE
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 315 megabytes
-    Info: Processing ended: Sun Dec 29 17:57:42 2024
+    Info: Peak virtual memory: 313 megabytes
+    Info: Processing ended: Sun Jan  5 02:58:56 2025
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 

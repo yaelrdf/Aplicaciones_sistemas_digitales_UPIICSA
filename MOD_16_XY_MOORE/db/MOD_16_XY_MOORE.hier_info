@@ -2,14 +2,14 @@
 clk => clk_redux:clk_redux_inst.clk_in
 X => A.IN0
 X => A.IN0
+X => A.IN0
 X => B.IN1
 X => C.IN1
-X => D.IN1
-X => A.IN0
 Y => A.IN1
 Y => A.IN1
 Y => A.IN1
 Y => A.IN1
+Y => D.IN1
 clk_1hz <> clk_redux:clk_redux_inst.clk_out
 A <> A~reg0
 B <> B~reg0
