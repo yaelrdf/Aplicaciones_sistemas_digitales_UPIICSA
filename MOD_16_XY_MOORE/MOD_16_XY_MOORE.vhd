@@ -36,10 +36,17 @@ signal estado : std_logic_vector(3 downto 0);
 process(clk_1hz)
     begin
         if rising_edge(clk_1hz) then
-            A <= (X or not(Y) or A) and (not(X) or not(Y) or A) and (X or Y or A) and (Y or Y or B or C or D) and (not(X) or not(Y) or not(A) or not(B) or not(C) or not(D));
-            B <= (X or not(Y) or B) and (X or B) and (X or Y or A or B) and (B or not(C) or D) and (not(X) or not(Y) or A) and (not(X) or not(Y) or not(B) or not(C) or not(D)) and (not(X) or not(Y) or B or C or D);
-            C <= (X or Y) and (X or not(B) or C) and (X or B or C) and (not(X) or not(Y) or not(A) or B) and (not(X) or not(Y) or not(B) or not(C) or not(D)) and (not(X) or not(Y) or A or not(B) or not(C));
-            D <= (X or Y) and (X or D) and (X or B or C or D) and (X or not(B) or not(C) or D) and (A or not(B) or C) and (A or B or not(C) or not(D)) and (not(X) or not(Y) or not(A) or B or C or not(D)) and (not(X) or not(Y) or not(A) or B or not(C) or D) and (not(X) or not(Y) or not(A) or not(B) or not(C) or not(D));
+            --A <= (X or not(Y) or A) and (not(X) or not(Y) or A) and (X or Y or A) and (Y or Y or B or C or D) and (not(X) or not(Y) or not(A) or not(B) or not(C) or not(D));
+            --B <= (X or not(Y) or B) and (X or B) and (X or Y or A or B) and (B or not(C) or D) and (not(X) or not(Y) or A) and (not(X) or not(Y) or not(B) or not(C) or not(D)) and (not(X) or not(Y) or B or C or D);
+            --C <= (X or Y) and (X or not(B) or C) and (X or B or C) and (not(X) or not(Y) or not(A) or B) and (not(X) or not(Y) or not(B) or not(C) or not(D)) and (not(X) or not(Y) or A or not(B) or not(C));
+            --D <= (X or Y) and (X or D) and (X or B or C or D) and (X or not(B) or not(C) or D) and (A or not(B) or C) and (A or B or not(C) or not(D)) and (not(X) or not(Y) or not(A) or B or C or not(D)) and (not(X) or not(Y) or not(A) or B or not(C) or D) and (not(X) or not(Y) or not(A) or not(B) or not(C) or not(D));
+
+            --C3 Primos
+            A <= (not(X) and Y and A) or (X and Y and not(A) and not(B)) or (not(A) and B and not(C) and not(D)) or (not(A) and not(B) and C) or (not(A) and B and C and D) or (not(X) and not(Y) and not(A) and not(D));
+            B <= (not(X) and Y and B) or (X and Y and not(B) and C and D) or (X and Y and B and not(C) and not(D)) or (X and Y and not(A) and B and not(C)) or (not(A) and B and C and not(D)) or (not(X) and not(Y) and not(A) and B and C) or (not(X) and not(Y) and not(B) and not(C) and not(D)) or (not(X) and not(Y) and A and not(B) and not(C)) or (not(X) and not(Y) and A and not(B) and C and not(D));
+            C <= (X and Y and B and C) or (X and Y and not(B) and not(C)) or (not(X) and Y and not(B) and C) or (not(X) and A and B and C) or (X and Y and B and D) or (not(X) and not(Y) and A and B) or (X and Y and not(A)) or (X and Y and not(B) and C and not(D)) or (not(X) and Y and B and C) or (not(X) and A and not(B) and C and D) or (not(X) and not(Y) and not(A) and not(B) and not(C) and not(D));
+            D <= (X and Y and not(A)) or (not(X) and Y and B and D) or (not(X) and Y and not(B) and D) or (not(A) and B and C) or (X and Y and A and not(B)) or (X and Y and B and not(C) and not(D)) or (not(X) and not(Y) and A) or (not(X) and not(Y) and not(B) and not(C) and not(D)) or (not(X) and not(Y) and A and not(B) and C and not(D));
+
         end if;                                                                                   
     
     --Concatenacion del estado para el manejo de display
