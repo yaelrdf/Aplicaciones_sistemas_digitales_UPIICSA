@@ -19,7 +19,7 @@
 - [Contador MOD16 variables XY DISPLAY](MOD_16_XY/MOD_16_XY.vhd)
 ----
 ### Contadores con variables externas
-> [!NOTE]
+> [!Warning]
 > Los codigos encontrados en esta seccion tienen condiciones especificas documentados en las tablas posteriores al codigo.
 >Todos fueron realizados bajo el metodo **Diagrama de estados**
 - [Contador MOD 16 con variables XY DISPLAY](MOD_16_XY_C1/MOD_16_XY_C1.vhd)
