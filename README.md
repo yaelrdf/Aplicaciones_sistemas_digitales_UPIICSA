@@ -6,10 +6,10 @@
 
 ## Indice
 - [Comuertas logicas](COMPUERTAS/COMPUERTAS.vhd)
-- [Sumador](SUMADOR/SUMADOR.vhd)
-- [Restador con comparador](RESTA_COMPARACION/RESTA_COMPARACION.vhd)
+- [Sumador 4 bits](SUMADOR/SUMADOR.vhd)
+- [Restador con comparador de 3 bits](RESTA_COMPARACION/RESTA_COMPARACION.vhd)
 - [Numeros par](NUMEROSPAR/NUMEROSPAR.vhd)
-- [Restador DYSPLAY](RESTA_3_BIT/RESTA_3_BIT.vhd)
+- [Restador 3 bits DYSPLAY](RESTA_3_BIT/RESTA_3_BIT.vhd)
 - [Hexadecimal a binario DYSPLAY](HEXA_BIN_EQU/HEXA_BIN_EQU.vhd)
 - [Multiplexor](MULTIPLEXOR/MULTIPLEXOR.vhd)
 ----
@@ -18,10 +18,48 @@
 - [Contador MOD8 DISPLAY](MOD_8_X/MOD_8_X.vhd)
 - [Contador MOD16 variables XY DISPLAY](MOD_16_XY/MOD_16_XY.vhd)
 ----
+### Contadores con variables externas
+> [!NOTE]
+> Los codigos encontrados en esta seccion tienen condiciones especificas documentados en las tablas posteriores al codigo.
+>Todos fueron realizados bajo el metodo **Diagrama de estados**
+- [Contador MOD 16 con variables XY DISPLAY](MOD_16_XY_C1/MOD_16_XY_C1.vhd)
+
+|X     | Y   | Comportamiento |
+| :---:| :--:| :------------: |
+|0     |0    | Multiplos del 4 Desendente|
+|0     |1    | STOP|
+|1     |0    | SET|
+|1     |1    | Multiplos del 3 asendente|
+
+- [Contador MOD 16 con variables XY DISPLAY](MOD_16_XY_C2/MOD_16_XY_C2.vhd)
+
+|X     | Y   | Comportamiento |
+| :---:| :--:| :------------: |
+|0     |0    | 3 Primeros multiplos del 5 Asendente|
+|0     |1    | STOP|
+|1     |0    | RESET|
+|1     |1    | 6 Primeros multiplos del 3 desendente|
+
+- [Contador MOD 16 con variables XY DISPLAY](MOD_16_XY_C3/MOD_16_XY_C3.vhd)
+
+|X     | Y   | Comportamiento |
+| :---:| :--:| :------------: |
+|0     |0    | Mulriplos del 5 desendente|
+|0     |1    | STOP|
+|1     |0    | RESET|
+|1     |1    | Numeros primos asendente|
+----
 ### Extras
 - [Contador MOD-5 Desendente (DISPLAY 7 Anodo)](MOD_5_DESENDENTE/MOD_5_DESENDENTE.vhd)
 - [Contador MOD-11 Desendente (DISPLAY 16 Catodo)](MOD11_DESENDENTE/MOD_11_DESENDENTE.vhd)
 - [COLIMA en display (16 Anodo)](PAIS_CLK/PAIS_CLK.vhd)
+- [Feliz ANO nuevo en DISPLAY (16 Catodo) dedicado ;)](ANO/ANO.vhd)
+- [Contador MOD-16 XY (Todos los estados de la seccion anterior)](MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd)
+
+
+> [!CAUTION]
+> Ultimo codigo citado "Contador MOD-16 XY" **NO ES FUNCIONAL** Este incluye todos los estados de la seccion "Contadores con variables externas" programados por ecuaciones.
+> Solo se debe tomar como ejemplificacion del metodo ecuciones para esos esenarios.
 
 
 
