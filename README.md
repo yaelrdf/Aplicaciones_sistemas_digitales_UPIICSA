@@ -58,8 +58,8 @@
 
 
 > [!CAUTION]
-> Ultimo codigo citado "Contador MOD-16 XY" **NO ES FUNCIONAL** Este incluye todos los estados de la seccion "Contadores con variables externas" programados por ecuaciones.
-> Solo se debe tomar como ejemplificacion del metodo ecuciones para esos esenarios.
+> Ultimo codigo citado "Contador MOD-16 XY" **NO ES FUNCIONAL** Este incluye todos los estados de la seccion "Contadores con variables externas" programados por **ecuaciones**.
+> **Solo se debe tomar como ejemplificacion del metodo ecuciones para esos esenarios.**
 
 
 
