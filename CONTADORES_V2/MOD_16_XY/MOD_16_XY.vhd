@@ -1,3 +1,9 @@
+--Contador MOD 16 XY
+--XY=0 multipplos del 5 asendente
+--Paro
+--Se
+-- XY=1 Multiplos del 3 desendente
+
 library IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.STD_LOGIC_ARITH.ALL;
@@ -38,37 +44,180 @@ begin
         case estado is
             when 0 =>
                 --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 30;
+                if XY = "00" then estado <= 5;
                 --Stop
                 elsif XY ="01" then estado <= estado;
                 --Set
-                elsif XY = "10" then estado <= 31;
+                elsif XY = "10" then estado <= 15;
                 -- Multiplos del 3 desendente
                 elsif XY = "11" then estado <= 15;
                 end if;
             
             when 1 =>
-                --Multiplos del 5 asendente
+                --Primeros 6 multiplos del 5 asendente
+                if XY = "00" then estado <= 5;
+                --Stop
+                elsif XY ="01" then estado <= estado;
+                --Set
+                elsif XY = "10" then estado <= 15;
+                -- Multiplos del 3 desendente
+                elsif XY = "11" then estado <= 0;
+                end if; 
+            
+            when 2 =>
+                --Primeros 6 multiplos del 5 asendente
+                if XY = "00" then estado <= 5;
+                --Stop
+                elsif XY ="01" then estado <= estado;
+                --Set
+                elsif XY = "10" then estado <= 15;
+                -- Multiplos del 3 desendente
+                elsif XY = "11" then estado <= 0;
+                end if;
+            
+            when 3 =>
+                --Primeros 6 multiplos del 5 asendente
+                if XY = "00" then estado <= 5;
+                --Stop
+                elsif XY ="01" then estado <= estado;
+                --Set
+                elsif XY = "10" then estado <= 15;
+                -- Multiplos del 3 desendente
+                elsif XY = "11" then estado <= 0;
+                end if;
+            
+            when 4 =>
+                --Primeros 6 multiplos del 5 asendente
+                if XY = "00" then estado <= 5;
+                --Stop
+                elsif XY ="01" then estado <= estado;
+                --Set
+                elsif XY = "10" then estado <= 15;
+                -- Multiplos del 3 desendente
+                elsif XY = "11" then estado <= 3;
+                end if;
+            
+            when 5 =>
+                --Primeros 6 multiplos del 5 asendente
+                if XY = "00" then estado <= 10;
+                --Stop
+                elsif XY ="01" then estado <= estado;
+                --Set
+                elsif XY = "10" then estado <= 15;
+                -- Multiplos del 3 desendente
+                elsif XY = "11" then estado <= 3;
+                end if;
+            
+            when 6 =>
+                --Primeros 6 multiplos del 5 asendente
+                if XY = "00" then estado <= 10;
+                --Stop
+                elsif XY ="01" then estado <= estado;
+                --Set
+                elsif XY = "10" then estado <= 15;
+                -- Multiplos del 3 desendente
+                elsif XY = "11" then estado <= 3;
+                end if;
+            
+            when 7 =>
+                --Primeros 6 multiplos del 5 asendente
+                if XY = "00" then estado <= 10;
+                --Stop
+                elsif XY ="01" then estado <= estado;
+                --Set
+                elsif XY = "10" then estado <= 15;
+                -- Multiplos del 3 desendente
+                elsif XY = "11" then estado <= 6;
+                end if;
+
+            when 8 =>
+                --Primeros 6 multiplos del 5 asendente
+                if XY = "00" then estado <= 10;
+                --Stop
+                elsif XY ="01" then estado <= estado;
+                --Set
+                elsif XY = "10" then estado <= 15;
+                -- Multiplos del 3 desendente
+                elsif XY = "11" then estado <= 6;
+                end if;
+            
+            when 9 =>
+                --Primeros 6 multiplos del 5 asendente
+                if XY = "00" then estado <= 10;
+                --Stop
+                elsif XY ="01" then estado <= estado;
+                --Set
+                elsif XY = "10" then estado <= 15;
+                -- Multiplos del 3 desendente
+                elsif XY = "11" then estado <= 6;
+                end if;
+            
+            when 10 =>
+                --Primeros 6 multiplos del 5 asendente
                 if XY = "00" then estado <= 15;
                 --Stop
                 elsif XY ="01" then estado <= estado;
                 --Set
                 elsif XY = "10" then estado <= 15;
                 -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 2;
+                elsif XY = "11" then estado <= 9;
                 end if;
             
-            when 0 =>
-                --Multiplos del 5 asendente
+            when 11 =>
+                --Primeros 6 multiplos del 5 asendente
                 if XY = "00" then estado <= 15;
                 --Stop
                 elsif XY ="01" then estado <= estado;
                 --Set
                 elsif XY = "10" then estado <= 15;
                 -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 2;
+                elsif XY = "11" then estado <= 9;
                 end if;
             
+            when 12 =>
+                --Primeros 6 multiplos del 5 asendente
+                if XY = "00" then estado <= 15;
+                --Stop
+                elsif XY ="01" then estado <= estado;
+                --Set
+                elsif XY = "10" then estado <= 15;
+                -- Multiplos del 3 desendente
+                elsif XY = "11" then estado <= 9;
+                end if;
+            
+            when 13 =>
+                --Primeros 6 multiplos del 5 asendente
+                if XY = "00" then estado <= 15;
+                --Stop
+                elsif XY ="01" then estado <= estado;
+                --Set
+                elsif XY = "10" then estado <= 15;
+                -- Multiplos del 3 desendente
+                elsif XY = "11" then estado <= 12;
+                end if;
+            
+            when 14 =>
+                --Primeros 6 multiplos del 5 asendente
+                if XY = "00" then estado <= 15;
+                --Stop
+                elsif XY ="01" then estado <= estado;
+                --Set
+                elsif XY = "10" then estado <= 15;
+                -- Multiplos del 3 desendente
+                elsif XY = "11" then estado <= 12;
+                end if;
+            
+            when 15 =>
+                --Primeros 6 multiplos del 5 asendente
+                if XY = "00" then estado <= 15;
+                --Stop
+                elsif XY ="01" then estado <= estado;
+                --Set
+                elsif XY = "10" then estado <= 15;
+                -- Multiplos del 3 desendente
+                elsif XY = "11" then estado <= 12;
+                end if;
+
         end case;
     end if;
 end process;
