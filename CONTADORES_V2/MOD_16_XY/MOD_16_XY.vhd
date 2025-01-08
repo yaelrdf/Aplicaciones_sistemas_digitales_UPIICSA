@@ -9,7 +9,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.STD_LOGIC_ARITH.ALL;
 USE IEEE.NUMERIC_STD.ALL;
 
-entity MOD_16_XY_C3 is
+entity MOD_16_XY is
     port(
         clk : in std_logic;
         clk_1hz : inout std_logic;
@@ -17,9 +17,9 @@ entity MOD_16_XY_C3 is
         display : out std_logic_vector(16 downto 0);
         estado : inout integer range 0 to 15
     );
-end MOD_16_XY_C3;
+end MOD_16_XY;
 
-architecture behavioral of MOD_16_XY_C3 is
+architecture behavioral of MOD_16_XY is
 --signals
 signal contador_1hz : integer range 0 to 25_000_000;
 
