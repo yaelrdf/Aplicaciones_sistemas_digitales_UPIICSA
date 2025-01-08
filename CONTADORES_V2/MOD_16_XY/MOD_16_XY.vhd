@@ -14,8 +14,9 @@ entity MOD_16_XY is
         clk : in std_logic;
         clk_1hz : inout std_logic;
         XY : in std_logic_vector(1 downto 0);
-        display : out std_logic_vector(16 downto 0);
-        estado : inout integer range 0 to 15
+        display1 : out std_logic_vector(6 downto 0);
+        display2 :out std_logic_vector (6 downto 0);
+        estado : inout integer range 0 to 25
     );
 end MOD_16_XY;
 
@@ -38,210 +39,71 @@ begin
 end process;
 
 --Manejo de estados
-process(clk_1hz)
+process(clk_1hz,XY)
 begin
-    if rising_edge(clk_1hz) then
-        case estado is
-            when 0 =>
-                --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 5;
-                --Stop
-                elsif XY ="01" then estado <= estado;
-                --Set
-                elsif XY = "10" then estado <= 15;
-                -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 15;
-                end if;
-            
-            when 1 =>
-                --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 5;
-                --Stop
-                elsif XY ="01" then estado <= estado;
-                --Set
-                elsif XY = "10" then estado <= 15;
-                -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 0;
-                end if; 
-            
-            when 2 =>
-                --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 5;
-                --Stop
-                elsif XY ="01" then estado <= estado;
-                --Set
-                elsif XY = "10" then estado <= 15;
-                -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 0;
-                end if;
-            
-            when 3 =>
-                --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 5;
-                --Stop
-                elsif XY ="01" then estado <= estado;
-                --Set
-                elsif XY = "10" then estado <= 15;
-                -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 0;
-                end if;
-            
-            when 4 =>
-                --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 5;
-                --Stop
-                elsif XY ="01" then estado <= estado;
-                --Set
-                elsif XY = "10" then estado <= 15;
-                -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 3;
-                end if;
-            
-            when 5 =>
-                --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 10;
-                --Stop
-                elsif XY ="01" then estado <= estado;
-                --Set
-                elsif XY = "10" then estado <= 15;
-                -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 3;
-                end if;
-            
-            when 6 =>
-                --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 10;
-                --Stop
-                elsif XY ="01" then estado <= estado;
-                --Set
-                elsif XY = "10" then estado <= 15;
-                -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 3;
-                end if;
-            
-            when 7 =>
-                --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 10;
-                --Stop
-                elsif XY ="01" then estado <= estado;
-                --Set
-                elsif XY = "10" then estado <= 15;
-                -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 6;
-                end if;
+if rising_edge(clk_1hz) then
+    if XY= "00" then
+        estado <= 0;
+        if estado < 25 then
+            estado <= estado + 5;
+        else
+            estado <= 0;
+        end if;
+    elsif XY = "01" then
+        estado <= estado;
 
-            when 8 =>
-                --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 10;
-                --Stop
-                elsif XY ="01" then estado <= estado;
-                --Set
-                elsif XY = "10" then estado <= 15;
-                -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 6;
-                end if;
-            
-            when 9 =>
-                --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 10;
-                --Stop
-                elsif XY ="01" then estado <= estado;
-                --Set
-                elsif XY = "10" then estado <= 15;
-                -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 6;
-                end if;
-            
-            when 10 =>
-                --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 15;
-                --Stop
-                elsif XY ="01" then estado <= estado;
-                --Set
-                elsif XY = "10" then estado <= 15;
-                -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 9;
-                end if;
-            
-            when 11 =>
-                --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 15;
-                --Stop
-                elsif XY ="01" then estado <= estado;
-                --Set
-                elsif XY = "10" then estado <= 15;
-                -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 9;
-                end if;
-            
-            when 12 =>
-                --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 15;
-                --Stop
-                elsif XY ="01" then estado <= estado;
-                --Set
-                elsif XY = "10" then estado <= 15;
-                -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 9;
-                end if;
-            
-            when 13 =>
-                --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 15;
-                --Stop
-                elsif XY ="01" then estado <= estado;
-                --Set
-                elsif XY = "10" then estado <= 15;
-                -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 12;
-                end if;
-            
-            when 14 =>
-                --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 15;
-                --Stop
-                elsif XY ="01" then estado <= estado;
-                --Set
-                elsif XY = "10" then estado <= 15;
-                -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 12;
-                end if;
-            
-            when 15 =>
-                --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 0;
-                --Stop
-                elsif XY ="01" then estado <= estado;
-                --Set
-                elsif XY = "10" then estado <= 15;
-                -- Multiplos del 3 desendente
-                elsif XY = "11" then estado <= 12;
-                end if;
-
-        end case;
+    elsif XY = "10" then
+        estado <= 1;
+    
+    elsif XY = "11" then
+        estado <= 15;
+        if estado > 0 then
+            estado <= estado - 3;
+        else
+            estado <= 15; 
+        end if;
     end if;
+end if;
 end process;
-
 --Manejo de display
 process(estado)
 begin
     case estado is
-        when 0 => display <= "11111111001001000";
-        when 1 => display <= "00110000001000000";
-        when 2 => display <= "11101110000110000";
-        when 3 => display <= "11111100000010000";
-        when 4 => display <= "00110001000110000";
-        when 5 => display <= "11011101000110000";
-        when 6 => display <= "11011111000110000";
-        when 7 => display <= "11110000000000000";
-        when 8 => display <= "11111111000110000";
-        when 9 => display <= "11111101000110000";
-        when 10 => display <= "01111011010000100";
-        when 11 => display <= "00110011000000000";
-        when 12 => display <= "01101011000010100";
-        when 13 => display <= "01111011000010000";
-        when 14 => display <= "00110011010010000";
-        when 15 => display <= "01011011010010000";
+        when 0 =>
+            display1 <= "0000001";
+            display2 <= "0000001";
+        when 1 =>
+            display1 <= "0000001";
+            display2 <= "1001111";
+        when 3 =>
+            display1 <= "0000001";
+            display2 <= "0000110";
+        when 5 =>
+            display1 <= "0000001";
+            display2 <= "0100100";
+        when 6 =>
+            display1 <= "0000001";
+            display2 <= "0100000";
+        when 9 =>
+            display1 <= "0000001";
+            display2 <= "0000100";
+        when 10 =>
+            display1 <= "1001111";
+            display2 <= "0000001";
+        ------Uso 2
+        when 12 =>
+            display1 <= "1001111";
+            display2 <= "0010010";
+        when 15 =>
+            display1 <= "1001111";
+            display2 <= "0100100";
+        when 20 =>
+            display1 <= "0010010";
+            display2 <= "0000001";
+        when 25 =>
+            display1 <= "0010010";
+            display2 <= "0100100";
+        when others => null;
     end case;
 end process;
 
