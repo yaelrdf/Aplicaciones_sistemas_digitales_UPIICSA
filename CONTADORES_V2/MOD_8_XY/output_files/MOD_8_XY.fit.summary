@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue Jan  7 21:06:10 2025
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : MOD_8_XY
+Top-level Entity Name : MOD_8_XY
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 66 / 240 ( 28 % )
+Total pins : 23 / 80 ( 29 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
