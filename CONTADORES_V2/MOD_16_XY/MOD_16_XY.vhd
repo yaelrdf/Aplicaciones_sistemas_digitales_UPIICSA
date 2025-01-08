@@ -209,7 +209,7 @@ begin
             
             when 15 =>
                 --Primeros 6 multiplos del 5 asendente
-                if XY = "00" then estado <= 15;
+                if XY = "00" then estado <= 0;
                 --Stop
                 elsif XY ="01" then estado <= estado;
                 --Set

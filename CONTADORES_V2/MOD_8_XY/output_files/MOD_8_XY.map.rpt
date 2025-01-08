@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MOD_8_XY
-Tue Jan  7 21:06:06 2025
+Wed Jan  8 15:09:51 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue Jan  7 21:06:06 2025          ;
+; Analysis & Synthesis Status ; Successful - Wed Jan  8 15:09:51 2025          ;
 ; Quartus Prime Version       ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name               ; MOD_8_XY                                       ;
 ; Top-level Entity Name       ; MOD_8_XY                                       ;
@@ -129,8 +129,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -140,13 +140,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                     ;
-+----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                        ; Library ;
-+----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------------------------+---------+
-; MOD_8_XY.vhd                     ; yes             ; Auto-Found VHDL File  ; /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd ;         ;
-+----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                             ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                                ; Library ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------------------------------------------------------------+---------+
+; mod_8_xy.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd ;         ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -215,44 +215,44 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Tue Jan  7 21:05:46 2025
+    Info: Processing started: Wed Jan  8 15:09:37 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MOD_8_XY -c MOD_8_XY
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Warning (12125): Using design file MOD_8_XY.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: MOD_8_XY-behavioral File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 19
-    Info (12023): Found entity 1: MOD_8_XY File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 10
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Warning (12125): Using design file mod_8_xy.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: MOD_8_XY-behavioral File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 19
+    Info (12023): Found entity 1: MOD_8_XY File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 10
 Info (12127): Elaborating entity "MOD_8_XY" for the top level hierarchy
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "clk_1hz" and its non-tri-state driver. File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 13
-    Warning (13035): Inserted always-enabled tri-state buffer between "estado[0]" and its non-tri-state driver. File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 40
-    Warning (13035): Inserted always-enabled tri-state buffer between "estado[1]" and its non-tri-state driver. File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 40
-    Warning (13035): Inserted always-enabled tri-state buffer between "estado[2]" and its non-tri-state driver. File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 40
+    Warning (13035): Inserted always-enabled tri-state buffer between "clk_1hz" and its non-tri-state driver. File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 13
+    Warning (13035): Inserted always-enabled tri-state buffer between "estado[0]" and its non-tri-state driver. File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 40
+    Warning (13035): Inserted always-enabled tri-state buffer between "estado[1]" and its non-tri-state driver. File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 40
+    Warning (13035): Inserted always-enabled tri-state buffer between "estado[2]" and its non-tri-state driver. File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 40
 Info (13060): One or more bidirectional pins are fed by always enabled tri-state buffers
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "clk_1hz" is moved to its source File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 13
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "estado[0]" is moved to its source File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 40
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "estado[1]" is moved to its source File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 40
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "estado[2]" is moved to its source File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 40
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "clk_1hz" is moved to its source File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 13
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "estado[0]" is moved to its source File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 40
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "estado[1]" is moved to its source File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 40
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "estado[2]" is moved to its source File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 40
 Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "clk_1hz~synth" File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 13
-    Warning (13010): Node "estado[0]~synth" File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 40
-    Warning (13010): Node "estado[1]~synth" File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 40
-    Warning (13010): Node "estado[2]~synth" File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 40
+    Warning (13010): Node "clk_1hz~synth" File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 13
+    Warning (13010): Node "estado[0]~synth" File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 40
+    Warning (13010): Node "estado[1]~synth" File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 40
+    Warning (13010): Node "estado[2]~synth" File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 40
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "display[0]" is stuck at GND File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 14
-    Warning (13410): Pin "display[1]" is stuck at GND File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 14
-    Warning (13410): Pin "display[2]" is stuck at GND File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 14
-    Warning (13410): Pin "display[7]" is stuck at GND File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 14
-    Warning (13410): Pin "display[8]" is stuck at GND File: /home/yaelrdf/Documents/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/MOD_8_XY.vhd Line: 14
+    Warning (13410): Pin "display[0]" is stuck at GND File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 14
+    Warning (13410): Pin "display[1]" is stuck at GND File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 14
+    Warning (13410): Pin "display[2]" is stuck at GND File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 14
+    Warning (13410): Pin "display[7]" is stuck at GND File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 14
+    Warning (13410): Pin "display[8]" is stuck at GND File: C:/Users/mcmin/Documents/GitHub/Aplicaciones_sistemas_digitales_UPIICSA/CONTADORES_V2/MOD_8_XY/mod_8_xy.vhd Line: 14
 Info (21057): Implemented 95 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 17 output pins
     Info (21060): Implemented 4 bidirectional pins
     Info (21061): Implemented 72 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 377 megabytes
-    Info: Processing ended: Tue Jan  7 21:06:06 2025
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:47
+    Info: Peak virtual memory: 4767 megabytes
+    Info: Processing ended: Wed Jan  8 15:09:51 2025
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:23
 
 

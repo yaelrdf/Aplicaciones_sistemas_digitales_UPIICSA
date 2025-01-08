@@ -70,4 +70,4 @@ set_location_assignment PIN_56 -to display[0]
 set_location_assignment PIN_78 -to estado[0]
 set_location_assignment PIN_82 -to estado[1]
 set_location_assignment PIN_84 -to estado[2]
-set_location_assignment PIN_99 -to X
+set_location_assignment PIN_97 -to X

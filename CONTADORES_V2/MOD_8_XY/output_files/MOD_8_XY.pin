@@ -159,7 +159,7 @@ GNDIO                        : 93        : gnd    :                   :         
 VCCIO2                       : 94        : power  :                   : 3.3V    : 2         :                
 GND*                         : 95        :        :                   :         : 2         :                
 GND*                         : 96        :        :                   :         : 2         :                
-GND*                         : 97        :        :                   :         : 2         :                
+X                            : 97        : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : 98        :        :                   :         : 2         :                
-X                            : 99        : input  : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : 99        :        :                   :         : 2         :                
 GND*                         : 100       :        :                   :         : 2         :                
