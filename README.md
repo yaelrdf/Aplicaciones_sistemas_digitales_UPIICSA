@@ -1,6 +1,16 @@
 # Aplicaciones de sistemas digitales UPIICSA
  Repositorio de trabajo, copia de seguridad y contribucion de trabajo.
 
+## Agredecimientos
+Gracias a todos los que permitieron que este respositorio creciera y se volviera fuente de consulta importante para muchos. Agradezco la confianza y que me brindaron y sobre todo la oportunidad de compartir un poco de mi conocimiento. Especiamlente a los miembros de "Manzanita sol" y asociados.
+
+El dia 18 de Abril del 2025 este respositorio es archivado marcado el fin de una era muy divertida y memorable. Este repositorio permanecera publico para todo el que quiera aprender y utilizar su contenido bajo los lineamientos permitidos en la licencia y el codigo de etica.
+
+#### Gracias a todas y cada una de las personas que hicieron esto posible. 
+#### Att. Yael RDF
+
+---
+
 > [!NOTE]
 > Este repositorio esta bajo licencia GPL-V3 por lo que la contribucion al autor "Yael-RDF" es nesesaria al utilizar cualquier contenido en este repositorio
 
@@ -53,7 +63,7 @@
 - [Contador MOD-5 Desendente (DISPLAY 7 Anodo)](MOD_5_DESENDENTE/MOD_5_DESENDENTE.vhd)
 - [Contador MOD-11 Desendente (DISPLAY 16 Catodo)](MOD11_DESENDENTE/MOD_11_DESENDENTE.vhd)
 - [COLIMA en display (16 Anodo)](PAIS_CLK/PAIS_CLK.vhd)
-- [Feliz ANO nuevo en DISPLAY (16 Catodo) dedicado ;)](ANO/ANO.vhd)
+- [Feliz ANO nuevo en DISPLAY (16 Catodo) especialmente para misa ;)](ANO/ANO.vhd)
 - [Contador MOD-16 XY (Todos los estados de la seccion anterior)](MOD_16_XY_MOORE/MOD_16_XY_MOORE.vhd)
 
 
