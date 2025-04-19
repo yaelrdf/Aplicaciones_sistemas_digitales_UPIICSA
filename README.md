@@ -4,7 +4,7 @@
 ## Agredecimientos
 Gracias a todos los que permitieron que este respositorio creciera y se volviera fuente de consulta importante para muchos. Agradezco la confianza y que me brindaron y sobre todo la oportunidad de compartir un poco de mi conocimiento. Especiamlente a los miembros de "Manzanita sol" y asociados.
 
-El dia 18 de Abril del 2025 este respositorio es archivado marcado el fin de una era muy divertida y memorable. Este repositorio permanecera publico para todo el que quiera aprender y utilizar su contenido bajo los lineamientos permitidos en la licencia y el codigo de etica.
+El dia 18 de Abril del 2025 este respositorio es archivado marcado el fin de una era muy divertida y memorable. Este repositorio permanecera publico para todo el que quiera aprender y utilizar su contenido bajo los lineamientos permitidos en la licencia y el [codigo de etica](codigo-de-etica).
 
 #### Gracias a todas y cada una de las personas que hicieron esto posible. 
 #### Att. Yael RDF
